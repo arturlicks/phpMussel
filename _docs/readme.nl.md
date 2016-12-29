@@ -188,14 +188,10 @@ Bestand | Beschrijving
 /_testfiles/graphics_standard_testfile.gif | Testbestand voor het testen phpMussel grafische handtekeningen.
 /_testfiles/html_standard_testfile.html | Testbestand voor het testen phpMussel genormaliseerde HTML handtekeningen.
 /_testfiles/md5_testfile.txt | Testbestand voor het testen phpMussel MD5 handtekeningen.
-/_testfiles/metadata_testfile.tar | Testbestand voor het testen phpMussel metadata handtekeningen en voor het testen van TAR bestandsondersteuning op uw systeem.
-/_testfiles/metadata_testfile.txt.gz | Testbestand voor het testen phpMussel metadata handtekeningen en voor het testen van GZ bestandsondersteuning op uw systeem.
-/_testfiles/metadata_testfile.zip | Testbestand voor het testen phpMussel metadata handtekeningen en voor het testen van ZIP bestandsondersteuning op uw systeem.
 /_testfiles/ole_testfile.ole | Testbestand voor het testen phpMussel OLE handtekeningen.
 /_testfiles/pdf_standard_testfile.pdf | Testbestand voor het testen phpMussel PDF handtekeningen.
 /_testfiles/pe_sectional_testfile.exe | Testbestand voor het testen phpMussel PE Sectionele handtekeningen.
 /_testfiles/swf_standard_testfile.swf | Testbestand voor het testen phpMussel SWF handtekeningen.
-/_testfiles/xdp_standard_testfile.xdp | Testbestand voor het testen phpMussel XML/XDP handtekeningen.
 /vault/ | Vault bestandsmap (bevat verschillende bestanden).
 /vault/cache/ | Cache bestandsmap (tijdelijke data).
 /vault/cache/.htaccess | Een hypertext toegang bestand (in dit geval, om gevoelige bestanden die behoren tot het script te beschermen tegen toegang door niet-geautoriseerde bronnen).
@@ -257,46 +253,34 @@ Bestand | Beschrijving
 /vault/signatures/ascii_clamav_regex.map | Bestand voor genormaliseerde ASCII handtekeningen.
 /vault/signatures/ascii_clamav_standard.cvd | Bestand voor genormaliseerde ASCII handtekeningen.
 /vault/signatures/ascii_clamav_standard.map | Bestand voor genormaliseerde ASCII handtekeningen.
-/vault/signatures/ascii_custom_regex.cvd | Bestand voor genormaliseerde ASCII handtekeningen.
-/vault/signatures/ascii_custom_standard.cvd | Bestand voor genormaliseerde ASCII handtekeningen.
 /vault/signatures/ascii_mussel_regex.cvd | Bestand voor genormaliseerde ASCII handtekeningen.
 /vault/signatures/ascii_mussel_standard.cvd | Bestand voor genormaliseerde ASCII handtekeningen.
 /vault/signatures/coex_clamav.cvd | Bestand voor complexe uitgebreide handtekeningen.
-/vault/signatures/coex_custom.cvd | Bestand voor complexe uitgebreide handtekeningen.
 /vault/signatures/coex_mussel.cvd | Bestand voor complexe uitgebreide handtekeningen.
 /vault/signatures/elf_clamav_regex.cvd | Bestand voor ELF handtekeningen.
 /vault/signatures/elf_clamav_regex.map | Bestand voor ELF handtekeningen.
 /vault/signatures/elf_clamav_standard.cvd | Bestand voor ELF handtekeningen.
 /vault/signatures/elf_clamav_standard.map | Bestand voor ELF handtekeningen.
-/vault/signatures/elf_custom_regex.cvd | Bestand voor ELF handtekeningen.
-/vault/signatures/elf_custom_standard.cvd | Bestand voor ELF handtekeningen.
 /vault/signatures/elf_mussel_regex.cvd | Bestand voor ELF handtekeningen.
 /vault/signatures/elf_mussel_standard.cvd | Bestand voor ELF handtekeningen.
 /vault/signatures/exe_clamav_regex.cvd | Bestand voor PE (Portable Executable) handtekeningen.
 /vault/signatures/exe_clamav_regex.map | Bestand voor PE (Portable Executable) handtekeningen.
 /vault/signatures/exe_clamav_standard.cvd | Bestand voor PE (Portable Executable) handtekeningen.
 /vault/signatures/exe_clamav_standard.map | Bestand voor PE (Portable Executable) handtekeningen.
-/vault/signatures/exe_custom_regex.cvd | Bestand voor PE (Portable Executable) handtekeningen.
-/vault/signatures/exe_custom_standard.cvd | Bestand voor PE (Portable Executable) handtekeningen.
 /vault/signatures/exe_mussel_regex.cvd | Bestand voor PE (Portable Executable) handtekeningen.
 /vault/signatures/exe_mussel_standard.cvd | Bestand voor PE (Portable Executable) handtekeningen.
 /vault/signatures/filenames_clamav.cvd | Bestand voor bestandsnaam handtekeningen.
-/vault/signatures/filenames_custom.cvd | Bestand voor bestandsnaam handtekeningen.
 /vault/signatures/filenames_mussel.cvd | Bestand voor bestandsnaam handtekeningen.
 /vault/signatures/general_clamav_regex.cvd | Bestand voor algemene handtekeningen.
 /vault/signatures/general_clamav_regex.map | Bestand voor algemene handtekeningen.
 /vault/signatures/general_clamav_standard.cvd | Bestand voor algemene handtekeningen.
 /vault/signatures/general_clamav_standard.map | Bestand voor algemene handtekeningen.
-/vault/signatures/general_custom_regex.cvd | Bestand voor algemene handtekeningen.
-/vault/signatures/general_custom_standard.cvd | Bestand voor algemene handtekeningen.
 /vault/signatures/general_mussel_regex.cvd | Bestand voor algemene handtekeningen.
 /vault/signatures/general_mussel_standard.cvd | Bestand voor algemene handtekeningen.
 /vault/signatures/graphics_clamav_regex.cvd | Bestand voor grafische handtekeningen.
 /vault/signatures/graphics_clamav_regex.map | Bestand voor grafische handtekeningen.
 /vault/signatures/graphics_clamav_standard.cvd | Bestand voor grafische handtekeningen.
 /vault/signatures/graphics_clamav_standard.map | Bestand voor grafische handtekeningen.
-/vault/signatures/graphics_custom_regex.cvd | Bestand voor grafische handtekeningen.
-/vault/signatures/graphics_custom_standard.cvd | Bestand voor grafische handtekeningen.
 /vault/signatures/graphics_mussel_regex.cvd | Bestand voor grafische handtekeningen.
 /vault/signatures/graphics_mussel_standard.cvd | Bestand voor grafische handtekeningen.
 /vault/signatures/hex_general_commands.csv | Hex-gecodeerde CSV van algemene commando detecties optioneel gebruikt door phpMussel.
@@ -304,74 +288,47 @@ Bestand | Beschrijving
 /vault/signatures/html_clamav_regex.map | Bestand voor genormaliseerde HTML handtekeningen.
 /vault/signatures/html_clamav_standard.cvd | Bestand voor genormaliseerde HTML handtekeningen.
 /vault/signatures/html_clamav_standard.map | Bestand voor genormaliseerde HTML handtekeningen.
-/vault/signatures/html_custom_regex.cvd | Bestand voor genormaliseerde HTML handtekeningen.
-/vault/signatures/html_custom_standard.cvd | Bestand voor genormaliseerde HTML handtekeningen.
 /vault/signatures/html_mussel_regex.cvd | Bestand voor genormaliseerde HTML handtekeningen.
 /vault/signatures/html_mussel_standard.cvd | Bestand voor genormaliseerde HTML handtekeningen.
 /vault/signatures/macho_clamav_regex.cvd | Bestand voor Mach-O handtekeningen.
 /vault/signatures/macho_clamav_regex.map | Bestand voor Mach-O handtekeningen.
 /vault/signatures/macho_clamav_standard.cvd | Bestand voor Mach-O handtekeningen.
 /vault/signatures/macho_clamav_standard.map | Bestand voor Mach-O handtekeningen.
-/vault/signatures/macho_custom_regex.cvd | Bestand voor Mach-O handtekeningen.
-/vault/signatures/macho_custom_standard.cvd | Bestand voor Mach-O handtekeningen.
 /vault/signatures/macho_mussel_regex.cvd | Bestand voor Mach-O handtekeningen.
 /vault/signatures/macho_mussel_standard.cvd | Bestand voor Mach-O handtekeningen.
 /vault/signatures/mail_clamav_regex.cvd | Bestand voor mail handtekeningen.
 /vault/signatures/mail_clamav_regex.map | Bestand voor mail handtekeningen.
 /vault/signatures/mail_clamav_standard.cvd | Bestand voor mail handtekeningen.
 /vault/signatures/mail_clamav_standard.map | Bestand voor mail handtekeningen.
-/vault/signatures/mail_custom_regex.cvd | Bestand voor mail handtekeningen.
-/vault/signatures/mail_custom_standard.cvd | Bestand voor mail handtekeningen.
 /vault/signatures/mail_mussel_regex.cvd | Bestand voor mail handtekeningen.
 /vault/signatures/mail_mussel_standard.cvd | Bestand voor mail handtekeningen.
-/vault/signatures/md5_clamav.cvd | Bestand voor MD5 gebaseerde handtekeningen.
-/vault/signatures/md5_custom.cvd | Bestand voor MD5 gebaseerde handtekeningen.
-/vault/signatures/md5_mussel.cvd | Bestand voor MD5 gebaseerde handtekeningen.
-/vault/signatures/metadata_clamav.cvd | Bestand voor archief metadata handtekeningen.
-/vault/signatures/metadata_custom.cvd | Bestand voor archief metadata handtekeningen.
-/vault/signatures/metadata_mussel.cvd | Bestand voor archief metadata handtekeningen.
+/vault/signatures/clamav.hdb | Bestand voor MD5 gebaseerde handtekeningen.
+/vault/signatures/phpmussel.hdb | Bestand voor MD5 gebaseerde handtekeningen.
 /vault/signatures/ole_clamav_regex.cvd | Bestand voor OLE handtekeningen.
 /vault/signatures/ole_clamav_regex.map | Bestand voor OLE handtekeningen.
 /vault/signatures/ole_clamav_standard.cvd | Bestand voor OLE handtekeningen.
 /vault/signatures/ole_clamav_standard.map | Bestand voor OLE handtekeningen.
-/vault/signatures/ole_custom_regex.cvd | Bestand voor OLE handtekeningen.
-/vault/signatures/ole_custom_standard.cvd | Bestand voor OLE handtekeningen.
 /vault/signatures/ole_mussel_regex.cvd | Bestand voor OLE handtekeningen.
 /vault/signatures/ole_mussel_standard.cvd | Bestand voor OLE handtekeningen.
 /vault/signatures/pdf_clamav_regex.cvd | Bestand voor PDF handtekeningen.
 /vault/signatures/pdf_clamav_regex.map | Bestand voor PDF handtekeningen.
 /vault/signatures/pdf_clamav_standard.cvd | Bestand voor PDF handtekeningen.
 /vault/signatures/pdf_clamav_standard.map | Bestand voor PDF handtekeningen.
-/vault/signatures/pdf_custom_regex.cvd | Bestand voor PDF handtekeningen.
-/vault/signatures/pdf_custom_standard.cvd | Bestand voor PDF handtekeningen.
 /vault/signatures/pdf_mussel_regex.cvd | Bestand voor PDF handtekeningen.
 /vault/signatures/pdf_mussel_standard.cvd | Bestand voor PDF handtekeningen.
-/vault/signatures/pex_custom.cvd | Bestand voor PE uitgebreide handtekeningen.
-/vault/signatures/pex_mussel.cvd | Bestand voor PE uitgebreide handtekeningen.
-/vault/signatures/pe_clamav.cvd | Bestand voor PE Sectionele handtekeningen.
-/vault/signatures/pe_custom.cvd | Bestand voor PE Sectionele handtekeningen.
-/vault/signatures/pe_mussel.cvd | Bestand voor PE Sectionele handtekeningen.
+/vault/signatures/phpmussel.pex | Bestand voor PE uitgebreide handtekeningen.
+/vault/signatures/clamav.mdb | Bestand voor PE Sectionele handtekeningen.
+/vault/signatures/phpmussel.mdb | Bestand voor PE Sectionele handtekeningen.
 /vault/signatures/swf_clamav_regex.cvd | Bestand voor the Shockwave handtekeningen.
 /vault/signatures/swf_clamav_regex.map | Bestand voor the Shockwave handtekeningen.
 /vault/signatures/swf_clamav_standard.cvd | Bestand voor the Shockwave handtekeningen.
 /vault/signatures/swf_clamav_standard.map | Bestand voor the Shockwave handtekeningen.
-/vault/signatures/swf_custom_regex.cvd | Bestand voor the Shockwave handtekeningen.
-/vault/signatures/swf_custom_standard.cvd | Bestand voor the Shockwave handtekeningen.
 /vault/signatures/swf_mussel_regex.cvd | Bestand voor the Shockwave handtekeningen.
 /vault/signatures/swf_mussel_standard.cvd | Bestand voor the Shockwave handtekeningen.
 /vault/signatures/switch.dat | Controles en sets bepaalde variabelen.
 /vault/signatures/urlscanner.cvd | Bestand voor URL scanner handtekeningen.
 /vault/signatures/whitelist_clamav.cvd | Bestand-specifieke whitelist.
-/vault/signatures/whitelist_custom.cvd | Bestand-specifieke whitelist.
 /vault/signatures/whitelist_mussel.cvd | Bestand-specifieke whitelist.
-/vault/signatures/xmlxdp_clamav_regex.cvd | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_clamav_regex.map | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_clamav_standard.cvd | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_clamav_standard.map | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_custom_regex.cvd | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_custom_standard.cvd | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_mussel_regex.cvd | Bestand voor XML/XDP handtekeningen.
-/vault/signatures/xmlxdp_mussel_standard.cvd | Bestand voor XML/XDP handtekeningen.
 /vault/.htaccess | Een hypertext toegang bestand (in dit geval, om gevoelige bestanden die behoren tot het script te beschermen tegen toegang door niet-geautoriseerde bronnen).
 /vault/cli.php | CLI handler.
 /vault/config.ini.RenameMe | Configuratiebestand; Bevat alle configuratieopties van phpMussel, het vertellen wat te doen en hoe om te werken correct (hernoemen om te activeren).
@@ -414,8 +371,6 @@ Handtekening bestanden gemarkeerd niet met "_regex" noch "_standard" zal zijn al
 
 Handtekening bestanden gemarkeerd met "_clamav" bevatten handtekeningen dat zijn geheel afkomstig van de ClamAV databank (GNU/GPL).
 
-Handtekening bestanden gemarkeerd met "_custom", als standaard, bevat geen handtekeningen; Deze dergelijke bestanden bestaan te geven u ergens aan uw eigen aangepaste handtekeningen te plaatsen, als u komen met elke van uw eigen.
-
 Handtekening bestanden gemarkeerd met "_mussel" bevatten handtekeningen dat specifiek zijn niet afkomstig van ClamAV, handtekeningen dat, in algemeen, ik heeft persoonlijk geschreven en/of gebaseerd op diverse verschillende bronnen.
 
 ---
@@ -426,14 +381,6 @@ Het volgende is een lijst van variabelen die in de `config.ini` configuratiebest
 
 ####"general" (Categorie)
 Algemene configuratie voor phpMussel.
-
-"script_password"
-- Voor het gemak, phpMussel zullen bepaalde functies toestaan te handmatig worden geactiveerd via POST, GET en QUERY. Echter, als een veiligheidsmaatregel, om dit te doen, phpMussel zal verwachten een wachtwoord te worden opgenomen met het commando, te waarborgen dat het u, en niet iemand anders, dat is proberen te handmatig activeren deze functies. Zetten `script_password` aan de wachtwoord zou u willen te gebruiken. Als er geen wachtwoord ingesteld, handmatige gebruik door standaard wordt uitgeschakeld. Gebruik iets wat u zult herinneren, maar dat is moeilijk voor anderen te gissen.
-- Heeft geen invloed in CLI-modus.
-
-"logs_password"
-- Hetzelfde als `script_password`, maar voor het bekijken van de inhoud van `scan_log` en `scan_kills`. Hebben verschillende wachtwoorden kan nuttig zijn als u wilt te geven toegang tot iemand anders voor een set van functies, maar niet de andere.
-- Heeft geen invloed in CLI-modus.
 
 "cleanup"
 - Vrijmaken script variabelen en de cache na de uitvoering? False = Nee; True = Ja [Standaard]. Als u niet gebruik het script na de eerste scan van upload, moet zetten op `true` (ja), om minimaliseren de geheugengebruik. Als u gebruik het script voor de doeleinden na de eerste scan van upload, moet zetten op `false` (nee), om te voorkomen dat onnodig herladen dubbele gegevens in het geheugen. In de huisartspraktijk, moet waarschijnlijk worden zetten op `true` (ja), maar, als u dit doet, het zal niet mogelijk zijn om het script te gebruiken voor iets anders dan het scannen van bestand uploaden.
@@ -474,12 +421,6 @@ Algemene configuratie voor phpMussel.
 "lang"
 - Geef de standaardtaal voor phpMussel.
 
-"lang_override"
-- Geef als phpMussel moet, wanneer mogelijk, overschrijven de taal specificatie met de taalvoorkeur verklaard door inkomende verzoeken (HTTP_ACCEPT_LANGUAGE). False = Nee [Standaard]; True = Ja.
-
-"lang_acceptable"
-- Het `lang_acceptable` richtlijn vertelt phpMussel welke talen door het script kunt worden aanvaard van `lang` of van `HTTP_ACCEPT_LANGUAGE`. Dit richtlijn moet -alleen- worden gewijzigd als u het toevoegen van uw eigen aangepaste taalbestanden of gedwongen verwijderen taalbestanden. De richtlijn is een door komma's gescheiden tekenreeks van de codes van die talen dat door het script zijn aanvaard.
-
 "quarantine_key"
 - phpMussel is in staat om gevlagd geprobeerd bestandsuploads te quarantaine in isolatie binnen de phpMussel vault, als dit is iets wat u wilt doen. Regelmatige gebruikers van phpMussel dat gewoon willen om hun websites of hosting-omgeving te beschermen zonder enige interesse in diep analyseren van gevlagd geprobeerd bestandsuploads moet dit functionaliteit hebben uitgeschakeld, maar elke gebruikers geïnteresseerd in de verdere analyse van gevlagd geprobeerd bestandsuploads voor malware onderzoek of voor soortgelijke zaken moeten inschakelen dit functionaliteit. Quarantaine van gevlagd geprobeerd bestandsuploads kunt ook somtijds helpen bij het opsporen van vals-positieven, als dit is iets dat vaak voorkomt voor u. Voor de uitschakelen van quarantaine functionaliteit, gewoon laat de `quarantine_key` richtlijn leeg, of wissen de inhoud van de richtlijn als het niet leeg alreeds. Voor de inschakelen van quarantaine functionaliteit, invoeren soms waarde in de richtlijn. De `quarantine_key` is een belangrijke beveiliging kenmerk van de quarantaine functionaliteit vereist als middel om de functionaliteit quarantaine te verhinderen exploitatie door potentiële aanvallers en als middel om verhinderen van elke mogelijke gegevens uitvoering van gegevens opgeslagen in de quarantaine. De `quarantine_key` moeten op dezelfde manier als uw wachtwoorden worden behandeld: De langer de beter, en bewaken het goed. Voor het beste gevolg, gebruik in combinatie met `delete_on_sight`.
 
@@ -501,113 +442,79 @@ Algemene configuratie voor phpMussel.
 "disable_frontend"
 - Uitschakelen frontend toegang? frontend toegang kan phpMussel beter beheersbaar te maken, maar kan ook een potentieel gevaar voor de veiligheid zijn. Het is aan te raden om phpMussel te beheren via het backend wanneer mogelijk, maar frontend toegang is hier voorzien voor wanneer het niet mogelijk is. Hebben het uitgeschakeld tenzij u het nodig hebt. False = Inschakelen frontend toegang; True = Uitschakelen frontend toegang [Standaard].
 
+"max_login_attempts"
+- Maximum aantal inlogpogingen (frontend). Standaard = 5.
+
+"FrontEndLog"
+- Bestand om de front-end login pogingen te loggen. Geef een bestandsnaam, of laat leeg om uit te schakelen.
+
 ####"signatures" (Categorie)
 Configuratie voor handtekeningen.
-- %%%_clamav = ClamAV handtekeningen (beide hoofdnet en dagelijks).
-- %%%_custom = Uw aangepaste handtekeningen (als u heeft geschreven elke).
-- %%%_mussel = phpMussel handtekeningen opgenomen in uw huidige handtekeningen reeks die niet afkomstig van ClamAV.
 
-Controleer tegen MD5 handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
-- "md5_clamav"
-- "md5_custom"
-- "md5_mussel"
+"MD5"
+- Gebruik MD5 handtekeningen bij het scannen? Als dat zo is, geef de namen van de handtekening bestanden te gebruiken, gescheiden door komma's.
+
+"PE_Sectional"
+- Gebruik PE Sectionele handtekeningen voor de PE-bestanden (EXE, DLL, e.z.v.) bij het scannen? Als dat zo is, geef de namen van de handtekening bestanden te gebruiken, gescheiden door komma's.
+
+"PE_Extended"
+- Gebruik PE uitgebreide handtekeningen voor de PE-bestanden (EXE, DLL, e.z.v.) bij het scannen? Als dat zo is, geef de namen van de handtekening bestanden te gebruiken, gescheiden door komma's.
 
 Controleer tegen algemeen handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "general_clamav"
-- "general_custom"
 - "general_mussel"
 
 Controleer tegen genormaliseerde ASCII handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "ascii_clamav"
-- "ascii_custom"
 - "ascii_mussel"
 
 Controleer tegen genormaliseerde HTML handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "html_clamav"
-- "html_custom"
 - "html_mussel"
-
-Controleer PE (Portable Executable) bestanden (EXE, DLL, ezv) tegen PE Sectionele handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
-- "pe_clamav"
-- "pe_custom"
-- "pe_mussel"
-
-Controleer PE (Portable Executable) bestanden (EXE, DLL, ezv) tegen PE uitgebreide handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
-- "pex_custom"
-- "pex_mussel"
 
 Controleer PE (Portable Executable) bestanden (EXE, DLL, ezv) tegen PE handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "exe_clamav"
-- "exe_custom"
 - "exe_mussel"
 
 Controleer ELF bestanden tegen ELF handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "elf_clamav"
-- "elf_custom"
 - "elf_mussel"
 
 Controleer Mach-O bestanden (OSX, ezv) tegen Mach-O handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "macho_clamav"
-- "macho_custom"
 - "macho_mussel"
 
 Controleer grafische bestanden tegen grafische-gebaseerde handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "graphics_clamav"
-- "graphics_custom"
 - "graphics_mussel"
-
-Controleer archief inhoud tegen archief metadata handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
-- "metadata_clamav"
-- "metadata_custom"
-- "metadata_mussel"
 
 Controleer OLE-objecten tegen OLE handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "ole_clamav"
-- "ole_custom"
 - "ole_mussel"
 
 Controleer bestandsnamen tegen bestandsnaam gebaseerd handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "filenames_clamav"
-- "filenames_custom"
 - "filenames_mussel"
 
 Controleer tegen email handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "mail_clamav"
-- "mail_custom"
 - "mail_mussel"
 
 Inschakelen bestand-specifieke whitelist? False = Nee; True = Ja [Standaard].
 - "whitelist_clamav"
-- "whitelist_custom"
 - "whitelist_mussel"
-
-Controleer XML/XDP gegevens tegen XML/XDP handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
-- "xmlxdp_clamav"
-- "xmlxdp_custom"
-- "xmlxdp_mussel"
 
 Controleer tegen complexe uitgebreide handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "coex_clamav"
-- "coex_custom"
 - "coex_mussel"
 
 Controleer tegen PDF handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "pdf_clamav"
-- "pdf_custom"
 - "pdf_mussel"
 
 Controleer tegen Shockwave handtekeningen wanneer scannen? False = Nee; True = Ja [Standaard].
 - "swf_clamav"
-- "swf_custom"
 - "swf_mussel"
-
-Handtekening controleren lengte beperken opties. Alleen veranderen deze als u weet wat je doet. SD = Standaard handtekeningen. RX = PCRE (Perl Compatibele Reguliere Expressies, of "Regex") handtekeningen. FN = Bestandsnaam handtekeningen. Als u noteren dat PHP mislukt wanneer phpMussel probeert te scannen, probeer verlagen deze "max" waarden. Als mogelijk en gemakkelijk, laat me weten wanneer dit gebeurt en de resultaten van wat u probeert.
-- "fn_siglen_min"
-- "fn_siglen_max"
-- "rx_siglen_min"
-- "rx_siglen_max"
-- "sd_siglen_min"
-- "sd_siglen_max"
 
 "fail_silently"
 - Moet phpMussel rapporteren wanneer handtekeningen bestanden zijn ontbrekend of beschadigd? Als `fail_silently` is uitgeschakeld, ontbrekende en beschadigde bestanden zal worden gerapporteerd op het scannen, en als `fail_silently` is ingeschakeld, ontbrekende en beschadigde bestanden zal zijn genegeerd, met het scannen rapporten voor het bestanden die er geen problemen. Dit moet in het algemeen met rust gelaten worden tenzij u ervaart mislukt of soortgelijke problemen. False = Uitgeschakeld; True = Ingeschakeld [Standaard].
@@ -693,7 +600,7 @@ Chameleon aanval detectie: False = Uitgeschakeld; True = Ingeschakeld.
 "chameleon_to_pdf"
 - Zoeken naar PDF-bestanden waarvan headers zijn onjuist.
 
-"archive_file_extensions" en "archive_file_extensions_wc"
+"archive_file_extensions"
 - Herkende archief bestandsextensies (formaat is CSV; moet alleen toevoegen of verwijderen wanneer problemen voorkomen; onnodig verwijderen kan leiden tot vals-positieven te verschijnen voor archiefbestanden, terwijl onnodig toevoeging zal effectief whitelist wat u toevoegt van aanval-specifieke detectie; wijzigen met voorzichtigheid; ook noteren dat Dit heeft geen effect op welke archieven kan en niet kan wordt geanalyseerd op inhoudsniveau). De lijst, als is bij standaard, geeft die formaten gebruikt meest vaak door de meeste systemen en CMS, maar opzettelijk is niet noodzakelijk alomvattend.
 
 "general_commands"
@@ -847,30 +754,28 @@ Waar NAME is de naam te noemen voor die handtekening en HEX is een hexadecimale 
 Elke vorm van reguliere expressie begrepen en correct verwerkt door moet ook correct worden begrepen en verwerkt door phpMussel en handtekeningen. Echter, Ik stel voor het nemen van extreem voorzichtigheid bij het schrijven van nieuwe handtekeningen op basis van reguliere expressie, omdat, als u niet helemaal zeker wat u doet, kan er zeer onregelmatig en/of onverwachte resultaten worden. Neem een kijkje op de phpMussel broncode als u niet helemaal zeker over de context waarin regex verklaringen geïnterpreteerd worden. Ook, vergeet niet dat alle patronen (met uitzondering van bestandsnaam, archief metadata en MD5 patronen) moet hexadecimaal gecodeerd worden (voorgaande patroon syntaxis, natuurlijk)!
 
 ####*WAAR OM AANGEPASTE HANDTEKENINGEN TE ZETTEN?*
-Alleen zet aangepaste handtekeningen in die bestanden bedoeld voor aangepaste handtekeningen. Die bestanden moeten "_custom" bevatten in hun bestandsnamen. U moet ook vermijden het bewerken van de standaard handtekeningen bestanden, tenzij u precies weet wat u doet, omdat, afgezien van goede praktijken in het algemeen en afgezien van het helpen u te onderscheiden tussen uw eigen handtekeningen en de standaard handtekeningen dat meegeleverd met phpMussel, het is goed om het bewerken te houden alleen het bestanden bestemd voor bewerking, omdat knoeien met de standaard handtekeningen bestanden kunt veroorzaken hen te stoppen met werken, vanwege de "map" bestanden: De maps/kaarten bestanden vertellen phpMussel waar in de handtekeningen bestanden te zoek voor handtekeningen vereist door phpMussel vanaf wanneer vereist, en deze kaarten ongesynchroniseerd kunt worden met hun bijbehorende handtekeningen bestanden indien deze handtekeningen bestanden hebben geknoeid. U kunt zetten ongeveer wat u ook wilt in uw aangepaste handtekeningen, zolang u de juiste syntaxis volgen. Echter, wees voorzichtig om nieuwe handtekeningen te testen voor vals-positieven vooraf als u van plan om ze te delen of gebruiken in een live-omgeving.
 
 ####*HANDTEKENINGEN OVERZICHT*
 Het volgende is een overzicht van de soorten handtekeningen gebruikt door phpMussel:
-- "Genormaliseerde ASCII handtekeningen" (ascii_*). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen.
-- "Complexe Uitgebreide handtekeningen" (coex_*). Gemengde soort van handtekeningen controleren.
-- "ELF handtekeningen" (elf_*). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de ELF-formaat.
-- "Portable Executable handtekeningen" (exe_*). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de PE-formaat.
-- "Bestandsnaam handtekeningen" (filenames_*). Gecontroleerd tegen het bestandsnamen van het bestanden gerichte voor het scannen.
-- "Algemene handtekeningen" (general_*). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen.
-- "Grafische handtekeningen" (graphics_*). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd naar een bekende grafisch formaat.
+- "Genormaliseerde ASCII handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen.
+- "Complexe Uitgebreide handtekeningen". Gemengde soort van handtekeningen controleren.
+- "ELF handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de ELF-formaat.
+- "Portable Executable handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de PE-formaat.
+- "Bestandsnaam handtekeningen". Gecontroleerd tegen het bestandsnamen van het bestanden gerichte voor het scannen.
+- "Algemene handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen.
+- "Grafische handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd naar een bekende grafisch formaat.
 - "Algemene commando's" (hex_general_commands.csv). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen.
-- "Genormaliseerde HTML handtekeningen" (html_*). Gecontroleerd tegen de inhoud van elke niet-whitelist HTML-bestand gericht voor het scannen.
-- "Mach-O handtekeningen" (macho_*). Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de Mach-O-formaat.
-- "Email handtekeningen" (mail_*). Gecontroleerd tegen de inhoud van elke niet-whitelist EML-bestand gericht voor het scannen.
-- "MD5 handtekeningen" (md5_*). Gecontroleerd tegen de MD5 hash van de inhoud en het bestandsgrootte van elke niet-whitelist bestand gericht voor het scannen.
-- "Archief metadata handtekeningen" (metadata_*). Gecontroleerd tegen de CRC32 hash van de inhoud en het bestandsgrootte van de eerste bestand bevatte binnenkant van ieder niet-whitelist archief gericht voor het scannen.
+- "Genormaliseerde HTML handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist HTML-bestand gericht voor het scannen.
+- "Mach-O handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de Mach-O-formaat.
+- "Email handtekeningen". Gecontroleerd tegen de inhoud van elke niet-whitelist EML-bestand gericht voor het scannen.
+- "MD5 handtekeningen". Gecontroleerd tegen de MD5 hash van de inhoud en het bestandsgrootte van elke niet-whitelist bestand gericht voor het scannen.
+
 - "OLE handtekeningen" (ole_*). Gecontroleerd tegen de inhoud van elke niet-whitelist OLE-object gericht voor het scannen.
 - "PDF handtekeningen" (pdf_*). Gecontroleerd tegen de inhoud van elke niet-whitelist PDF-bestand gericht voor het scannen.
 - "Portable executable sectionele handtekeningen" (pe_*). Gecontroleerd tegen de MD5 hash en de grootte van elke PE-sectie van elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de PE-formaat.
 - "Portable executable uitgebreide handtekeningen" (pex_*). Gecontroleerd tegen de MD5 hash en de grootte van variabelen in elke niet-whitelist bestand gericht voor het scannen en geïdentificeerd aan de PE-formaat.
 - "Shockwave handtekeningen" (swf_*). Gecontroleerd tegen de inhoud van elke niet-whitelist Shockwave-bestand gericht voor het scannen.
 - "Whitelist handtekeningen" (whitelist_*). Gecontroleerd tegen de MD5 hash van de inhoud en het bestandsgrootte van elke bestand gericht voor het scannen. Gecontroleerd bestanden zal zijn immuun van gecontroleerd te worden door de soort van handtekening in hun whitelist binnenkomst.
-- "XML/XDP handtekeningen" (xmlxdp_*). Gecontroleerd tegen elke XML/XDP data binnen elke niet-whitelist bestanden gericht voor het scannen.
 (Bewust zijn van dat elk van deze handtekeningen gemakkelijk kunnen worden uitgeschakeld via `config.ini`).
 
 ---
@@ -974,4 +879,4 @@ phpMussel *DOET* blokkeren van een bestand | __Vals positieve__ | Waar positieve
 ---
 
 
-Laatste Bijgewerkt: 4 December 2016 (2016.12.04).
+Laatste Bijgewerkt: 19 December 2016 (2016.12.19).

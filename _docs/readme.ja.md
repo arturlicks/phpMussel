@@ -187,15 +187,11 @@ CLIプロンプトにて`c`とタイプしエンターを押せば、利用可�
 /_testfiles/general_standard_testfile.txt | phpMussel一般署名用テストファイル。
 /_testfiles/graphics_standard_testfile.gif | phpMusselグラフィック署名用テストファイル。
 /_testfiles/html_standard_testfile.html | phpMussel正規化HTML署名テストファイル。
-/_testfiles/md5_testfile.txt | phpMussel MD5署名用テストファイル。
-/_testfiles/metadata_testfile.tar | システム内TARファイルサポート確認ならびにphpMusselメタデータ署名用テストファイル。
-/_testfiles/metadata_testfile.txt.gz | システム内GZファイルサポート確認ならびにphpMusselメタデータ署名用テストファイル。
-/_testfiles/metadata_testfile.zip | システム内ZIPファイルサポート確認ならびにphpMusselメタデータ署名用テストファイル。
+/_testfiles/md5_testfile.txt | phpMussel ＭＤ５署名用テストファイル。
 /_testfiles/ole_testfile.ole | phpMussel OLE署名用テストファイル。
 /_testfiles/pdf_standard_testfile.pdf | phpMussel PDF署名用テストファイル。
 /_testfiles/pe_sectional_testfile.exe | phpMussel PEセクショナル署名用テストファイル。
 /_testfiles/swf_standard_testfile.swf | phpMussel SWF署名用テストファイル。
-/_testfiles/xdp_standard_testfile.xdp | phpMussel XML/XDP署名用テストファイル。
 /vault/ | ヴォルト・ディレクトリ（様々なファイルを含んでいます）。
 /vault/cache/ | キャッシュ・ディレクトリ（一時データ用）。
 /vault/cache/.htaccess | ハイパーテキスト・アクセスファイル（この場合、本スクリプトの重要なファイルを権限のないソースのアクセスから保護するためです）。
@@ -257,46 +253,34 @@ CLIプロンプトにて`c`とタイプしエンターを押せば、利用可�
 /vault/signatures/ascii_clamav_regex.map | 正規化ASCII署名用ファイル。
 /vault/signatures/ascii_clamav_standard.cvd | 正規化ASCII署名用ファイル。
 /vault/signatures/ascii_clamav_standard.map | 正規化ASCII署名用ファイル。
-/vault/signatures/ascii_custom_regex.cvd | 正規化ASCII署名用ファイル。
-/vault/signatures/ascii_custom_standard.cvd | 正規化ASCII署名用ファイル。
 /vault/signatures/ascii_mussel_regex.cvd | 正規化ASCII署名用ファイル。
 /vault/signatures/ascii_mussel_standard.cvd | 正規化ASCII署名用ファイル。
 /vault/signatures/coex_clamav.cvd | 複合拡張署名用ファイル。
-/vault/signatures/coex_custom.cvd | 複合拡張署名用ファイル。
 /vault/signatures/coex_mussel.cvd | 複合拡張署名用ファイル。
 /vault/signatures/elf_clamav_regex.cvd | ELF署名用ファイル。
 /vault/signatures/elf_clamav_regex.map | ELF署名用ファイル。
 /vault/signatures/elf_clamav_standard.cvd | ELF署名用ファイル。
 /vault/signatures/elf_clamav_standard.map | ELF署名用ファイル。
-/vault/signatures/elf_custom_regex.cvd | ELF署名用ファイル。
-/vault/signatures/elf_custom_standard.cvd | ELF署名用ファイル。
 /vault/signatures/elf_mussel_regex.cvd | ELF署名用ファイル。
 /vault/signatures/elf_mussel_standard.cvd | ELF署名用ファイル。
-/vault/signatures/exe_clamav_regex.cvd | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_clamav_regex.map | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_clamav_standard.cvd | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_clamav_standard.map | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_custom_regex.cvd | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_custom_standard.cvd | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_mussel_regex.cvd | PE（ポータブル実行可能）署名用ファイル。
-/vault/signatures/exe_mussel_standard.cvd | PE（ポータブル実行可能）署名用ファイル。
+/vault/signatures/exe_clamav_regex.cvd | ＰＥ（ポータブル実行可能）署名用ファイル。
+/vault/signatures/exe_clamav_regex.map | ＰＥ（ポータブル実行可能）署名用ファイル。
+/vault/signatures/exe_clamav_standard.cvd | ＰＥ（ポータブル実行可能）署名用ファイル。
+/vault/signatures/exe_clamav_standard.map | ＰＥ（ポータブル実行可能）署名用ファイル。
+/vault/signatures/exe_mussel_regex.cvd | ＰＥ（ポータブル実行可能）署名用ファイル。
+/vault/signatures/exe_mussel_standard.cvd | ＰＥ（ポータブル実行可能）署名用ファイル。
 /vault/signatures/filenames_clamav.cvd | ファイル名署名用ファイル。
-/vault/signatures/filenames_custom.cvd | ファイル名署名用ファイル。
 /vault/signatures/filenames_mussel.cvd | ファイル名署名用ファイル。
 /vault/signatures/general_clamav_regex.cvd | 一般署名用ファイル。
 /vault/signatures/general_clamav_regex.map | 一般署名用ファイル。
 /vault/signatures/general_clamav_standard.cvd | 一般署名用ファイル。
 /vault/signatures/general_clamav_standard.map | 一般署名用ファイル。
-/vault/signatures/general_custom_regex.cvd | 一般署名用ファイル。
-/vault/signatures/general_custom_standard.cvd | 一般署名用ファイル。
 /vault/signatures/general_mussel_regex.cvd | 一般署名用ファイル。
 /vault/signatures/general_mussel_standard.cvd | 一般署名用ファイル。
 /vault/signatures/graphics_clamav_regex.cvd | グラフィック署名用ファイル。
 /vault/signatures/graphics_clamav_regex.map | グラフィック署名用ファイル。
 /vault/signatures/graphics_clamav_standard.cvd | グラフィック署名用ファイル。
 /vault/signatures/graphics_clamav_standard.map | グラフィック署名用ファイル。
-/vault/signatures/graphics_custom_regex.cvd | グラフィック署名用ファイル。
-/vault/signatures/graphics_custom_standard.cvd | グラフィック署名用ファイル。
 /vault/signatures/graphics_mussel_regex.cvd | グラフィック署名用ファイル。
 /vault/signatures/graphics_mussel_standard.cvd | グラフィック署名用ファイル。
 /vault/signatures/hex_general_commands.csv | phpMussel がオプション利用する一般コマンド検知の１６進法変換CSV。
@@ -304,74 +288,47 @@ CLIプロンプトにて`c`とタイプしエンターを押せば、利用可�
 /vault/signatures/html_clamav_regex.map | 正規化HTML署名用ファイル。
 /vault/signatures/html_clamav_standard.cvd | 正規化HTML署名用ファイル。
 /vault/signatures/html_clamav_standard.map | 正規化HTML署名用ファイル。
-/vault/signatures/html_custom_regex.cvd | 正規化HTML署名用ファイル。
-/vault/signatures/html_custom_standard.cvd | 正規化HTML署名用ファイル。
 /vault/signatures/html_mussel_regex.cvd | 正規化HTML署名用ファイル。
 /vault/signatures/html_mussel_standard.cvd | 正規化HTML署名用ファイル。
 /vault/signatures/macho_clamav_regex.cvd | Mach-O署名用ファイル。
 /vault/signatures/macho_clamav_regex.map | Mach-O署名用ファイル。
 /vault/signatures/macho_clamav_standard.cvd | Mach-O署名用ファイル。
 /vault/signatures/macho_clamav_standard.map | Mach-O署名用ファイル。
-/vault/signatures/macho_custom_regex.cvd | Mach-O署名用ファイル。
-/vault/signatures/macho_custom_standard.cvd | Mach-O署名用ファイル。
 /vault/signatures/macho_mussel_regex.cvd | Mach-O署名用ファイル。
 /vault/signatures/macho_mussel_standard.cvd | Mach-O署名用ファイル。
 /vault/signatures/mail_clamav_regex.cvd | メール署名用のファイル。
 /vault/signatures/mail_clamav_regex.map | メール署名用のファイル。
 /vault/signatures/mail_clamav_standard.cvd | メール署名用のファイル。
 /vault/signatures/mail_clamav_standard.map | メール署名用のファイル。
-/vault/signatures/mail_custom_regex.cvd | メール署名用のファイル。
-/vault/signatures/mail_custom_standard.cvd | メール署名用のファイル。
 /vault/signatures/mail_mussel_regex.cvd | メール署名用のファイル。
 /vault/signatures/mail_mussel_standard.cvd | メール署名用のファイル。
-/vault/signatures/md5_clamav.cvd | MD5ベース署名用ファイル。
-/vault/signatures/md5_custom.cvd | MD5ベース署名用ファイル。
-/vault/signatures/md5_mussel.cvd | MD5ベース署名用ファイル。
-/vault/signatures/metadata_clamav.cvd | アーカイブメタデータ署名用ファイル。
-/vault/signatures/metadata_custom.cvd | アーカイブメタデータ署名用ファイル。
-/vault/signatures/metadata_mussel.cvd | アーカイブメタデータ署名用ファイル。
+/vault/signatures/clamav.hdb | ＭＤ５ベース署名用ファイル。
+/vault/signatures/phpmussel.hdb | ＭＤ５ベース署名用ファイル。
 /vault/signatures/ole_clamav_regex.cvd | OLE署名用ファイル。
 /vault/signatures/ole_clamav_regex.map | OLE署名用ファイル。
 /vault/signatures/ole_clamav_standard.cvd | OLE署名用ファイル。
 /vault/signatures/ole_clamav_standard.map | OLE署名用ファイル。
-/vault/signatures/ole_custom_regex.cvd | OLE署名用ファイル。
-/vault/signatures/ole_custom_standard.cvd | OLE署名用ファイル。
 /vault/signatures/ole_mussel_regex.cvd | OLE署名用ファイル。
 /vault/signatures/ole_mussel_standard.cvd | OLE署名用ファイル。
 /vault/signatures/pdf_clamav_regex.cvd | PDF署名用ファイル。
 /vault/signatures/pdf_clamav_regex.map | PDF署名用ファイル。
 /vault/signatures/pdf_clamav_standard.cvd | PDF署名用ファイル。
 /vault/signatures/pdf_clamav_standard.map | PDF署名用ファイル。
-/vault/signatures/pdf_custom_regex.cvd | PDF署名用ファイル。
-/vault/signatures/pdf_custom_standard.cvd | PDF署名用ファイル。
 /vault/signatures/pdf_mussel_regex.cvd | PDF署名用ファイル。
 /vault/signatures/pdf_mussel_standard.cvd | PDF署名用ファイル。
-/vault/signatures/pex_custom.cvd | PE拡張署名用ファイル。
-/vault/signatures/pex_mussel.cvd | PE拡張署名用ファイル。
-/vault/signatures/pe_clamav.cvd | PEセクショナル署名用ファイル。
-/vault/signatures/pe_custom.cvd | PEセクショナル署名用ファイル。
-/vault/signatures/pe_mussel.cvd | PEセクショナル署名用ファイル。
+/vault/signatures/phpmussel.pex | PE拡張署名用ファイル。
+/vault/signatures/clamav.mdb | PEセクショナル署名用ファイル。
+/vault/signatures/phpmussel.mdb | PEセクショナル署名用ファイル。
 /vault/signatures/swf_clamav_regex.cvd | ショックウェーブ署名用ファイル。
 /vault/signatures/swf_clamav_regex.map | ショックウェーブ署名用ファイル。
 /vault/signatures/swf_clamav_standard.cvd | ショックウェーブ署名用ファイル。
 /vault/signatures/swf_clamav_standard.map | ショックウェーブ署名用ファイル。
-/vault/signatures/swf_custom_regex.cvd | ショックウェーブ署名用ファイル。
-/vault/signatures/swf_custom_standard.cvd | ショックウェーブ署名用ファイル。
 /vault/signatures/swf_mussel_regex.cvd | ショックウェーブ署名用ファイル。
 /vault/signatures/swf_mussel_standard.cvd | ショックウェーブ署名用ファイル。
 /vault/signatures/switch.dat | 変数をコントロール、セットします。
 /vault/signatures/urlscanner.cvd | URLスキャナー署名用ファイル。
 /vault/signatures/whitelist_clamav.cvd | 特定ホワイトリスト用ファイル。
-/vault/signatures/whitelist_custom.cvd | 特定ホワイトリスト用ファイル。
 /vault/signatures/whitelist_mussel.cvd | 特定ホワイトリスト用ファイル。
-/vault/signatures/xmlxdp_clamav_regex.cvd | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_clamav_regex.map | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_clamav_standard.cvd | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_clamav_standard.map | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_custom_regex.cvd | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_custom_standard.cvd | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_mussel_regex.cvd | XML/XDP署名用ファイル。
-/vault/signatures/xmlxdp_mussel_standard.cvd | XML/XDP署名用ファイル。
 /vault/.htaccess | ハイパーテキスト・アクセスファイル（この場合、本スクリプトの重要なファイルを権限のないソースのアクセスから保護するためです）。
 /vault/cli.php | CLIハンドラ。
 /vault/config.ini.RenameMe | phpMussel設定ファイル；phpMusselの全オプション設定を記載しています。それぞれのオプションの機能と動作手法の説明です（アクティブにするために名前を変更します）。
@@ -414,8 +371,6 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 
 "_clamav"でマークされた署名ファイルは、ClamAVデータベース（GNU/GPL）をソースとする署名のみを含んでいます。
 
-"_custom"でマークされた署名ファイルは、署名を含んでいません。その必要があれば、ユーザーが自由にカスタム署名のために利用できます。
-
 "_mussel"でマークされた署名は、ClamAVをソースとしない署名を含んでいます。概して私自身か種々の情報源から集めた署名です。
 
 ---
@@ -426,14 +381,6 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 
 ####"general" （全般、カテゴリー）
 全般的な設定。
-
-"script_password" （スクリプト・パスワード）
-- 利便性向上のため、phpMusselには、POST、GET 、QUERYを使ったいくつかの手動機能があります（迅速なアップデート等）。しかし、セキュリティーを考慮し、これを実行するには、コマンドとともにパスワードを必要とするようになっています。`script_password`は自由に設定してもらって構いません。デフォルトでは、パスワードの設定なくしては、手動機能は無効です。パスワードは覚えやすいが他人には想像できないものにして下さい。
-- CLIモードでは影響しません。
-
-"logs_password" （ログ・パスワード）
-- `script_password`と同じですが、`scan_log`と`scan_kills`を見るためのパスワードです。パスワードが２つ存在する理由は、ユーザーが他者に`scan_log`と`scan_kills`のみのアクセスを与えることができるようにするためです。
-- CLIモードでは影響しません。
 
 "cleanup" （クリーンアップ）
 - 初回アップロード後に変数とキャッシュの設定をクリアするか否かについてのスクリプトです。`false`(偽） = いいえ; `true`（真） = はい 「Default（デフォルト設定）」。初回アップロードスキャニング以外で使用することがなければ、 `true`（真）としメモリーの使用量を最小にします。使用するのであれば、`false`（偽）とし、メモリーに不要な重複データを再ロードするのを防ぎます。通常は`true`（真）。 に設定しますが、初回アップロードスキャニングに対してしか使用できないことを覚えておいて下さい。
@@ -456,166 +403,124 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 - *`logfileSerialized='serial.{yyyy}-{mm}-{dd}-{hh}.txt'`*
 
 "timeOffset" （タイム・オフセット）
-- お使いのサーバの時刻は、ローカル時刻と一致しない場合、あなたのニーズに応じて、時間を調整するために、あなたはここにオフセットを指定することができます。しかし、その代わりに、一般的にタイムゾーンディレクティブ（あなたの`php.ini`ファイルで）を調整ーることをお勧めします、でも時々（といった、限ら共有ホスティングプロバイダでの作業時）これは何をすることは必ずしも可能ではありません、したがって、このオプションは、ここで提供されています。オフセット分であります。
+- お使いのサーバの時刻は、ローカル時刻と一致しない場合、あなたのニーズに応じて、時間を調整するために、あなたはここにオフセットを指定することができます。 しかし、その代わりに、一般的にタイムゾーンディレクティブ（あなたの`php.ini`ファイルで）を調整ーることをお勧めします、でも時々（といった、限ら共有ホスティングプロバイダでの作業時）これは何をすることは必ずしも可能ではありません、したがって、このオプションは、ここで提供されています。 オフセット分であります。
 - 例（１時間を追加します）：`timeOffset=60`
 
 "ipaddr" （アイピーアドレス）
-- 接続要求のIPアドレスをどこで見つけるべきかについて（Cloudflareのようなサービスに対して有効）。 Default（デフォルト設定） = REMOTE_ADDR。
-- 注意：変更には最新の注意が必要です。
+- 接続要求のIPアドレスをどこで見つけるべきかについて（Cloudflareのようなサービスに対して有効）。 Default（デフォルト設定） = REMOTE_ADDR。 注意：変更には最新の注意が必要です。
 
 "enable_plugins" （イネーブル・プラグインす）
 - プラグインのサポートを有効にしますか？ `false` = いいえ; `true` = はい 「Default（デフォルト設定）」。
 
 "forbid_on_block" （フォービッド・オン・ブロック）
-- アップロードファイルがブロックされたメッセージと共に、phpMusselから４０３ヘッダーを送るべきか、通常の２００でよいかどうかについて。`false`（偽） = いいえ（２００） 「Default（デフォルト設定）」； `true`（真） = はい（４０３）。
+- アップロードファイルがブロックされたメッセージと共に、phpMusselから４０３ヘッダーを送るべきか、通常の２００でよいかどうかについて。 `false`（偽） = いいえ（２００） 「Default（デフォルト設定）」； `true`（真） = はい（４０３）。
 
 "delete_on_sight" （デリート・オン・サイト）
-- このディレクティブを有効にすると、検知基準（署名でも何でも）にあったアップロードファイルは直ちに削除されます。クリーンと判断されたファイルはそのままです。アーカイブの場合、問題のファイルが一部であってもアーカイブ全てが削除の対象となります。アップロードファイルのスキャンにおいては、本ディレクティブを有効にすることは必須ではありません。なぜならPHPはスクリプト実行後に自動的にキャッシュの内容を破棄するからです。言い換えれば、ファイルが移動されたか、コピーされたか、削除されない限り、PHPはサーバーにアップロードしたファイルを残しておくことは通常ありません。このディレクティブはセキュリティーに念を入れる目的で設置されています。PHPは稀に予測外の振る舞いをすることがあるからです。`false`（偽） = スキャニング後、ファイルはそのまま（デフォルト設定）。`true`（真） = スキャニング後、クリーンでなければ直ちに削除。
+- このディレクティブを有効にすると、検知基準（署名でも何でも）にあったアップロードファイルは直ちに削除されます。クリーンと判断されたファイルはそのままです。アーカイブの場合、問題のファイルが一部であってもアーカイブ全てが削除の対象となります。アップロードファイルのスキャンにおいては、本ディレクティブを有効にすることは必須ではありません。なぜならPHPはスクリプト実行後に自動的にキャッシュの内容を破棄するからです。言い換えれば、ファイルが移動されたか、コピーされたか、削除されない限り、PHPはサーバーにアップロードしたファイルを残しておくことは通常ありません。このディレクティブはセキュリティーに念を入れる目的で設置されています。 PHPは稀に予測外の振る舞いをすることがあるからです。 `false`（偽） = スキャニング後、ファイルはそのまま（デフォルト設定）。`true`（真） = スキャニング後、クリーンでなければ直ちに削除。
 
 "lang" （ラング）
 - phpMusselのデフォルト言語を設定します。
 
-"lang_override" （ラング・オーバーライド）
-- phpMusselが、可能であれば、インバウンド要求によって宣言された言語選択により言語設定を無視すべきかを設定します（HTTP_ACCEPT_LANGUAGE）。 `false`（偽） = いいえ「Default（デフォルト）」； `true`（真） = はい。
-
-"lang_acceptable" （ラング・アクセクタブル）
-- `lang_acceptable`ディレクティブは、スクリプト`lang`からの言語かそれとも`HTTP_ACCEPT_LANGUAGE`から言語のどちらを受け入れるべきかphpMusselに指示します。このディレクティブは、カスタマイズ言語ファイルが追加された場合、あるいは言語ファイルが強制的に取り除かれた場合にのみ修正して下さい。利用可能な言語で、カンマ区切りの文字列で指定します。
-
 "quarantine_key" （クオランティン・キ―）
-- phpMusselは、必要とあれば、phpMusselのヴォルト内で独立してフラグ付ファイルのアップロードを検疫することができます。一般的なphpMusselのユーザーは、ウェブサイトやホスティング環境の保護ができれば充分と考えており、フラグ付のようなものにさらなる分析を加えようまでの要求はないようですので、無効で構いません。ですが詳細に分析してマルウェアに備えたいユーザーは有効にすると良いでしょう。フラグ付ファイルのアップロードの検疫は誤検出のデバッグに役立つことがあります。検疫機能を無効にするには、`quarantine_key`ディレクティブを空にしておくか、空でない場合はディレクティブ内のコンテンツを消去して下さい。有効にするには、デイレクティブに何らかの値を入れて下さい。`quarantine_key`は検疫機能における重要なセキュリティー要素であり、検疫機能内に保存されたデータの執行を各種の攻撃から守っています。`quarantine_key`はパスワードと同様に考えて下さい。長い方がより安全と言えます。最も効果的な使用法は`delete_on_sight`との併用です。
+- phpMusselは、必要とあれば、phpMusselのヴォルト内で独立してフラグ付ファイルのアップロードを検疫することができます。 一般的なphpMusselのユーザーは、ウェブサイトやホスティング環境の保護ができれば充分と考えており、フラグ付のようなものにさらなる分析を加えようまでの要求はないようですので、無効で構いません。 ですが詳細に分析してマルウェアに備えたいユーザーは有効にすると良いでしょう。フラグ付ファイルのアップロードの検疫は誤検出のデバッグに役立つことがあります。検疫機能を無効にするには、`quarantine_key`ディレクティブを空にしておくか、空でない場合はディレクティブ内のコンテンツを消去して下さい。 有効にするには、デイレクティブに何らかの値を入れて下さい。`quarantine_key`は検疫機能における重要なセキュリティー要素であり、検疫機能内に保存されたデータの執行を各種の攻撃から守っています。 `quarantine_key`はパスワードと同様に考えて下さい。長い方がより安全と言えます。最も効果的な使用法は`delete_on_sight`との併用です。
 
 "quarantine_max_filesize" （クオランティン・マックス・ファイルサイズ）
-- 検疫されるファイルサイズの上限。この値より大きなファイルは検疫されません。クオランティンの容量を超える異常に大きなファイルサイズによる攻撃で、メモリーが無駄に消費されるのを防ぐ意味で重要です。単位はKB、デフォルト設定は２MB
-（Default/デフォルト =2048 =2048KB =2MB）です。
+- 検疫されるファイルサイズの上限。この値より大きなファイルは検疫されません。 クオランティンの容量を超える異常に大きなファイルサイズによる攻撃で、メモリーが無駄に消費されるのを防ぐ意味で重要です。 単位はKB、デフォルト設定は２MB （Default/デフォルト =2048 =2048KB =2MB）です。
 
 "quarantine_max_usage" （クオランティン・マックス・ユーセッジ）
-- 検疫のために利用する最大メモリー量。全メモリー量が使用されると、この範囲内に収まるよう古いファイルが削除の対象となります。クオランティンの容量を超える異常に大きなファイルサイズによる攻撃で、メモリーが無駄に消費されるのを防ぐ意味で重要です。単位はKB、デフォルト設定は６４MB（Default/デフォルト =65536 =65536KB =64MB）です。
+- 検疫のために利用する最大メモリー量。 全メモリー量が使用されると、この範囲内に収まるよう古いファイルが削除の対象となります。 クオランティンの容量を超える異常に大きなファイルサイズによる攻撃で、メモリーが無駄に消費されるのを防ぐ意味で重要です。 単位はKB、デフォルト設定は６４MB（Default/デフォルト =65536 =65536KB =64MB）です。
 
 "honeypot_mode" （ハニーポット・モード）
-- ハニーポットモードが有効になっていると、phpMusselはアップロードされてきた全てのファイルを例外なく検疫します。署名にマッチするかどうかは問題としません。スキャニングや分析もなされません。phpMusselをウィルス／マルウェアのリサーチに利用と考えているユーザーにとって有益と言えるでしょう。ただし、アップロードファイルのスキャニングという点からは、あまり推奨できませんし、ハニーポット・モードを本来の目的以外に使用することもお勧めできません。デフォルト設定では無効です。`false`（偽） = Disabled（無効） 「Default（デフォルト）」； `true`（真） = Enabled（有効）。
+- ハニーポットモードが有効になっていると、phpMusselはアップロードされてきた全てのファイルを例外なく検疫します。署名にマッチするかどうかは問題としません。 スキャニングや分析もなされません。 phpMusselをウィルス／マルウェアのリサーチに利用と考えているユーザーにとって有益と言えるでしょう。ただし、アップロードファイルのスキャニングという点からは、あまり推奨できませんし、ハニーポット・モードを本来の目的以外に使用することもお勧めできません。 デフォルト設定では無効です。 `false`（偽） = Disabled（無効） 「Default（デフォルト）」； `true`（真） = Enabled（有効）。
 
 "scan_cache_expiry" （スキャン・キャッシュ・エクスパイヤリー）
-- phpMusselはスキャニング結果をどれくらいの期間キャッシュすべきか？秒単位で、デフォルトは２１，６００秒（６時間）となっています。０にするとキャッシュ無効になります。
+- phpMusselはスキャニング結果をどれくらいの期間キャッシュすべきか？ 秒単位で、デフォルトは２１，６００秒（６時間）となっています。０にするとキャッシュ無効になります。
 
 "disable_cli" （ディスエイブル・シーエルアイ）
-- CLIモードを無効にするか？CLIモード（シーエルアイ・モード）はデフォルトでは有効になっていますが、テストツール（PHPUnit等）やCLIベースのアプリケーションと干渉しあう可能性が無いとは言い切れません。CLIモードを無効にする必要がなければ、このデレクティブは無視してもらって結構です。 `false`（偽） = CLIモードを有効にします「Default（デフォルルト）」； `true`（真） = CLIモードを無効にします。
+- CLIモードを無効にするか？CLIモード（シーエルアイ・モード）はデフォルトでは有効になっていますが、テストツール（PHPUnit等）やCLIベースのアプリケーションと干渉しあう可能性が無いとは言い切れません。 CLIモードを無効にする必要がなければ、このデレクティブは無視してもらって結構です。 `false`（偽） = CLIモードを有効にします「Default（デフォルルト）」； `true`（真） = CLIモードを無効にします。
 
 "disable_frontend" （ディスエイブル・フロントエンド）
-- フロントエンドへのアクセスを無効にするか？フロントエンドへのアクセスは、phpMusselをより管理しやすくすることができます。前記、それはまた、潜在的なセキュリティリスクになる可能性があります。バックエンドを経由して管理することをお勧めします、しかし、これが不可能な場合、フロントエンドへのアクセスが提供され。あなたがそれを必要としない限り、それを無効にします。 `false`（偽） = フロントエンドへのアクセスを有効にします； `true`（真） = フロントエンドへのアクセスを無効にします「Default（デフォルルト）」。
+- フロントエンドへのアクセスを無効にするか？フロントエンドへのアクセスは、phpMusselをより管理しやすくすることができます。 前記、それはまた、潜在的なセキュリティリスクになる可能性があります。バックエンドを経由して管理することをお勧めします、しかし、これが不可能な場合、フロントエンドへのアクセスが提供され。あなたがそれを必要としない限り、それを無効にします。 `false`（偽） = フロントエンドへのアクセスを有効にします； `true`（真） = フロントエンドへのアクセスを無効にします「Default（デフォルルト）」。
+
+"max_login_attempts" （マクス・ログイン・アテンプト）
+- ログイン試行の最大回数（フロントエンド）。 Default（デフォルト設定） = ５。
+
+"FrontEndLog" （フロントエンド・ログ）
+- フロントエンド・ログインの試みを記録するためのファイル。 ファイル名指定するか、無効にしたい場合は空白のままにして下さい。
 
 ####"signatures" （シグニチャーズ、カテゴリ）
 署名（シグニチャ）の設定。
-- %%%_clamav = ClamAV署名（メインとデイリーの両方）。
-- %%%_custom = カスタム署名（作成した場合）。
-- %%%_mussel = ClamAVからでなく、ユーザーの現在の署名に含まれるphpMussel署名。
 
-スキャニング時にMD5署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
-- "md5_clamav"
-- "md5_custom"
-- "md5_mussel"
+"MD5" （ＭＤ５）
+- スキャニング時にＭＤ５署名に対してチェックしますか？ その場合は、使用するシグネチャファイルの名前をコンマで区切って指定します。
+
+"PE_Sectional" （ＰＥ・セクショナル）
+- スキャニング時にＰＥ（ポータブル・エグゼキュータブル）ファイル（ＥＸＥ、ＤＬＬ、等）をＰＥセクショナル署名に対してチェックしますか？ その場合は、使用するシグネチャファイルの名前をコンマで区切って指定します。
+
+"PE_Extended" （ＰＥ・イクステンディッド）
+- スキャニング時にＰＥ（ポータブル・エグゼキュータブル）ファイル（ＥＸＥ、ＤＬＬ、等）をＰＥ拡張署名に対してチェックしますか？ その場合は、使用するシグネチャファイルの名前をコンマで区切って指定します。
 
 スキャニング時に一般署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "general_clamav"
-- "general_custom"
 - "general_mussel"
 
 スキャニング時に正規ASCII署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "ascii_clamav"
-- "ascii_custom"
 - "ascii_mussel"
 
 スキャニング時に正規HTML署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "html_clamav"
-- "html_custom"
 - "html_mussel"
 
-スキャニング時にPE（ポータブル・エグゼキュータブル）ファイル（EXE, DLL等）をPEセクショナル署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
-- "pe_clamav"
-- "pe_custom"
-- "pe_mussel"
-
-スキャニング時にPE（ポータブル・エグゼキュータブル）ファイル（EXE, DLL等）をPE拡張署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
-- "pex_custom"
-- "pex_mussel"
-
-スキャニング時にPE（ポータブル・エグゼキュータブル）ファイル（EXE, DLL等）をPE署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
+スキャニング時にＰＥ（ポータブル・エグゼキュータブル）ファイル（ＥＸＥ、ＤＬＬ、等）をＰＥ署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "exe_clamav"
-- "exe_custom"
 - "exe_mussel"
 
 スキャニング時にELFファイルをELF署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "elf_clamav"
-- "elf_custom"
 - "elf_mussel"
 
 スキャニング時にMach-Oファイル（OSX、など）をMach-O署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "macho_clamav"
-- "macho_custom"
 - "macho_mussel"
 
 スキャニング時にグラフィックファイルをグラフィックベース署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "graphics_clamav"
-- "graphics_custom"
 - "graphics_mussel"
-
-スキャニング時にアーカイブコンテンツをアーカイブメタデータ署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
-- "metadata_clamav"
-- "metadata_custom"
-- "metadata_mussel"
 
 スキャニング時にOLEオブジェクトをOLE署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "ole_clamav"
-- "ole_custom"
 - "ole_mussel"
 
 スキャニング時にファイル名をファイル名ベース署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "filenames_clamav"
-- "filenames_custom"
 - "filenames_mussel"
 
 スキャンする際に、電子メール署名を使用しますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "mail_clamav"
-- "mail_custom"
 - "mail_mussel"
 
 ファイル特定ホワイトリストを有効にしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "whitelist_clamav"
-- "whitelist_custom"
 - "whitelist_mussel"
-
-スキャニング時にXML/XDPチャンクをXML/XDP署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
-- "xmlxdp_clamav"
-- "xmlxdp_custom"
-- "xmlxdp_mussel"
 
 スキャニング時に複合拡張署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "coex_clamav"
-- "coex_custom"
 - "coex_mussel"
 
 スキャニング時にPDF署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "pdf_clamav"
-- "pdf_custom"
 - "pdf_mussel"
 
 ショックウェーブ署名に対してチェックしますか？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
 - "swf_clamav"
-- "swf_custom"
 - "swf_mussel"
 
-署名マッチング長さ制限オプション。理解の上、変更して下さい。SD = スタンダード署名、RX = PCRE（Perl適合正規表現、あるいは"Regex"）署名、FN =ファイル名署名。phpMusselがスキャンしようした時にPHPがクラッシュするようなら、最大値を下げてみて下さい。どのような状況で発生するか、何を試して結果どうだったか、お知らせ頂ければ幸いです。
-- "fn_siglen_min"
-- "fn_siglen_max"
-- "rx_siglen_min"
-- "rx_siglen_max"
-- "sd_siglen_min"
-- "sd_siglen_max"
-
 "fail_silently" （フェイル・サイレントリー）
-- 署名ファイルがない、あるいは破損している場合に、phpMusselがそれをリポートすべきか否か？`fail_silently`が無効ならば、問題はリポートされ、有効であれば、問題は無視されたスキャニングレポートが作成されます。クラッシュするというような害がなければ、デフォルト設定のままにしておくべきです。 `false`（偽） = Disabled（無効）; `true`（真） = Enabled（有効） 「Default（デフォルト）」
+- 署名ファイルがない、あるいは破損している場合に、phpMusselがそれをリポートすべきか否か？ `fail_silently`が無効ならば、問題はリポートされ、有効であれば、問題は無視されたスキャニングレポートが作成されます。 クラッシュするというような害がなければ、デフォルト設定のままにしておくべきです。 `false`（偽） = Disabled（無効）; `true`（真） = Enabled（有効） 「Default（デフォルト）」
 
 "fail_extensions_silently" （フェイル・エクステンションズ・サイレントリー）
-- 拡張子がない場合にphpMusselがそれをレポートすべきか否か？`fail_extensions_silently`が無効の場合、拡張子なしはスキャニング時にレポートされ、有効の場合は無視され問題は報告されません。このディレクティブを無効にすることは、セキュリティーを向上させるかもしれませんが、誤検出も増加する恐れがあります。 `false`（偽） = Disabled（無効）; `true`（真） = Enabled（有効） 「Default（デフォルト）」
+- 拡張子がない場合にphpMusselがそれをレポートすべきか否か？ `fail_extensions_silently`が無効の場合、拡張子なしはスキャニング時にレポートされ、有効の場合は無視され問題は報告されません。 このディレクティブを無効にすることは、セキュリティーを向上させるかもしれませんが、誤検出も増加する恐れがあります。 `false`（偽） = Disabled（無効）; `true`（真） = Enabled（有効） 「Default（デフォルト）」
 
 "detect_adware" （ディテクト・アドウェア）
 - phpMusselはアドウェア検出のために署名を分析すべきか否か？ `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
@@ -639,23 +544,23 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 ファイル取扱い設定。
 
 "max_uploads" （マックス・アップローズ）
-- 一度にスキャンできるアップロードファイル数の上限で、これを超えるとスキャンを中断し、ユーザーにその旨を知らせ、論理攻撃からの保護として機能します。システムやCMSがDDoS攻撃にあい、phpMusselがオーバーロードしてPHPプロセスに支障をきたすことがないようにするためです。推奨数は１０ですが、ハードウェアのスピードによっては、これ以上／以下がよいということもあるでしょう。この数は、アーカイブのコンテンツは含まないことを覚えておいて下さい。
+- 一度にスキャンできるアップロードファイル数の上限で、これを超えるとスキャンを中断し、ユーザーにその旨を知らせ、論理攻撃からの保護として機能します。 システムやCMSがDDoS攻撃にあい、phpMusselがオーバーロードしてPHPプロセスに支障をきたすことがないようにするためです。推奨数は１０ですが、ハードウェアのスピードによっては、これ以上／以下がよいということもあるでしょう。この数は、アーカイブのコンテンツは含まないことを覚えておいて下さい。
 
 "filesize_limit" （ファイルサイズ・リミット）
-- ファイルサイズ上限の単位はKｂです。. 65536 = 64MB 「Default（デフォルト）」； 0 = リミットしません（上限なし、常にグレイリスト化）、正の数値であれば何でも構いません。PHPの設定でメモリーに制限があったり、アップロードファイルサイズの上限が設定されている場合に有効的です。
+- ファイルサイズ上限の単位はKｂです。 65536 = 64MB 「Default（デフォルト）」； 0 = リミットしません（上限なし、常にグレイリスト化）、正の数値であれば何でも構いません。 PHPの設定でメモリーに制限があったり、アップロードファイルサイズの上限が設定されている場合に有効的です。
 
 "filesize_response" （ファイルサイズ・レスポンス）
-- 上限サイズを超えるファイルをどう処理するかについてです。 `false`（偽） = Whitelist（ホワイトリスト）; `true`（真） = Blacklist（ブラックリスト） 「Default（デフォルト）」
+- 上限サイズを超えるファイルをどう処理するかについてです。 `false`（偽） = Whitelist（ホワイトリスト）; `true`（真） = Blacklist（ブラックリスト） 「Default（デフォルト）」。
 
 "filetype_whitelist" （ファイルタイプ・ホワイトリスト）、 "filetype_blacklist" （ファイルタイプ・ブラックリスト）、 "filetype_greylist" （ファイルタイプ・グレーリスト）
-- システムが特定タイプのファイルのみアップロードを許可する、あるいは拒絶する場合は、ファイルタイプを適切にホワイトリスト、ブラックリスト、グレーリストにて分類しておくと、ファイルタイプによって弾かれるファイルはスキャンをスキップできるため、スピードアップに繋がります。フォーマットはCSV（カンマ区切り）です。リストによらず全てをスキャンしたい場合は、変数は空白のままとし、ホワイトリスト／ブラックリスト／グレーリストを無効にします。
+- システムが特定タイプのファイルのみアップロードを許可する、あるいは拒絶する場合は、ファイルタイプを適切にホワイトリスト、ブラックリスト、グレーリストにて分類しておくと、ファイルタイプによって弾かれるファイルはスキャンをスキップできるため、スピードアップに繋がります。フォーマットはCSV（カンマ区切り）です。 リストによらず全てをスキャンしたい場合は、変数は空白のままとし、ホワイトリスト／ブラックリスト／グレーリストを無効にします。
 - プロセスの論理的順序:
  - ファイルタイプがホワイトリストに記載されていれば、スキャンせず、ブロックせず、ブラックリストおよびグレイリストに対してチェックを行いません。
  - ファイルタイプがブラックリストに記載されていれば、スキャンすることなく、直ちににブロックし、グレーリストに対してチェックを行いません。
  - グレーリストが空、あるいはグレーリストが空でなくかつそのファイルタイプがあれば、通常通りスキャンしブロックするか否かを判断します。グレーリストが空でなくかつそのファイルタイプが含まれていなければ、ブラックリストと同様の扱いをすることになり、スキャンなしにブロックします。
 
 "check_archives" （チェック・アーカイブズ）
-- アーカイブのコンテンツに対してチェックを試みるか否かについてです。 `false`（偽） = チェックしない; `true`（真） = チェックする「Default（デフォルト）」
+- アーカイブのコンテンツに対してチェックを試みるか否かについてです。 `false`（偽） = チェックしない; `true`（真） = チェックする「Default（デフォルト）」。
 - 現在サポートしているのはBZ、GZ、 LZF、 ZIP形式です（RAR、CAB、7z等は対象外）。
 - 本機能は万能ではありませんので、有効にしておくことを推奨していますが、必ず全てを検出することを保証するものではありません。
 - また現在チェックのアーカイブはZIPに対して再帰的でないことに注意して下さい。
@@ -667,15 +572,15 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 - ファイルタイプのブラックリスト化／ホワイトリスト化をアーカイブのコンテンツに持ち込むか否か？ `false` = いいえ（ただグレーリストすべて） 「Default（デフォルト設定）」; `true` = はい。
 
 "max_recursion" （マックス・リカーション）
-- アーカイブに対する最大再帰深さです。デフォルト＝１０
+- アーカイブに対する最大再帰深さです。 デフォルト＝１０。
 
 "block_encrypted_archives" （ブロック・エンクリプティッド・アーカイブズ）
-- 暗号化されたアーカイブを検出しブロックするか否か？phpMusselは暗号化されたアーカイブをスキャンすることはできないので、アーカイブの暗号化によってphpMussel、アンチウィルススキャナー等をかいくぐろうとする攻撃者がいるかもしれません。暗号化されたアーカイブをブロックすることにより、このようなリスクを回避することができます。 `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」
+- 暗号化されたアーカイブを検出しブロックするか否か？phpMusselは暗号化されたアーカイブをスキャンすることはできないので、アーカイブの暗号化によってphpMussel、アンチウィルススキャナー等をかいくぐろうとする攻撃者がいるかもしれません。暗号化されたアーカイブをブロックすることにより、このようなリスクを回避することができます。 `false`（偽） = いいえ; `true`（真） = はい 「Default（デフォルト）」。
 
 ####"attack_specific" （アタック・スペシフィック、カテゴリー）
 アタックースペシフィック　ディレクティブ。
 
-キャメロンアタック検出。 `false`（偽） = オフ; `true`（真） = オン
+キャメロンアタック検出。 `false`（偽） = オフ; `true`（真） = オン。
 
 "chameleon_from_php" （キャメロン・フロム・ピーエイチピー）
 - ファイルでもなくPHPアーカイブとも認識できないファイル中のPHPヘッダーを探します。
@@ -695,11 +600,11 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 "chameleon_to_pdf" （キャメロン・トゥ・ピーディーエフ）
 - ヘッダーが正しくないPDFファイルを探します。
 
-"archive_file_extensions" （アーカイブ・ファイル・エクステンション） と "archive_file_extensions_wc" （アーカイブ・ファイル・エクステンション・ダブリューシー）
+"archive_file_extensions" （アーカイブ・ファイル・エクステンション）
 - 認識可能なアーカイブファイルエクステンションです（フォーマットはCSV；問題があった場合にのみ追加あるいは取り除くべきです。不用意に取り除くと誤検出の原因となる可能性があります。反対に不用意に追加すると、アタックースペシフィック検出から追加したものをホワイトリスト化してしまいます。充分に注意に上、変更して下さい。なお、コンテントレベルにおいてアーカイブを分析することが出来るか否かには影響しません）。デフォルトでは最も一般なフォーマットをリストしていますが、意図的に包括的にはしていません。
 
 "general_commands" （ジェネラル・コマンズ）
-- `eval()`や`exec()`といった通常のコマンドがファイルに含まれていないか調べます。ブラウザを介してPHP、JavaScript、HTML、python、perlといったファイルをシステムおよびCMSにアップロードすることあるならば無効にして下さい。他にプロテクションがなく、かつ前述のファイルをアップロードすることがなければ有効にします。phpMusselをZB Blockなどと併せて用いセキュリティーの向上を目的としているなら、本オプション機能をオンにする必要はないでしょう。なぜなら、phpMusselが探すものは（この意味において）既に存在するプロテクションと同じ物であり、機能が重複するだけだからです。`false`（偽） = チェックしない「Default（デフォルト）」； `true`（真） = チェックする。
+- `eval()`や`exec()`といった通常のコマンドがファイルに含まれていないか調べます。ブラウザを介してPHP、JavaScript、HTML、python、perlといったファイルをシステムおよびCMSにアップロードすることあるならば無効にして下さい。他にプロテクションがなく、かつ前述のファイルをアップロードすることがなければ有効にします。 phpMusselをZB Blockなどと併せて用いセキュリティーの向上を目的としているなら、本オプション機能をオンにする必要はないでしょう。なぜなら、phpMusselが探すものは（この意味において）既に存在するプロテクションと同じ物であり、機能が重複するだけだからです。 `false`（偽） = チェックしない「Default（デフォルト）」； `true`（真） = チェックする。
 
 "block_control_characters" （ブロック・コントロール・キャラクターズ）
 - 制御文字を含んだファイルをブロックするか否か（改行以外）？についてです（[\x00-\x08\x0b\x0c\x0e\x1f\x7f]）。もし、テキストのみをアップロードするなら、このオプションを有効にして、さらにプロテクションを強化できます。テキスト以外もアップロード対象であれば、有効にすると誤検出の原因になりえます。`false`（偽） = ブロックしない「Default（デフォルト）」； `true`（真） = ブロックする。
@@ -717,29 +622,29 @@ CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字を�
 phpMusselの互換性ディレクティブ。
 
 "ignore_upload_errors" （イグノア・アップロード・エラーズ）
-- システム上でphpMusselの機能に修正が必要でない限りはこのディレクティブは通常無効です。無効に設定すると、`$_FILES` array()に要素の存在を検知したとき、その要素が表すファイルのスキャンが開始され、要素が空白か無であればphpMusselはエラーメッセージを返します。これは本来phpMusselがあるべき姿です。しかしCMSにおいては、$_FILESの空要素は普通に発生するものであり、正常なphpMusselの挙動が正常なCMSの挙動を阻害する恐れがあります。このような場合は、本オプションを有効にして、phpMusselが空要素をスキャンしてエラーメッセージを返すのを避け、要求のあったページへスムーズに進むことができるようにします。`false`（偽） = OFF （オフ）； `true`（真） = ON （オン）です。
+- システム上でphpMusselの機能に修正が必要でない限りはこのディレクティブは通常無効です。無効に設定すると、`$_FILES` array()に要素の存在を検知したとき、その要素が表すファイルのスキャンが開始され、要素が空白か無であればphpMusselはエラーメッセージを返します。これは本来phpMusselがあるべき姿です。しかしCMSにおいては、$_FILESの空要素は普通に発生するものであり、正常なphpMusselの挙動が正常なCMSの挙動を阻害する恐れがあります。このような場合は、本オプションを有効にして、phpMusselが空要素をスキャンしてエラーメッセージを返すのを避け、要求のあったページへスムーズに進むことができるようにします。 `false`（偽） = OFF （オフ）； `true`（真） = ON （オン）です。
 
 "only_allow_images" （オンリー・アロウ・イメージ）
-- システムあるいはCMSに画像ファイルのアップロードのみを許可するのであれば、このディレクティブは有効にすべきであり、そうでなければ無効とします。有効にすると、画像と特定できないファイルはスキャンすることなしにブロックしますので、プロセス時間の短縮とメモリーの節約が期待できます。`false`（偽） = OFF （オフ）； `true`（真） = ON （オン） です。
+- システムあるいはCMSに画像ファイルのアップロードのみを許可するのであれば、このディレクティブは有効にすべきであり、そうでなければ無効とします。有効にすると、画像と特定できないファイルはスキャンすることなしにブロックしますので、プロセス時間の短縮とメモリーの節約が期待できます。 `false`（偽） = OFF （オフ）； `true`（真） = ON （オン） です。
 
 ####"heuristic" （ヒューリスティック、カテゴリ）
 ヒューリスティック・ディレクティブズ。
 
 "threshold" （スレッシュホールド）
-- phpMusselには、このファイルは疑わしく危険性が高いと判断する署名があります。しきい値は、アップロードされているファイルの危険性の最大値であり、これを超えるとマルウェアと判断されます。ここにおける危険性の定義とは、疑わしいと特定されたものの総数です。デフォルトでは３に設定されています。これより低いと誤検出の可能性が増え、大きすぎると、誤検出は減るものの危険性のあるファイルが検出されない可能性が増加してしまいます。特に問題がなければ、デフォルト値のままにしておくことお勧めします。
+- phpMusselには、このファイルは疑わしく危険性が高いと判断する署名があります。 しきい値は、アップロードされているファイルの危険性の最大値であり、これを超えるとマルウェアと判断されます。ここにおける危険性の定義とは、疑わしいと特定されたものの総数です。 デフォルトでは３に設定されています。 これより低いと誤検出の可能性が増え、大きすぎると、誤検出は減るものの危険性のあるファイルが検出されない可能性が増加してしまいます。 特に問題がなければ、デフォルト値のままにしておくことお勧めします。
 
 ####"virustotal" （ウィルストータル、カテゴリ）
 VirusTotal.comディレクティブズ。
 
 "vt_public_api_key" （ヴィティ・パブリック・エイピーアイ・キー）
-- オプションですが、phpMusselはVirus Total APIを使ってファイルをスキャンすることができます。ウィルス、トロイの木馬、マルウェア、その他の攻撃に対して非常に効果的に機能します。デフォルトではVirus Total APIを使ったスキャニングは無効になっています。有効にするには、Virus TotalのAPIキーが必要です。メリットが極めて大きいため、有効にすることを強く推奨します。Virus Total APIの使用にあたっては、Virus Totalのドキュメンテーションにある通り、利用規定ならびにガイドラインを遵守しなくてはなりません。この統合機能を使用するためには、
- - Virus TotalとAPIのサービス規定を読み同意すること。[サービス規定はこちらから](https://www.virustotal.com/en/about/terms-of-service/)。
- - 最低でもVirus Total Public APIドキュメンテーションの前文を読み理解すること（VirusTotalPublic API v2.0以降Contents（コンテンツ）前まで）Virus Total Public APIの[ドキュメンテーションはこちらから](https://www.virustotal.com/en/documentation/public-api/)。
+- オプションですが、phpMusselはVirus Total APIを使ってファイルをスキャンすることができます。 ウィルス、トロイの木馬、マルウェア、その他の攻撃に対して非常に効果的に機能します。 デフォルトではVirus Total APIを使ったスキャニングは無効になっています。 有効にするには、Virus TotalのAPIキーが必要です。 メリットが極めて大きいため、有効にすることを強く推奨します。 Virus Total APIの使用にあたっては、Virus Totalのドキュメンテーションにある通り、利用規定ならびにガイドラインを遵守しなくてはなりません。 この統合機能を使用するためには：
+ - Virus TotalとAPIのサービス規定を読み同意すること。 [サービス規定はこちらから](https://www.virustotal.com/en/about/terms-of-service/)。
+ - 最低でもVirus Total Public APIドキュメンテーションの前文を読み理解すること（VirusTotalPublic API v2.0以降Contents「コンテンツ」前まで）。 Virus Total Public APIの[ドキュメンテーションはこちらから](https://www.virustotal.com/en/documentation/public-api/)。
 
 注意：Virus Total API使用したスキャニングが無効になっている場合、このカテゴリー（`virustotal`）のディレクティブを参照する必要はありません。無効であれば、どれも機能しません。Virus Total APIキーを取得するには、Virus Totalのサイトのページ右上にあるリンク「コミュニティに参加」をクリックして、必要事項を記入しサインアップします。インストラクションに従ってパブリックAPIキーを取得した後、`config.ini`設定ファイルの`vt_public_api_key`ディレクティブのそれをコピー＆ペーストして下さい。
 
 "vt_suspicion_level" （ヴィティ・サスピション・レベル）
-- デフォルト設定では、phpMusselがVirus Total APIを使ってスキャンするファイル（疑がわしいもの）には制限があります。`vt_suspicion_level`ディレクティブを編集することのより、この制限を変更することが可能です。
+- デフォルト設定では、phpMusselがVirus Total APIを使ってスキャンするファイル（疑がわしいもの）には制限があります。 `vt_suspicion_level`ディレクティブを編集することのより、この制限を変更することが可能です。
 - `0`： phpMusselの署名を使ってスキャンした結果、ヒューリスティックな重みがあると判断された場合にのみ、疑わしいファイルと結論付けられます。すなわちTotal APIは、phpMusselが危険性を察知はしたが完全にそうとは言い切れず、したがってブロックもせず、フラグを付けることもしなかった時のセカンドオピニオンです。
 - `1`： phpMusselの署名を使ってスキャンした結果、実行ファイルと思われる（PEファイル、Mach-O ファイル、ELF/Linuxファイル等）、ないしは実行可能なデータを含んだフォーマット（マクロ、DOC/DOCXファイル、アーカイブRARs／ZIPSファイル等)があれば、ヒューリスティックな重みがあるとして疑わしいファイルと結論付けられます。これはデフォルト設定であり、推奨レベルでもあります。Virus Total APIは、phpMusselが危険性なしと判断し、したがってブロックもせず、フラグを付けることもしなかった時のセカンドオピニオンです。
 - `2`： ファイルは全て疑わしいものとされ、Virus Total APIを使ってスキャンされます。API割り当てを使い切る恐れがあるため、推奨は控えますが、状況によっては適切と言えるでしょう（例えば、ウェブマスターやホストマスターがアップロードされる内容を信頼できない状況等）。この警戒レベルでは、通常ブロック／フラグも対象にならないファイルも全てVirus Total APIを使ってスキャンされます。したがって、Virus Total APIの割り当てを早々に消費してしまうこともあり得、またAPI割り当てを使い切れば、phpMusselはVirus Total APIの使用を中止します（警戒レベルに関係なく）。
@@ -747,36 +652,36 @@ VirusTotal.comディレクティブズ。
 注意：phpMusselによってブラックリスト化、ホワイトリスト化されたファイルはVirus Total APIを使ったスキャンの対象にはなりません。これらは既に善悪が結論付けられたものであり、Virus Total APIで再びスキャンする必要性はないためです。phpMusseがVirus Total APIを利用するのは、phpMusse自身が危険性の有無について判断しかねる状況においての補助と言えます。
 
 "vt_weighting" （ヴィティ・ウェイティング）
-- phpMusselがVirus Total APIを使ったスキャニング結果を検出として扱うか、検出の重み付けとして扱うべきか？複数のエンジン（Virus Totalのように）を使用したスキャニングは、検出率の向上（より多くのマルウェアが検出）をもたらす一方で誤検出の増加も招くため、このディレクティブが存在します。したがって、スキャニング結果は、決定的判断ではなく信頼スコアとして利用した方が適当なケースもあります。値が０の場合、Virus Total APIを使ったスキャンは検出として扱われ、Virus Totalのエンジンがマルウェアとフラグを付けたファイルは、phpMusselもマルウェアと判断します。その他の値の場合は結果は検出の重み付けとなり、スキャンされたファイルがマルウェアかどうかphpMusselが判断するための信頼スコア（あるいは検出の重み付け）となります（値はマルウェアと判断するための最小信頼スコア、あるいは重み）。デフォルト値は０です。
+- phpMusselがVirus Total APIを使ったスキャニング結果を検出として扱うか、検出の重み付けとして扱うべきか？ 複数のエンジン（Virus Totalのように）を使用したスキャニングは、検出率の向上（より多くのマルウェアが検出）をもたらす一方で誤検出の増加も招くため、このディレクティブが存在します。 したがって、スキャニング結果は、決定的判断ではなく信頼スコアとして利用した方が適当なケースもあります。 値が０の場合、Virus Total APIを使ったスキャンは検出として扱われ、Virus Totalのエンジンがマルウェアとフラグを付けたファイルは、phpMusselもマルウェアと判断します。 その他の値の場合は結果は検出の重み付けとなり、スキャンされたファイルがマルウェアかどうかphpMusselが判断するための信頼スコア（あるいは検出の重み付け）となります（値はマルウェアと判断するための最小信頼スコア、あるいは重み）。 デフォルト値は０です。
 
 "vt_quota_rate" （ヴィティ・クォータ・レート） と "vt_quota_time" （ヴィティ・クォータ・タイム）
-- Virus Total APIのドキュメンテーションによると「１分間のタイムフレームの間にリクエストは最大４回」の上限があります。ハニークライアントやハニーポット等のオートメーションを使用し、リポートを受け取るだけでなく、VirusTotal にリソースを提供していれば、上限は引き上げられます。phpMussel のデフォルトでは最大４回を遵守していますが、前述の事情から、この２つのディレクトリを準備し、状況に合わせて変更できるようになっています。制限に達してしまうといった不都合や問題がない限りデフォルト値を変更することは勧められませんが、値を小さくすることが適当なケースもあります。上限はタイムフレーム`vt_quota_time`（ヴィティ・クォータ・タイム）「 分内に」`vt_quota_rate`（ヴィティ・クォータ・レート）で設定します。
+- Virus Total APIのドキュメンテーションによると「１分間のタイムフレームの間にリクエストは最大４回」の上限があります。 ハニークライアントやハニーポット等のオートメーションを使用し、リポートを受け取るだけでなく、VirusTotal にリソースを提供していれば、上限は引き上げられます。 phpMussel のデフォルトでは最大４回を遵守していますが、前述の事情から、この２つのディレクトリを準備し、状況に合わせて変更できるようになっています。 制限に達してしまうといった不都合や問題がない限りデフォルト値を変更することは勧められませんが、値を小さくすることが適当なケースもあります。 上限はタイムフレーム`vt_quota_time`（ヴィティ・クォータ・タイム）「分内に」`vt_quota_rate`（ヴィティ・クォータ・レート）で設定します。
 
 ####"urlscanner" （ユーアールエルスキャナー、カテゴリ）
 URLスキャナー設定。
 
 "urlscanner" （ユーアールエルスキャナー）
-- phpMusselにはURLスキャナーがビルトインされていて、スキャンされたファイルやデータ内の悪質なURLを検出することができます。URLスキャナーを有効にするには`urlscanner`（ユーアールエルスキャナー）ディレクティブを`true`（真）、無効にするには`false`（偽）にして下さい。
+- phpMusselにはURLスキャナーがビルトインされていて、スキャンされたファイルやデータ内の悪質なURLを検出することができます。 URLスキャナーを有効にするには`urlscanner`（ユーアールエルスキャナー）ディレクティブを`true`（真）、無効にするには`false`（偽）にして下さい。
 
 注意：URLスキャナーが無効の場合、このカテゴリー（`urlscanner`）を参照する必要はありません。
 
 URLスキャナーAPIルックアップ設定。
 
 "lookup_hphosts" （ルックアップ・エイチピーホスツ）
-- Trueにすると、APIの[hpHosts](http://hosts-file.net/)ルックアップが有効になります。hpHostsはAPIルックアップを実行するのに API鍵を必要としません。
+- Trueにすると、APIの[hpHosts](http://hosts-file.net/)ルックアップが有効になります。 hpHostsはAPIルックアップを実行するのに API鍵を必要としません。
 
 "google_api_key" （グーグル・エーピーアイ・キー）
-- 必要なAPI鍵が定義されれば、APIのGoogle Safe Browsing APIルックアップが有効になります。Google Safe Browsing APIルックアップスに必要なAPI鍵は、[から取得することができます](https://console.developers.google.com/)。
+- 必要なAPI鍵が定義されれば、APIのGoogle Safe Browsing APIルックアップが有効になります。 Google Safe Browsing APIルックアップスに必要なAPI鍵は、[から取得することができます](https://console.developers.google.com/)。
 - 注意：Google Safe Browsing APIルックアップはまだ完成していないので、将来的な利用を想定しています。
 
 "maximum_api_lookups" （マクシマム・エーピーアイ・ルックアップス）
-- スキャン反復におけるAPIルックアップの最大回数。APIルックアップの度にスキャン反復の時間が積み重なってしまうので、スキャン処理の速度向上のため、制限を設けたいと考えるかもしれません。０は制限なしを意味します。デフォルトは１０です。
+- スキャン反復におけるAPIルックアップの最大回数。APIルックアップの度にスキャン反復の時間が積み重なってしまうので、スキャン処理の速度向上のため、制限を設けたいと考えるかもしれません。 ０は制限なしを意味します。 デフォルトは１０です。
 
 "maximum_api_lookups_response" （マクシマム・エーピーアイ・ルックアップス・レスポンス）
-- APIルックアップの回数制限を超えた時の対応です。`false`（偽） = 何もしない（処理を継続する）「Default（デフォルト）」;`true`（真） = ファイルにフラグを付ける／ブロックする。
+- APIルックアップの回数制限を超えた時の対応です。 `false`（偽） = 何もしない（処理を継続する）「Default（デフォルト）」; `true`（真） = ファイルにフラグを付ける／ブロックする。
 
 "cache_time" （キャッシュ・タイム）
-- APIルックアップの結果をどれくらいキャッシュするか（秒単位です）？デフォルトは３６００秒（一時間）。
+- APIルックアップの結果をどれくらいキャッシュするか（秒単位です）？ デフォルトは３６００秒（一時間）。
 
 ####"template_data" （テンプレート・データ、カテゴリ）
 テンプレートとテーマ用のディレクティブ／変数。
@@ -784,7 +689,7 @@ URLスキャナーAPIルックアップ設定。
 テンプレートのデータは、ユーザーに向けてアップロード拒否のメッセージをHTML形式でアウトプットする際に使用されます。カスタムテーマを使っている場合は`template_custom.html`を使用して、そうでない場合は`template.html`を使用してHTMLアウトプットが生成されます。設定ファイル内にあるこのセクション用の変数は、HTMLアウトプットのために解析され、で囲まれた変数名は対応する変数データに置き換えられます。例えば`foo="bar"`とすると、HTMLアウトプット内の`<p>{foo}</p>`は`<p>bar</p>`となります。
 
 "css_url" （シーエスエス・ユーアールエル）
-- カスタムテーマ用のテンプレートファイルは、外部CSSプロパティーを使っています。一方、デフォルトテーマは内部CSSです。カスタムテーマを適用するためには、CSSファイルのパブリック HTTPアドレスを"css_url"変数を使って指定して下さい。この変数が空白であれば、デフォルトテーマが適用されます。
+- カスタムテーマ用のテンプレートファイルは、外部CSSプロパティーを使っています。 一方、デフォルトテーマは内部CSSです。 カスタムテーマを適用するためには、CSSファイルのパブリック HTTPアドレスを"css_url"変数を使って指定して下さい。 この変数が空白であれば、デフォルトテーマが適用されます。
 
 ---
 
@@ -799,7 +704,7 @@ URLスキャナーAPIルックアップ設定。
 NAMEはその署名を指す名前でFNRXはファイル名（エンコードされていない）にマッチする正規表現パターンです。
 
 ####*MD5署名*
-MD5署名のフォーマットは例外なく次のようになります。
+ＭＤ５署名のフォーマットは例外なく次のようになります。
 
 `HASH:FILESIZE:NAME`
 
@@ -846,33 +751,31 @@ HASHは全ファイルのMD5ハッシュ、FILESIZEはそのファイルの全�
 NAMEはその署名を指す名前、HEXは与えられた署名により適合を見るファイルの１６進法にエンコードされたセグメントです。FROMとTOはオプション・パラメータで、データソースのどこからどこまでチェックするかを示します（メール機能ではサポートしていません）。
 
 ####*正規表現*
-PHPが正規表現と判断し処理するフォーマットであれば、phpMusselと署名によって間違いなく処理されます。しかし念のため、署名を基礎とする正規表現を新規に作成する場合は細心の注意を払って下さい。絶対的な自信がない状況では、思いもしないエラーが発生しかねません。正規表現ステートメントが解析されているコンテキストを完全に理解していないならば、phpMusselのコードを見て下さい。パターンは全て（ファイル名、アーカイブ・メタデータ、MD5 パターンを除く）１６進法でエンコードされなければならない点に注意(上記のパターン構文も)です！
+PHPが正規表現と判断し処理するフォーマットであれば、phpMusselと署名によって間違いなく処理されます。しかし念のため、署名を基礎とする正規表現を新規に作成する場合は細心の注意を払って下さい。絶対的な自信がない状況では、思いもしないエラーが発生しかねません。正規表現ステートメントが解析されているコンテキストを完全に理解していないならば、phpMusselのコードを見て下さい。パターンは全て（ファイル名、アーカイブ・メタデータ、ＭＤ５パターンを除く）１６進法でエンコードされなければならない点に注意(上記のパターン構文も)です！
 
 ####*カスタム署名の場所*
-カスタム署名は、カスタム署名があるべきファイルに置いて下さい。ファイル名は"_custom"を含むものとします。加えて、デフォルト署名ファイルを編集するのは可能な限り避けるべきで、一般的に推奨されるだけでなく、あるいは自身の署名とphpMusselのデフォルト署名の区別という観点だけなく、デフォルト署名ファイルの改ざんは、"maps"ファイルとの関係で正常な機能を阻害する恐れがあります。というのも、mapsファイルによりphpMusselは署名ファイルのどこを探すか判断するためです。改ざんによりmapsと関連署名ファイルの同期は破壊されかねません。構文さえ守れば、カスタム署名にはかなりの自由度がありますが、稼働環境では十分な注意が必要で、新しい署名は誤検出のテストを欠かさずに行って下さい。
 
 ####*署名詳細*
 phpMusselが使う署名タイプの詳細です。
-- "正規ASCII署名" (ascii_*)　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用されます。
-- "複合拡張署名" (coex_*)　ミックスした署名タイプのマッチングです。
-- "ELF署名" (elf_*)　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用され、 ELFフォーマットへの適合をみます。
-- "ポータブル実行署名" (exe_*)　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用され、PEフォーマットへの適合をみます。
-- "ファイル名署名" (filenames_*)　スキャン対象ファイルのファイル名に対して使用されます。
-- "一般署名" (general_*)　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用されます。
-- "グラフィック署名" (graphics_*)　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用され、既知のグラフィカルファイルフォーマットへの適合をみます。
+- "正規ASCII署名"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用されます。
+- "複合拡張署名"　ミックスした署名タイプのマッチングです。
+- "ELF署名"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用され、 ELFフォーマットへの適合をみます。
+- "ポータブル実行署名"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用され、PEフォーマットへの適合をみます。
+- "ファイル名署名"　スキャン対象ファイルのファイル名に対して使用されます。
+- "一般署名"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用されます。
+- "グラフィック署名"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツに対して使用され、既知のグラフィカルファイルフォーマットへの適合をみます。
 - "一般コマンド" (hex_general_commands.csv)　スキャン対象ファイルがホワイトリスト化されていないファイルのコンテンツに対して使用されます。
-- "正規ＨＴＭＬ署名" (html_*)　スキャン対象ファイルがホワイトリスト化されていないＨＴＭＬファイル場合、そのコンテンツに対して使用されます。
-- "マッチＯ署名" (macho_*) スキャン対象ファイルがホワイトリスト化されていない場合、そのファイルのコンテンツに対して使用され、マッチＯフォーマットへの適合をみます。
-- "Ｅメール署名" (mail_*)　スキャン対象ファイルがホワイトリスト化されていないEMLファイルの場合、そのコンテンツに対して使用されます。
-- "MD5署名" (md5_*)　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツのMD5ハッシュ、ファイルサイズに対して使用されます。
-- "アーカイブメタデータ署名" (metadata_*) スキャン対象ファイルがホワイトリスト化されていないアーカイブを含む場合、スキャン対象ファイルのCRC32ハッシュとファイルサイズに対して使用されます。
+- "正規ＨＴＭＬ署名"　スキャン対象ファイルがホワイトリスト化されていないＨＴＭＬファイル場合、そのコンテンツに対して使用されます。
+- "マッチＯ署名" スキャン対象ファイルがホワイトリスト化されていない場合、そのファイルのコンテンツに対して使用され、マッチＯフォーマットへの適合をみます。
+- "Ｅメール署名"　スキャン対象ファイルがホワイトリスト化されていないEMLファイルの場合、そのコンテンツに対して使用されます。
+- "ＭＤ５署名"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツのＭＤ５ハッシュ、ファイルサイズに対して使用されます。
+
 - "OLE署名" (ole_*) スキャン対象ファイルがホワイトリスト化されていないOLEオブジェクトの場合、そのコンテンツに対して使用されます。
 - "PDF署名" (pdf_*)　スキャン対象ファイルがホワイトリスト化されていないPDFファイルの場合、そのコンテンツに対して使用されます。
-- "ポータブル実行セクショナル署名" (pe_*)　スキャン対象ファイルがホワイトリスト化されていない場合、全てのPE部分のMD5ハッシュとファイルサイズに対して使用され、PEフォーマットへの適合をみます。
-- "ポータブル実行拡張署名" (pex_*)　スキャン対象ファイルがホワイトリスト化されていない場合、ファイル内のMD5ハッシュと変数のサイズに対して使用され、PEフォーマットへの適合をみます。
+- "ポータブル実行セクショナル署名" (pe_*)　スキャン対象ファイルがホワイトリスト化されていない場合、全てのPE部分のＭＤ５ハッシュとファイルサイズに対して使用され、PEフォーマットへの適合をみます。
+- "ポータブル実行拡張署名" (pex_*)　スキャン対象ファイルがホワイトリスト化されていない場合、ファイル内のＭＤ５ハッシュと変数のサイズに対して使用され、PEフォーマットへの適合をみます。
 - "SWF署名" (swf_*)　スキャン対象ファイルがホワイトリスト化されていないショックウェーブファイルの場合、そのコンテンツに対して使用されます。
-- "ホワイトリスト署名" (whitelist_*)　スキャン対象ファイルのコンテンツのMD5ハッシュとファイルサイズに対して使用されます。適合ファイルは、ホワイトリスト・エントリー内に記載された署名タイプへの適合性を必要としません。
-- "XML/XDP署名 " (xmlxdp_*)　スキャン対象ファイルがホワイトリスト化されていない場合、ファイル内で確認されたXML/XDPに対して使用されます。
+- "ホワイトリスト署名" (whitelist_*)　スキャン対象ファイルのコンテンツのＭＤ５ハッシュとファイルサイズに対して使用されます。適合ファイルは、ホワイトリスト・エントリー内に記載された署名タイプへの適合性を必要としません。
 （注意：これらの署名は`config.ini`において容易に無効設定できます）。
 
 ---
@@ -976,4 +879,4 @@ phpMusselは、ファイルをブロックします | __偽陽性__ | 真陽性�
 ---
 
 
-最終アップデート： 2016年12月4日。
+最終アップデート： 2016年12月19日。

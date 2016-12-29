@@ -202,6 +202,9 @@ entries will be deleted when those goals have been achieved.
 - [2016.12.03; Sub-minor code change; Maikuolan]: Improved mechanism for making
   determinations between requests via direct access and requests via hooks.
 
+- [2016.12.11; Sub-minor code change; Maikuolan]: Improved some of the docBlock
+  comments. Did some subtle refactoring.
+
 ======
 
 Changelog notes for versions < v1.0.0 can be found in the "Changelog-v0.txt"

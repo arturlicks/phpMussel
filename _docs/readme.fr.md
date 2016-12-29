@@ -188,14 +188,10 @@ Fichier | Description
 /_testfiles/graphics_standard_testfile.gif | Fichier pour tester phpMussel graphiques signatures.
 /_testfiles/html_standard_testfile.html | Fichier pour tester phpMussel normalisé HTML signatures.
 /_testfiles/md5_testfile.txt | Fichier pour tester phpMussel MD5 signatures.
-/_testfiles/metadata_testfile.tar | Fichier pour tester phpMussel métadonnées signatures et pour tester soutien du fichiers TAR sur votre système.
-/_testfiles/metadata_testfile.txt.gz | Fichier pour tester phpMussel métadonnées signatures et pour tester soutien du fichiers GZ sur votre système.
-/_testfiles/metadata_testfile.zip | Fichier pour tester phpMussel métadonnées signatures et pour tester soutien du fichiers ZIP sur votre système.
 /_testfiles/ole_testfile.ole | Fichier pour tester phpMussel OLE signatures.
 /_testfiles/pdf_standard_testfile.pdf | Fichier pour tester phpMussel PDF signatures.
 /_testfiles/pe_sectional_testfile.exe | Fichier pour tester phpMussel PE Sectional signatures.
 /_testfiles/swf_standard_testfile.swf | Fichier pour tester phpMussel SWF signatures.
-/_testfiles/xdp_standard_testfile.xdp | Fichier pour tester phpMussel XML/XDP signatures.
 /vault/ | Voûte répertoire (contient divers fichiers).
 /vault/cache/ | Cache répertoire (pour les données temporaires).
 /vault/cache/.htaccess | Un hypertexte accès fichier (dans ce cas, pour protéger les sensibles fichiers appartenant au script contre être consulté par non autorisées sources).
@@ -257,46 +253,34 @@ Fichier | Description
 /vault/signatures/ascii_clamav_regex.map | Fichier pour normalisé ASCII signatures.
 /vault/signatures/ascii_clamav_standard.cvd | Fichier pour normalisé ASCII signatures.
 /vault/signatures/ascii_clamav_standard.map | Fichier pour normalisé ASCII signatures.
-/vault/signatures/ascii_custom_regex.cvd | Fichier pour normalisé ASCII signatures.
-/vault/signatures/ascii_custom_standard.cvd | Fichier pour normalisé ASCII signatures.
 /vault/signatures/ascii_mussel_regex.cvd | Fichier pour normalisé ASCII signatures.
 /vault/signatures/ascii_mussel_standard.cvd | Fichier pour normalisé ASCII signatures.
 /vault/signatures/coex_clamav.cvd | Fichier pour les signatures complexes étendues.
-/vault/signatures/coex_custom.cvd | Fichier pour les signatures complexes étendues.
 /vault/signatures/coex_mussel.cvd | Fichier pour les signatures complexes étendues.
 /vault/signatures/elf_clamav_regex.cvd | Fichier pour l'ELF signatures.
 /vault/signatures/elf_clamav_regex.map | Fichier pour l'ELF signatures.
 /vault/signatures/elf_clamav_standard.cvd | Fichier pour l'ELF signatures.
 /vault/signatures/elf_clamav_standard.map | Fichier pour l'ELF signatures.
-/vault/signatures/elf_custom_regex.cvd | Fichier pour l'ELF signatures.
-/vault/signatures/elf_custom_standard.cvd | Fichier pour l'ELF signatures.
 /vault/signatures/elf_mussel_regex.cvd | Fichier pour l'ELF signatures.
 /vault/signatures/elf_mussel_standard.cvd | Fichier pour l'ELF signatures.
 /vault/signatures/exe_clamav_regex.cvd | Fichier pour les PE (Portable Executable) signatures.
 /vault/signatures/exe_clamav_regex.map | Fichier pour les PE (Portable Executable) signatures.
 /vault/signatures/exe_clamav_standard.cvd | Fichier pour les PE (Portable Executable) signatures.
 /vault/signatures/exe_clamav_standard.map | Fichier pour les PE (Portable Executable) signatures.
-/vault/signatures/exe_custom_regex.cvd | Fichier pour les PE (Portable Executable) signatures.
-/vault/signatures/exe_custom_standard.cvd | Fichier pour les PE (Portable Executable) signatures.
 /vault/signatures/exe_mussel_regex.cvd | Fichier pour les PE (Portable Executable) signatures.
 /vault/signatures/exe_mussel_standard.cvd | Fichier pour les PE (Portable Executable) signatures.
 /vault/signatures/filenames_clamav.cvd | Fichier pour filename signatures.
-/vault/signatures/filenames_custom.cvd | Fichier pour filename signatures.
 /vault/signatures/filenames_mussel.cvd | Fichier pour filename signatures.
 /vault/signatures/general_clamav_regex.cvd | Fichier pour général signatures.
 /vault/signatures/general_clamav_regex.map | Fichier pour général signatures.
 /vault/signatures/general_clamav_standard.cvd | Fichier pour général signatures.
 /vault/signatures/general_clamav_standard.map | Fichier pour général signatures.
-/vault/signatures/general_custom_regex.cvd | Fichier pour général signatures.
-/vault/signatures/general_custom_standard.cvd | Fichier pour général signatures.
 /vault/signatures/general_mussel_regex.cvd | Fichier pour général signatures.
 /vault/signatures/general_mussel_standard.cvd | Fichier pour général signatures.
 /vault/signatures/graphics_clamav_regex.cvd | Fichier pour graphiques signatures.
 /vault/signatures/graphics_clamav_regex.map | Fichier pour graphiques signatures.
 /vault/signatures/graphics_clamav_standard.cvd | Fichier pour graphiques signatures.
 /vault/signatures/graphics_clamav_standard.map | Fichier pour graphiques signatures.
-/vault/signatures/graphics_custom_regex.cvd | Fichier pour graphiques signatures.
-/vault/signatures/graphics_custom_standard.cvd | Fichier pour graphiques signatures.
 /vault/signatures/graphics_mussel_regex.cvd | Fichier pour graphiques signatures.
 /vault/signatures/graphics_mussel_standard.cvd | Fichier pour graphiques signatures.
 /vault/signatures/hex_general_commands.csv | Hex-codé CSV de généraux commande détections optionnellement utilisés par phpMussel.
@@ -304,74 +288,47 @@ Fichier | Description
 /vault/signatures/html_clamav_regex.map | Fichier pour normalisé HTML signatures.
 /vault/signatures/html_clamav_standard.cvd | Fichier pour normalisé HTML signatures.
 /vault/signatures/html_clamav_standard.map | Fichier pour normalisé HTML signatures.
-/vault/signatures/html_custom_regex.cvd | Fichier pour normalisé HTML signatures.
-/vault/signatures/html_custom_standard.cvd | Fichier pour normalisé HTML signatures.
 /vault/signatures/html_mussel_regex.cvd | Fichier pour normalisé HTML signatures.
 /vault/signatures/html_mussel_standard.cvd | Fichier pour normalisé HTML signatures.
 /vault/signatures/macho_clamav_regex.cvd | Fichier pour Mach-O signatures.
 /vault/signatures/macho_clamav_regex.map | Fichier pour Mach-O signatures.
 /vault/signatures/macho_clamav_standard.cvd | Fichier pour Mach-O signatures.
 /vault/signatures/macho_clamav_standard.map | Fichier pour Mach-O signatures.
-/vault/signatures/macho_custom_regex.cvd | Fichier pour Mach-O signatures.
-/vault/signatures/macho_custom_standard.cvd | Fichier pour Mach-O signatures.
 /vault/signatures/macho_mussel_regex.cvd | Fichier pour Mach-O signatures.
 /vault/signatures/macho_mussel_standard.cvd | Fichier pour Mach-O signatures.
 /vault/signatures/mail_clamav_regex.cvd | Fichier pour mail signatures.
 /vault/signatures/mail_clamav_regex.map | Fichier pour mail signatures.
 /vault/signatures/mail_clamav_standard.cvd | Fichier pour mail signatures.
 /vault/signatures/mail_clamav_standard.map | Fichier pour mail signatures.
-/vault/signatures/mail_custom_regex.cvd | Fichier pour mail signatures.
-/vault/signatures/mail_custom_standard.cvd | Fichier pour mail signatures.
 /vault/signatures/mail_mussel_regex.cvd | Fichier pour mail signatures.
 /vault/signatures/mail_mussel_standard.cvd | Fichier pour mail signatures.
-/vault/signatures/md5_clamav.cvd | Fichier pour MD5 basé signatures.
-/vault/signatures/md5_custom.cvd | Fichier pour MD5 basé signatures.
-/vault/signatures/md5_mussel.cvd | Fichier pour MD5 basé signatures.
-/vault/signatures/metadata_clamav.cvd | Fichier pour les signatures métadonnées d'archives.
-/vault/signatures/metadata_custom.cvd | Fichier pour les signatures métadonnées d'archives.
-/vault/signatures/metadata_mussel.cvd | Fichier pour les signatures métadonnées d'archives.
+/vault/signatures/clamav.hdb | Fichier pour MD5 basé signatures.
+/vault/signatures/phpmussel.hdb | Fichier pour MD5 basé signatures.
 /vault/signatures/ole_clamav_regex.cvd | Fichier pour les OLE signatures.
 /vault/signatures/ole_clamav_regex.map | Fichier pour les OLE signatures.
 /vault/signatures/ole_clamav_standard.cvd | Fichier pour les OLE signatures.
 /vault/signatures/ole_clamav_standard.map | Fichier pour les OLE signatures.
-/vault/signatures/ole_custom_regex.cvd | Fichier pour les OLE signatures.
-/vault/signatures/ole_custom_standard.cvd | Fichier pour les OLE signatures.
 /vault/signatures/ole_mussel_regex.cvd | Fichier pour les OLE signatures.
 /vault/signatures/ole_mussel_standard.cvd | Fichier pour les OLE signatures.
 /vault/signatures/pdf_clamav_regex.cvd | Fichier pour les PDF signatures.
 /vault/signatures/pdf_clamav_regex.map | Fichier pour les PDF signatures.
 /vault/signatures/pdf_clamav_standard.cvd | Fichier pour les PDF signatures.
 /vault/signatures/pdf_clamav_standard.map | Fichier pour les PDF signatures.
-/vault/signatures/pdf_custom_regex.cvd | Fichier pour les PDF signatures.
-/vault/signatures/pdf_custom_standard.cvd | Fichier pour les PDF signatures.
 /vault/signatures/pdf_mussel_regex.cvd | Fichier pour les PDF signatures.
 /vault/signatures/pdf_mussel_standard.cvd | Fichier pour les PDF signatures.
-/vault/signatures/pex_custom.cvd | Fichier pour les PE étendues signatures.
-/vault/signatures/pex_mussel.cvd | Fichier pour les PE étendues signatures.
-/vault/signatures/pe_clamav.cvd | Fichier pour les PE Sectional signatures.
-/vault/signatures/pe_custom.cvd | Fichier pour les PE Sectional signatures.
-/vault/signatures/pe_mussel.cvd | Fichier pour les PE Sectional signatures.
+/vault/signatures/phpmussel.pex | Fichier pour les PE étendues signatures.
+/vault/signatures/clamav.mdb | Fichier pour les PE Sectional signatures.
+/vault/signatures/phpmussel.mdb | Fichier pour les PE Sectional signatures.
 /vault/signatures/swf_clamav_regex.cvd | Fichier pour les Shockwave signatures.
 /vault/signatures/swf_clamav_regex.map | Fichier pour les Shockwave signatures.
 /vault/signatures/swf_clamav_standard.cvd | Fichier pour les Shockwave signatures.
 /vault/signatures/swf_clamav_standard.map | Fichier pour les Shockwave signatures.
-/vault/signatures/swf_custom_regex.cvd | Fichier pour les Shockwave signatures.
-/vault/signatures/swf_custom_standard.cvd | Fichier pour les Shockwave signatures.
 /vault/signatures/swf_mussel_regex.cvd | Fichier pour les Shockwave signatures.
 /vault/signatures/swf_mussel_standard.cvd | Fichier pour les Shockwave signatures.
 /vault/signatures/switch.dat | Contrôle et définit certaines variables.
 /vault/signatures/urlscanner.cvd | Fichier pour l'URL scanner signatures.
 /vault/signatures/whitelist_clamav.cvd | Fichier spécifique blanche liste.
-/vault/signatures/whitelist_custom.cvd | Fichier spécifique blanche liste.
 /vault/signatures/whitelist_mussel.cvd | Fichier spécifique blanche liste.
-/vault/signatures/xmlxdp_clamav_regex.cvd | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_clamav_regex.map | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_clamav_standard.cvd | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_clamav_standard.map | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_custom_regex.cvd | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_custom_standard.cvd | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_mussel_regex.cvd | Fichier pour XML/XDP signatures.
-/vault/signatures/xmlxdp_mussel_standard.cvd | Fichier pour XML/XDP signatures.
 /vault/.htaccess | Un hypertexte accès fichier (dans ce cas, pour protéger les sensibles fichiers appartenant au script contre être consulté par non autorisées sources).
 /vault/cli.php | Module de CLI.
 /vault/config.ini.RenameMe | Fichier de configuration; Contient toutes les options de configuration pour phpMussel, pour comment fonctionner correctement (renommer pour activer).
@@ -414,8 +371,6 @@ Signature fichiers non marqués avec "_regex" ou "_standard" seront aussi l'un o
 
 Signature fichiers marqué avec "_clamav" contient signatures entièrement basée du ClamAV base de données (GNU/GPL).
 
-Signature fichiers marqué avec "_custom", par défaut, ne contiennent pas de signatures; Ces fichiers existent à donner vous un place pour placer vos propres personnalisées signatures, si vous créez une partie de votre propre.
-
 Signature fichiers marqué avec "_mussel" contenir signatures qui ne sont pas spécifiquement provenant par ClamAV, signatures qui, en général, je développé par moi-même et/ou basé sur informations recueillies de diverses sources.
 
 ---
@@ -426,14 +381,6 @@ Ce qui suit est une liste des directives disponibles pour phpMussel dans le `con
 
 ####"general" (Catégorie)
 Configuration générale pour phpMussel.
-
-"script_password"
-- Par commodité, phpMussel permettra certaines fonctions pour être déclenché manuellement via POST, GET et QUERY. Cependant, par mesure de sécurité, pour ce faire, phpMussel s'attend à un mot de passe pour être inclus dans la commande, à assurer que c'est vous, et pas quelqu'un d'autre, attenter de déclencher manuellement ces fonctions. Fixer `script_password` à le mot de passe que vous souhaitez d'utiliser. Si aucun mot de passe est fixé, déclenchement manuel sera désactivé par défaut. Utiliser quelque chose que vous souvenez, mais qui est difficile à deviner.
-- N'a pas d'influence en le mode CLI.
-
-"logs_password"
-- La même comme `script_password`, mais par l'affichage du contenu de `scan_log` et `scan_kills`. Pour avoir distincts mots de passe peut être utile si vous voulez donner à quelqu'un autre accès à un ensemble de fonctions mais pas l'autre.
-- N'a pas d'influence en le mode CLI.
 
 "cleanup"
 - Déensemble variables du script et cache après l'exécution? False = Non; True = Oui [Défaut]. Si vous ne utilisez pas le script au-delà l'initiale analyse du téléchargements, devrait ensemble à `true` (oui) à minimiser l'utilisation de la mémoire. Si vous utilisez le script à des fins au-delà l'initiale analyse du téléchargements, devrait ensemble à `false` (non), pour éviter recharger inutilement dupliqué données dans la mémoire. Dans la pratique générale, il devrait probablement être ensemblé à `true`, mais, si vous faites cela, vous ne serez pas être capable d'utiliser le script pour tout chose autre que l'analyse des fichiers téléchargements.
@@ -474,12 +421,6 @@ Configuration générale pour phpMussel.
 "lang"
 - Spécifiez la langue défaut pour phpMussel.
 
-"lang_override"
-- Spécifiez si phpMussel devrait, quand c'est possible, remplacer la spécification du langage avec la préférence de langue déclarée par les demandes entrantes (HTTP_ACCEPT_LANGUAGE). False = Non [Défaut]; True = Oui.
-
-"lang_acceptable"
-- La `lang_acceptable` directive indique à phpMussel quelles langues peuvent être acceptées par le script de la part de `lang` ou de la part de `HTTP_ACCEPT_LANGUAGE`. Cette directive devrait **SEULEMENT** être modifié si vous ajoutez vos propres langues fichiers personnalisés ou retirer par force les langues fichiers. La directive est une chaîne de codes utilisés par ces langues acceptées par le script, délimité par des virgules.
-
 "quarantine_key"
 - phpMussel est capable de mettre en quarantaine le marqué fichier téléchargement tentatives en isolement au sein de la voûte de phpMussel, si cela est quelque chose que vous voulez qu'il fasse. L'utilisateurs de phpMussel qui souhaitent simplement de protéger leurs sites ou environnement d'hébergement sans avoir un profondément intérêt dans d'analyse de quelconque marqué fichier téléchargement tentatives devrait laisser cette fonctionnalité désactivée, mais tous les utilisateurs intéressés dans d'analyse plus approfondie de tenté fichier téléchargements pour la recherche des logiciels malveillants ou pour des choses semblables devraient permettre cette fonctionnalité. La quarantaine de marqué fichier téléchargement tentatives peut parfois aider également dans le débogage des faux positifs, si cela est quelque chose qui se produit fréquemment pour vous. Pour désactiver la fonctionnalité de quarantaine, il suffit de laisser la directive `quarantine_key` vide, ou effacer le contenu de cette directive si elle est pas déjà vide. Pour activer la fonctionnalité de quarantaine, entrer une valeur dans la directive. Le `quarantine_key` est une élément important de la sécurité de la fonctionnalité de quarantaine requis en tant que moyen de prévention de la fonctionnalité de quarantaine d'être exploités par des attaquants potentiels en tant que moyen de prévention toute potentielle exécution de données stockées dans la quarantaine. Le `quarantine_key` devrait être traité de la même manière que vos mots de passe: Le plus sera le mieux, et conservez-le bien. Pour un meilleur effet, utiliser en conjonction avec `delete_on_sight`.
 
@@ -490,7 +431,7 @@ Configuration générale pour phpMussel.
 - La maximale utilisation autorisée de la mémoire pour la quarantaine. Si la totale d'utilisée mémoire par la quarantaine atteint cette valeur, les anciens fichiers en quarantaine seront supprimés jusqu'à ce que la totale mémoire utilisée n'atteint pas cette valeur. Cette directive est un important moyen de rendre plus difficile pour des agresseurs potentiels d'inonder votre quarantaine avec des données non désirées ce qui pourrait causer l'emballement d'utilisation des données sur votre service d'hébergement. La valeur est en Ko. Défaut =65536 =65536Ko =64Mo.
 
 "honeypot_mode"
-- Lorsque le honeypot mode est activé, phpMussel va tenter de mettre en quarantaine tous les fichier téléchargements ce qu'il rencontre, indépendamment de si oui ou non le fichier en cours de téléchargement correspond à signature inclus, et aucune réelle analyse de ces fichier téléchargements tentatives va arriver. Cette fonctionnalité devrait être utile pour ceux qui souhaitent utiliser phpMussel pour des fins de logiciels malveillants ou virus recherche, mais il pas n'est recommandé d'activer cette fonctionnalité si l'utilisation prévue de phpMussel par l'utilisateur est l'analyse de fichier téléchargements comme la norme, ni est-il recommandé d'utiliser la honeypot fonctionnalité pour fins autres que de honeypotting. Par défaut, cette option est désactivée. False = Désactivé [Défaut]; True = Activé.
+- Quand le honeypot mode est activé, phpMussel va tenter de mettre en quarantaine tous les fichier téléchargements ce qu'il rencontre, indépendamment de si oui ou non le fichier en cours de téléchargement correspond à signature inclus, et aucune réelle analyse de ces fichier téléchargements tentatives va arriver. Cette fonctionnalité devrait être utile pour ceux qui souhaitent utiliser phpMussel pour des fins de logiciels malveillants ou virus recherche, mais il pas n'est recommandé d'activer cette fonctionnalité si l'utilisation prévue de phpMussel par l'utilisateur est l'analyse de fichier téléchargements comme la norme, ni est-il recommandé d'utiliser la honeypot fonctionnalité pour fins autres que de honeypotting. Par défaut, cette option est désactivée. False = Désactivé [Défaut]; True = Activé.
 
 "scan_cache_expiry"
 - Pour combien de temps devrait phpMussel cache les résultats de l'analyse? La valeur est le nombre de secondes pour mettre en cache les résultats de l'analyse pour. Par défaut est 21600 secondes (6 heures); Une valeur de 0 désactive mettre en cache les résultats de l'analyse.
@@ -501,119 +442,85 @@ Configuration générale pour phpMussel.
 "disable_frontend"
 - Désactiver l'accès frontal? L'accès frontal peut rendre phpMussel plus facile à gérer, mais peut aussi être un risque potentiel pour la sécurité. Il est recommandé de gérer phpMussel via le back-end chaque fois que possible, mais l'accès frontal est prévu pour quand il est impossible. Seulement activer si vous avez besoin. False = Activer l'accès frontal; True = Désactiver l'accès frontal [Défaut].
 
+"max_login_attempts"
+- Nombre maximal de tentatives de connexion (l'accès frontal). Défaut = 5.
+
+"FrontEndLog"
+- Fichier pour l'enregistrement des tentatives de connexion à l'accès frontal. Spécifier un fichier, ou laisser vide à désactiver.
+
 ####"signatures" (Catégorie)
 Configuration pour les signatures.
-- %%%_clamav = ClamAV signatures (mains et daily).
-- %%%_custom = Vos signatures personnalisés (si vous avez écrit tout).
-- %%%_mussel = phpMussel signatures incluses dans votre courant ensemble des signatures qui ne sont pas de ClamAV.
 
-Vérifier contre les signatures MD5 au cours de analyse? False = Non; True = Oui [Défaut].
-- "md5_clamav"
-- "md5_custom"
-- "md5_mussel"
+"MD5"
+- Vérifier contre les signatures MD5 au cours de analyse? Si oui, spécifiez les noms des fichiers de signatures à utiliser, délimité par des virgules.
+
+"PE_Sectional"
+- Vérifier les fichiers PE (Portable Exécutable; EXE, DLL, etc) contre les signatures PE Sectional au cours de analyse? Si oui, spécifiez les noms des fichiers de signatures à utiliser, délimité par des virgules.
+
+"PE_Extended"
+- Vérifier les fichiers PE (Portable Exécutable; EXE, DLL, etc) contre les signatures PE étendues au cours de analyse? Si oui, spécifiez les noms des fichiers de signatures à utiliser, délimité par des virgules.
 
 Vérifier contre les signatures générales au cours de analyse? False = Non; True = Oui [Défaut].
 - "general_clamav"
-- "general_custom"
 - "general_mussel"
 
 Vérifier contre les signatures ASCII normalisés au cours de analyse? False = Non; True = Oui [Défaut].
 - "ascii_clamav"
-- "ascii_custom"
 - "ascii_mussel"
 
 Vérifier contre les signatures HTML normalisés au cours de analyse? False = Non; True = Oui [Défaut].
 - "html_clamav"
-- "html_custom"
 - "html_mussel"
-
-Vérifier les fichiers PE (Portable Exécutable; EXE, DLL, etc) contre les signatures PE Sectional au cours de analyse? False = Non; True = Oui [Défaut].
-- "pe_clamav"
-- "pe_custom"
-- "pe_mussel"
-
-Vérifier les fichiers PE (Portable Exécutable; EXE, DLL, etc) contre les signatures PE étendues au cours de analyse? False = Non; True = Oui [Défaut].
-- "pex_custom"
-- "pex_mussel"
 
 Vérifier les fichiers PE (Portable Exécutable; EXE, DLL, etc) contre les signatures PE au cours de analyse? False = Non; True = Oui [Défaut].
 - "exe_clamav"
-- "exe_custom"
 - "exe_mussel"
 
 Vérifier les fichiers ELF contre les signatures ELF au cours de analyse? False = Non; True = Oui [Défaut].
 - "elf_clamav"
-- "elf_custom"
 - "elf_mussel"
 
 Vérifier les fichiers Mach-O (OSX, etc) contre les signatures Mach-O au cours de analyse? False = Non; True = Oui [Défaut].
 - "macho_clamav"
-- "macho_custom"
 - "macho_mussel"
 
 Vérifier les fichiers graphiques contre les signatures graphiques basées au cours de analyse? False = Non; True = Oui [Défaut].
 - "graphics_clamav"
-- "graphics_custom"
 - "graphics_mussel"
-
-Vérifier les contenus de fichiers contre les signatures métadonnées d'archives au cours de analyse? False = Non; True = Oui [Défaut].
-- "metadata_clamav"
-- "metadata_custom"
-- "metadata_mussel"
 
 Vérifier les objets OLE contre les signatures OLE au cours de analyse? False = Non; True = Oui [Défaut].
 - "ole_clamav"
-- "ole_custom"
 - "ole_mussel"
 
 Vérifier les noms de fichiers contre les signatures basées sur les noms de fichiers au cours de analyse? False = Non; True = Oui [Défaut].
 - "filenames_clamav"
-- "filenames_custom"
 - "filenames_mussel"
 
 Vérifier contre les signatures email au cours de analyse? False = Non; True = Oui [Défaut].
 - "mail_clamav"
-- "mail_custom"
 - "mail_mussel"
 
 Activer fichier spécifique blanche liste? False = Non; True = Oui [Défaut].
 - "whitelist_clamav"
-- "whitelist_custom"
 - "whitelist_mussel"
-
-Vérifier XML/XDP contre les signatures XML/XDP au cours de analyse? False = Non; True = Oui [Défaut].
-- "xmlxdp_clamav"
-- "xmlxdp_custom"
-- "xmlxdp_mussel"
 
 Vérifier contre les signatures complexes étendues au cours de analyse? False = Non; True = Oui [Défaut].
 - "coex_clamav"
-- "coex_custom"
 - "coex_mussel"
 
 Vérifier contre les signatures PDF au cours de analyse? False = Non; True = Oui [Défaut].
 - "pdf_clamav"
-- "pdf_custom"
 - "pdf_mussel"
 
 Vérifier contre les signatures shockwave au cours de analyse? False = Non; True = Oui [Défaut].
 - "swf_clamav"
-- "swf_custom"
 - "swf_mussel"
 
-Signature correspondance longueur limiter options. Modifier seulement si vous savez ce que vous faites. SD = Signatures standard. RX = PCRE (Perl Compatibles Régulières Expressions, ou "Regex") signatures. FN = Signatures basées sur les noms de fichiers. Si vous remarquez PHP s'écraser quand phpMussel tentatives d'analyse, tenter à réduire ces "max" valeurs. Si possible et pratique, laissez-moi savoir quand cela se produit et les résultats de ce que vous essayez.
-- "fn_siglen_min"
-- "fn_siglen_max"
-- "rx_siglen_min"
-- "rx_siglen_max"
-- "sd_siglen_min"
-- "sd_siglen_max"
-
 "fail_silently"
-- Devrait phpMussel signaler lorsque les fichiers du signatures sont manquants ou endommagés? Si `fail_silently` est désactivé, fichiers manquants et corrompus seront signalé sur analyse, et si `fail_silently` est activé, fichiers manquants et corrompus seront ignorés, avec l'analyse signalés pour ceux fichiers qu'il n'y a pas de problèmes. Cela devrait généralement être laissé seul sauf si vous rencontrez accidents ou similaires problèmes. False = Désactivé; True = Activé [Défaut].
+- Devrait phpMussel signaler quand les fichiers du signatures sont manquants ou endommagés? Si `fail_silently` est désactivé, fichiers manquants et corrompus seront signalé sur analyse, et si `fail_silently` est activé, fichiers manquants et corrompus seront ignorés, avec l'analyse signalés pour ceux fichiers qu'il n'y a pas de problèmes. Cela devrait généralement être laissé seul sauf si vous rencontrez accidents ou similaires problèmes. False = Désactivé; True = Activé [Défaut].
 
 "fail_extensions_silently"
-- Devrait phpMussel signaler lorsque les extensions sont manquantes? Si `fail_extensions_silently` est désactivé, extensions manquantes seront signalé sur analyse, et si `fail_extensions_silently` est activé, extensions manquantes seront ignorés, avec l'analyse signalés pour ceux fichiers qu'il n'y a pas de problèmes. La désactivation de cette directive peut potentiellement augmenter votre sécurité, mais peut aussi conduire à une augmentation de faux positifs. False = Désactivé; True = Activé [Défaut].
+- Devrait phpMussel signaler quand les extensions sont manquantes? Si `fail_extensions_silently` est désactivé, extensions manquantes seront signalé sur analyse, et si `fail_extensions_silently` est activé, extensions manquantes seront ignorés, avec l'analyse signalés pour ceux fichiers qu'il n'y a pas de problèmes. La désactivation de cette directive peut potentiellement augmenter votre sécurité, mais peut aussi conduire à une augmentation de faux positifs. False = Désactivé; True = Activé [Défaut].
 
 "detect_adware"
 - Devrait phpMussel utiliser signatures pour détecter les adwares? False = Non; True = Oui [Défaut].
@@ -693,7 +600,7 @@ Détection des attaques de caméléon: False = Désactivé; True = Activé.
 "chameleon_to_pdf"
 - Vérifier pour les fichiers PDF dont headers sont incorrects.
 
-"archive_file_extensions" et "archive_file_extensions_wc"
+"archive_file_extensions"
 - Les extensions de fichiers d'archives reconnus (format est CSV; devraient ajouter ou supprimer seulement quand problèmes surviennent; supprimer inutilement peut entraîner des faux positifs à paraître pour archive fichiers, tandis que ajoutant inutilement sera essentiellement liste blanche ce que vous ajoutez à partir de l'attaque spécifique détection; modifier avec prudence; aussi noter que cela n'a aucun effet sur ce archives peut et ne peut pas être analysé au niveau du contenu). La liste, comme en cas de défaut, énumère les formats plus couramment utilisé dans la majorité des systèmes et CMS, mais volontairement pas nécessairement complète.
 
 "general_commands"
@@ -847,30 +754,28 @@ Où NOM est le nom à citer pour la signature et HEX est un hexadécimal codé s
 Toute forme de regex comprise et préparé correctement par PHP devrait aussi être correctement compris et préparé par phpMussel et ses signatures. Mais, je vous suggère de prendre une extrême prudence lors de l'écriture de nouvelles regex basé signatures, parce, si vous n'êtes pas entièrement sûr de ce que vous faites, il peut y avoir très irréguliers et/ou inattendus résultats. Jetez un oeil à la phpMussel source code si vous n'êtes pas entièrement sûr sur le contexte dans lequel regex déclarations sont analysés. Aussi, rappeler toutes les déclarations (à l'exception de nom de fichier, métadonnées d'archives et MD5 déclarations) doit être de codé de hexadécimale (à l'exception de déclaration syntaxe, bien sûr)!
 
 ####*OÙ METTRE DES PERSONNALISÉES SIGNATURES?*
-Seulement mettre des signatures personnalisées dans les fichiers prévus pour signatures personnalisées. Ces fichiers devrait contenir "_custom" dans leur noms. Vous devrait aussi éviter modifier les défaut signature fichiers, sauf si vous savez exactement ce que vous faites, parce, en plus d'être une bonne pratique en général et aidant vous à distinguer entre vos signatures et le défaut signatures inclus avec phpMussel, il est bon de tenir à l'édition seuls les fichiers destinés à l'édition, parce que l'altération du défaut signature fichiers peut cessé leur fonctionner correctement, en raison des "maps" fichiers: Les maps fichiers racontent phpMussel où dans le signature fichiers à chercher pour requis signatures par phpMussel selon lorsque requis, et ces maps peut devenir désynchronisée avec leur associé signature fichiers si le signature fichiers sont altéré. Vous pouvez mettre à peu près ce que vous voulez dans vos personnalisée signatures, aussi longtemps que vous suivez la correcte syntaxe. Mais, être prudent à tester nouvelles signatures pour faux positifs avant si vous avez l'intention à partager ou utiliser dans un réel environnement.
 
 ####*SIGNATURE DÉTAIL*
 Ce qui suit est un détail des types de signatures utilisées par phpMussel:
-- "Signatures ASCII normalisés" (ascii_*). Vérifié contre les contenus de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
-- "Signatures complexes étendues" (coex_*). Mixte types des signatures correspondant.
-- "Signatures ELF" (elf_*). Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au ELF format.
-- "Signatures portable executable" (exe_*). Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au format PE.
-- "Signatures pour les noms de fichiers" (filenames_*). Vérifié contre les noms de fichiers ciblé pour d'analyse.
-- "Signatures générales" (general_*). Vérifié contre les contenus de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
-- "Signatures graphiques" (graphics_*). Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié à un format de fichier graphique connu.
+- "Signatures ASCII normalisés". Vérifié contre les contenus de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
+- "Signatures complexes étendues". Mixte types des signatures correspondant.
+- "Signatures ELF". Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au ELF format.
+- "Signatures portable executable". Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au format PE.
+- "Signatures pour les noms de fichiers". Vérifié contre les noms de fichiers ciblé pour d'analyse.
+- "Signatures générales". Vérifié contre les contenus de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
+- "Signatures graphiques". Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié à un format de fichier graphique connu.
 - "Commandes générales" (hex_general_commands.csv). Vérifié contre les contenus de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
-- "Signatures HTML normalisés" (html_*). Vérifié contre les contenus de chaque fichier HTML qui est pas sur la liste blanche et est ciblée pour d'analyse.
-- "Signatures Mach-O" (macho_*). Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au Mach-O format.
-- "Signatures email" (mail_*). Vérifié contre les contenus de chaque fichier EML qui est pas sur la liste blanche.
-- "Signatures MD5" (md5_*). Vérifié contre le hachage MD5 des contenus et taille de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
-- "Signatures métadonnées d'archives" (metadata_*). Vérifié contre le hash CRC32 et taille du fichier initial contenu à l'intérieur de toute archive qui est pas sur la liste blanche et est ciblée pour d'analyse.
+- "Signatures HTML normalisés". Vérifié contre les contenus de chaque fichier HTML qui est pas sur la liste blanche et est ciblée pour d'analyse.
+- "Signatures Mach-O". Vérifié contre les contenus de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au Mach-O format.
+- "Signatures email". Vérifié contre les contenus de chaque fichier EML qui est pas sur la liste blanche.
+- "Signatures MD5". Vérifié contre le hachage MD5 des contenus et taille de chaque fichier qui est pas sur la liste blanche et est ciblée pour d'analyse.
+
 - "Signatures OLE" (ole_*). Vérifié contre les contenus de chaque objet qui est pas sur la liste blanche et est ciblée pour d'analyse.
 - "Signatures PDF" (pdf_*). Vérifié contre les contenus de chaque fichier PDF qui est pas sur la liste blanche.
 - "Signatures portable executable sectional" (pe_*). Vérifié contre le taille et le hachage MD5 des sections de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au format PE.
 - "Signatures portable executable étendues" (pex_*). Vérifié contre le taille et le hachage MD5 des variables de chaque fichier non listé blanche, ciblée pour l'analyse et identifié au PE format.
 - "Signatures SWF" (swf_*). Vérifié contre les contenus de chaque fichier Shockwave qui est pas sur la liste blanche.
 - "Signatures blanche liste" (whitelist_*). Vérifié contre le hachage MD5 des contenus et la taille de chaque fichier ciblée pour d'analyse. Les identifiés fichiers sera immunitaire d'être identifié par le type de signature mentionné dans leur entrée de blanche liste.
-- "Signatures XML/XDP" (xmlxdp_*). Vérifié contre de chaque XML/XDP trouvés dans tout fichier non listé blanche et ciblée pour l'analyse.
 (Noter que ces signatures peut être désactivé facilement via `config.ini`).
 
 ---
@@ -974,4 +879,4 @@ phpMussel bloque un fichier | __Faux positif__ | Vrai positif (inférence correc
 ---
 
 
-Dernière Mise à Jour: 4 Décembre 2016 (2016.12.04).
+Dernière Mise à Jour: 19 Décembre 2016 (2016.12.19).

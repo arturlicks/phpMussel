@@ -1,5 +1,6 @@
-== .:: phpMussel Switch File ::. ==
-.:: These to be ignored by the General and ASCII signatures of ClamAV
+phpMussel switch file.
+
+== Sets flags for ignoring some certain ClamAV signature files ==
 FD-RX:377f068[23]002de218:A:8;infectable=false
 FD:252150532d41646f62652d:A:11;infectable=false
 FD:28546869732066696c65206d75737420626520636f6e76657274656420776974682042696e48657820342e3029:A:45;infectable=false
@@ -12,7 +13,8 @@ FD:53514c69746520666f726d6174203300:A:16;infectable=false
 FD:53594d430100:A:6;infectable=false
 FD:d9d505f920a163d7:A:8;infectable=false
 FD:fffb90:A:3;infectable=false
-.:: Used by CoEx and some others for assisting with determining potential file content
+
+== Assists with determining potential file content ==
 $fileswitch:unassigned;FD:4d5a:A:2;fileswitch=pefile
 $fileswitch:unassigned;FD-RX:(?cafebabe|cafed00d|cefaedfe|cffaedfe|feedface|feedfacf):A:4;fileswitch=java
 $fileswitch:unassigned;FD:494433:A:3;fileswitch=mp3
@@ -43,5 +45,3 @@ $fileswitch:unassigned;FN:\.(?[Rr][Uu]?[Bb][WwYy]?|[Gg][Ee][Mm])$;fileswitch=rub
 $fileswitch:unassigned;FN:\.(?[Cc][Vv][Dd]|[Ii][Nn][Cc]|[Mm][Dd]|[Tt][Xx][Tt])$;fileswitch=ignore
 $fileswitch:unassigned;FD-RX:(?1f8b|425a68|504b|52617221|7f454c46):A:4;fileswitch=vt_interest
 $fileswitch:unassigned;FD:7801:A:2;FD:6b6f6c79:-512;fileswitch=vt_interest
-
-EOF

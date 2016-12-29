@@ -102,7 +102,6 @@
 
 `$phpMussel['Scan']($what_to_scan, $output_type, $output_flatness);`
 
-
 <div dir="rtl"><ul>
  <li>`$what_to_scan` يمكن أن تكون سلسلة، مصفوفة، أو مجموعة من المصفوفات، وتشير إلى أي ملف/ملفات، دليل و/أو دلائل ليتم إجراء المسح عليها.</li>
  <li>`$output_type` هي قيمة منطقية تدل على نتائج الفحص ليتم إرجاعها كالتالي، الخطأ يرشد الدالة لإرجاع نتائج الفحص على شكل عدد (النتائج المرجعة -3 تشير إلى مشاكل واجهها phpMussel مع التوقيعات أو ملفات خريطة التوقيع و التي من الممكن أن تكون مفقودة أو تالفة، -2 تشير إلى أنه تم الكشف عن بيانات تالفة خلال الفحص وبالتالي فشل في إكمال الفحص، 0 يشير إلى أن هدف الفحص غير موجود و بالتالي لم تكن هناك حاجة لعملية الفحص، 1 يشير إلى أن الهدف تم فحصه بنجاح و لم يتم الكشف عن أي مشاكل، 2 يشير إلى أن الهدف تم فحصه بنجاح و تم الكشف عن مشاكل. القيمة الصحيحة ترشد الدالة لإرجاع نتائج الفحص كنص مقروء للبشر. بالإضافة إلى ذلك، في كلتا الحالتين، يمكن الوصول إلى النتائج عبر المتغيرات العالمية بعد اكتمال الفحص. هذا المتغير هو اختياري و إذا لم تحدد فالافتراضي هو القيمة الخطأ.</li>
@@ -193,14 +192,10 @@
 <div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات جرافيكس\رسومات phpMussel.</div> | /_testfiles/graphics_standard_testfile.gif
 <div dir="rtl" style="display:inline;">ملف اختبار للتأكد بأن "بي اتش بيم اسل" قد قام بتطبيع توقيعات HTML.</div> | /_testfiles/html_standard_testfile.html
 <div dir="rtl" style="display:inline;">ملف اختبار للتأكد بأن "بي اتش بيم اسل" قد قام بتطبيع توقيعات MD5.</div> | /_testfiles/md5_testfile.txt
-<div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات البيانات الوصفية لـ phpMussel و لاختبار دعم ملف من نوع TAR على النظام الخاص بك.</div> | /_testfiles/metadata_testfile.tar
-<div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات البيانات الوصفية لـ phpMussel و لاختبار دعم ملف من نوع GZ على النظام الخاص بك.</div> | /_testfiles/metadata_testfile.txt.gz
-<div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات البيانات الوصفية لـ phpMussel و لاختبار دعم ملف من نوع ZIP على النظام الخاص بك.</div> | /_testfiles/metadata_testfile.zip
 <div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات OLE في phpMussel.</div> | /_testfiles/ole_testfile.ole
 <div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات PDF في phpMussel.</div> | /_testfiles/pdf_standard_testfile.pdf
 <div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات PE الجزئية في phpMussel.</div> | /_testfiles/pe_sectional_testfile.exe
 <div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات swf في phpMussel.</div> | /_testfiles/swf_standard_testfile.swf
-<div dir="rtl" style="display:inline;">ملف اختبار لاختبار توقيعات XML/XDP في phpMussel.</div> | /_testfiles/xdp_standard_testfile.xdp
 <div dir="rtl" style="display:inline;">دليل /vault/ (يحتوي على ملفات متنوعة).</div> | /vault/
 <div dir="rtl" style="display:inline;">دليل ذاكرة التخزين المؤقت (للبيانات المؤقتة).</div> | /vault/cache/
 <div dir="rtl" style="display:inline;">ملف وصول النص التشعبي (في هذه الحالة، لحماية الملفات الحساسة التي تنتمي إلى البرنامج من أن يتم الوصول إليها عن طريق مصادر غير مصرح لها).</div> | /vault/cache/.htaccess
@@ -262,46 +257,34 @@
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات الموسعة المعقدة.</div> | /vault/signatures/coex_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات الموسعة المعقدة.</div> | /vault/signatures/coex_custom.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات الموسعة المعقدة.</div> | /vault/signatures/coex_mussel.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات اسم الملف.</div> | /vault/signatures/filenames_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات اسم الملف.</div> | /vault/signatures/filenames_custom.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات اسم الملف.</div> | /vault/signatures/filenames_mussel.cvd
 <div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ترميز ملف CSV الأوامر العامة المكتشفة المستخدمة اختياريا من قبل phpMussel.</div> | /vault/signatures/hex_general_commands.csv
@@ -309,74 +292,47 @@
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/md5_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/md5_custom.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/md5_mussel.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البيانات الوصفية المؤرشفة.</div> | /vault/signatures/metadata_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البيانات الوصفية المؤرشفة.</div> | /vault/signatures/metadata_custom.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البيانات الوصفية المؤرشفة.</div> | /vault/signatures/metadata_mussel.cvd
+<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/clamav.hdb
+<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/phpmussel.hdb
 <div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/pe_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/pe_custom.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/pe_mussel.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الموسعة.</div> | /vault/signatures/pex_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الموسعة.</div> | /vault/signatures/pex_custom.cvd
+<div dir="rtl" style="display:inline;">ملف توقيعات PE الموسعة.</div> | /vault/signatures/phpmussel.pex
+<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/clamav.mdb
+<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/phpmussel.mdb
 <div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_regex.map
 <div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_custom_standard.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_mussel_regex.cvd
 <div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">يتحكم و يضع متغيرات محددة.</div> | /vault/signatures/switch.dat
 <div dir="rtl" style="display:inline;">ملق توقيعات مسح الروابط.</div> | /vault/signatures/urlscanner.cvd
 <div dir="rtl" style="display:inline;">ملف قائمة السماح المحددة.</div> | /vault/signatures/whitelist_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف قائمة السماح المحددة.</div> | /vault/signatures/whitelist_custom.cvd
 <div dir="rtl" style="display:inline;">ملف قائمة السماح المحددة.</div> | /vault/signatures/whitelist_mussel.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_custom_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_custom_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات XML/XDP.</div> | /vault/signatures/xmlxdp_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ملف وصول النص التشعبي (في هذه الحالة، لحماية الملفات الحساسة التي تنتمي إلى البرنامج من أن يتم الوصول إليها عن طريق مصادر غير مصرح لها).</div> | /vault/.htaccess
 <div dir="rtl" style="display:inline;">معالج CLI.</div> | /vault/cli.php
 <div dir="rtl" style="display:inline;">ملف التكوين. يحتوي على جميع خيارات تهيئة phpMussel، يخبرك ماذا يفعل وكيف يعمل بشكل صحيح (إعادة تسمية لتفعيل)!</div> | /vault/config.ini.RenameMe
@@ -419,8 +375,6 @@
 
 <div dir="rtl">ملفات التوقيع المحددة بعلامة "_clamav" تحتوي على التوقيعات التي مصدرها تماما من قاعدة بيانات كلام ايه في (GNU/GPL).<br /><br /></div>
 
-<div dir="rtl">ملفات التوقيع المحددة بعلامة "_custom"بشكل افتراضي، لا تحتوي على أي توقيعات على الإطلاق؛ توجد مثل هذه الملفات لتعطيك مكان لوضع التوقيعات المخصصة الخاصة بك، إذا كنت تأتي بأي منها بنفسك.<br /><br /></div>
-
 <div dir="rtl">ملفات التوقيع المحددة بعلامة "_mussel" تحتوي على التوقيعات التي على وجه التحديد التي ليست مصدرها كلام ايه في، والتوقيعات التي عموما قد إما أتيت بها بنفسي و/أو بناء على المعلومات التي تم جمعها من مصار مختلفة.<br /><br /></div>
 
 ---
@@ -431,18 +385,6 @@
 
 #### <div dir="rtl">"general" (التصنيف)<br /></div>
 <div dir="rtl">التكوين العام لـ phpMussel.<br /><br /></div>
-
-<div dir="rtl">"script_password"<br /></div>
-<div dir="rtl"><ul>
- <li>للسهولة، phpMussel يقوم بالسماح لوظائف معينة يمكن تشغيلها يدويا من خلال وظيفة الحصول على والاستعلام. مع ذلك، كإجراء أمني احترازي، للقيام بذلك، phpMussel تتوقع كلمة مرور ليتم تضمينها مع الأمر لضمان أنك من أصدرت الامر وليس شخصا آخر، في محاولة لبدء هذه الوظائف يدويا. تحدد script_password أي كلمة سر ترغب في استخدامها. إذا تم تعيين أية كلمة مرور، سيتم تعطيل البدء اليدوي بشكل افتراضي. ننصح باستخدام شيء تذكرونه ككلمة مرور ولكن يصعب على الآخرين تخمينها.</li>
- <li>ليس له أي تأثير في وضع CLI "واجهة سطر الأوامر".</li>
-</ul></div>
-
-<div dir="rtl">"logs_password"<br /></div>
-<div dir="rtl"><ul>
- <li>نفس `script_password`، ولكن لعرض محتويات `scan_log` و `scan_kills`. يمكن وجود كلمات سر منفصلة تكون مفيدة إذا كنت تريد أن تعطي شخص آخر الوصول إلى مجموعة واحدة من وظائف دون غيرها.</li>
- <li>ليس له أي تأثير في وضع CLI "واجهة سطر الأوامر".</li>
-</ul></div>
 
 <div dir="rtl">"cleanup"<br /></div>
 <div dir="rtl"><ul>
@@ -505,16 +447,6 @@
  <li>تحديد اللغة الافتراضية الخاصة بـ phpMussel.</li>
 </ul></div>
 
-<div dir="rtl">"lang_override"<br /></div>
-<div dir="rtl"><ul>
- <li>تحديد ما إذا كان ينبغي phpMussel، عندما يكون ذلك ممكنا، تجاوز مواصفات اللغة مع تفضيلات اللغة التي أعلنها طلبات الداخلية (HTTP_ACCEPT_LANGUAGE). كاذبة = لا [الافتراضي]. صحيح = نعم.</li>
-</ul></div>
-
-<div dir="rtl">"lang_acceptable"<br /></div>
-<div dir="rtl"><ul>
- <li>و"lang_acceptable" التوجيه يقول phpMussel التي يجوز قبول لغة من خلال البرنامج النصي من "لانج" أو من `HTTP_ACCEPT_LANGUAGE`. يجب فقط أن يتم تعديل هذا التوجيه إذا كنت تقوم بإضافة ملفات اللغة مخصصة الخاصة بك أو إزالة الملفات لغة قسرا. التوجيه هو بفواصل سلسلة من الرموز المستخدمة من قبل تلك اللغات التي يقبلها النصي.</li>
-</ul></div>
-
 <div dir="rtl">"quarantine_key"<br /></div>
 <div dir="rtl"><ul>
  <li>phpMussel غير قادرة على الحجر ترفع علم حاول تحميل الملف في عزلة داخل "قبو" phpMussel، إذا كان هذا هو ما تريد أن تفعله. المستخدمين العاديين من phpMussel التي ترغب ببساطة لحماية مواقعها على شبكة الإنترنت أو بيئة استضافة دون وجود أي مصلحة في تحليل عميق أي ترفع علم تحميل الملفات حاول يجب ترك هذه الوظيفة ذوي الاحتياجات الخاصة، ولكن أي المستخدمين المهتمين في مزيد من التحليل للترفع علم حاولت تحميل الملفات للبحث عن البرامج الضارة أو ما شابه مثل هذه الأمور ينبغي أن تمكن هذه الوظيفة. الحجر الصحي لترفع العلم تحميل الملفات حاول يمكن في بعض الأحيان أن تساعد في تصحيح ايجابيات كاذبة، إذا كان هذا هو الشيء الذي كثيرا ما يحدث لك. إلى تعطيل وظيفة العزل، ببساطة مغادرة `quarantine_key` التوجيه فارغة، أو مسح محتويات هذا التوجيه إذا لم يكن خاليا بالفعل. لتمكين وظيفة العزل، وإدخال قيمة في التوجيه. و `quarantine_key` هي ميزة أمنية مهمة من وظائف الحجر الصحي المطلوبة كوسيلة لمنع وظيفة الحجر الصحي من أن تستغل من قبل المهاجمين المحتملين، وكوسيلة لمنع أي احتمال تنفيذ البيانات المخزنة داخل الحجر الصحي. و `quarantine_key` ينبغي أن يعامل بنفس الطريقة التي يعامل بها كلمات السر الخاصة بك: وكلما كان ذلك أفضل، وحراسته مشددة. للحصول على أفضل تأثير، استخدم بالتزامن مع `delete_on_sight`.</li>
@@ -550,154 +482,118 @@
  <li>تعطيل وصول front-end؟ وصول front-end يستطيع جعل phpMussel أكثر قابلية للإدارة، ولكن يمكن أيضا أن تكون مخاطر أمنية محتملة. من المستحسن لإدارة phpMussel عبر back-end متى أمكن، لكن وصول front-end متوفر عندما لم يكن ممكنا. يبقيه المعوقين إلا إذا كنت في حاجة إليها. False = تمكين وصول front-end؛ True = تعطيل وصول front-end [الافتراضي].</li>
 </ul></div>
 
+<div dir="rtl">"max_login_attempts"<br /></div>
+<div dir="rtl"><ul>
+ <li>الحد الأقصى لعدد محاولات تسجيل الدخول (front-end). الافتراضي = 5.</li>
+</ul></div>
+
+<div dir="rtl">"FrontEndLog"<br /></div>
+<div dir="rtl"><ul>
+ <li>ملف لتسجيل محاولات الدخول الأمامية. تحديد اسم الملف، أو اتركه فارغا لتعطيل.</li>
+</ul></div>
+
 #### <div dir="rtl">"signatures" (التصنيف)<br /></div>
 <div dir="rtl">تكوين التوقيعات.<br /><br /></div>
 <div dir="rtl"><ul>
- <li>%%%_clamav = ClamAV توقيعات (الرئيسية و اليومية).</li>
- <li>%%%_custom = توقيعاتك الخاصة ( إذا كنت قد كتبت أي منها ).</li>
- <li>%%%_mussel = phpMussel توقيعات،المدرجة في القائمة الحالية حتى التي ليست من توقيعات ClamAV.</li>
 </ul></div>
 
-<div dir="rtl">تحقق على التوقيعات MD5 أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
+<div dir="rtl">"MD5"<br /></div>
 <div dir="rtl"><ul>
- <li>"md5_clamav"</li>
- <li>"md5_custom"</li>
- <li>"md5_mussel"</li>
+ <li>تحقق على التوقيعات MD5 أثناء الفحص؟ لو ذلك، تحديد أسماء الملفات توقيع لاستخدام، مفصولة بفواصل.</li>
+</ul></div>
+
+<div dir="rtl">"PE_Sectional"<br /></div>
+<div dir="rtl"><ul>
+ <li>تحقق PE (الملف التنفيذي المحمولة) ملفات (EXE، DLL، الخ) على التوقيعات PE الاقسام أثناء الفحص؟ ذلك، تحديد أسماء الملفات توقيع لاستخدام، مفصولة بفواصل.</li>
+</ul></div>
+
+<div dir="rtl">"PE_Extended"<br /></div>
+<div dir="rtl"><ul>
+ <li>تحقق PE الملفات (محمول الملف التنفيذي) (EXE، DLL، الخ) على التوقيعات طويلة PE أثناء الفحص؟ ذلك، تحديد أسماء الملفات توقيع لاستخدام، مفصولة بفواصل.</li>
 </ul></div>
 
 <div dir="rtl">تحقق على التوقيعات العامة أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"general_clamav"</li>
- <li>"general_custom"</li>
  <li>"general_mussel"</li>
 </ul></div>
 
 <div dir="rtl">تحقق على التوقيعات ASCII المطبعة أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"ascii_clamav"</li>
- <li>"ascii_custom"</li>
  <li>"ascii_mussel"</li>
 </ul></div>
 
 <div dir="rtl">تحقق على التوقيعات HTML المطبعة أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"html_clamav"</li>
- <li>"html_custom"</li>
  <li>"html_mussel"</li>
-</ul></div>
-
-<div dir="rtl">تحقق PE (الملف التنفيذي المحمولة) ملفات (EXE، DLL، الخ) على التوقيعات PE الاقسام أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
-<div dir="rtl"><ul>
- <li>"pe_clamav"</li>
- <li>"pe_custom"</li>
- <li>"pe_mussel"</li>
-</ul></div>
-
-<div dir="rtl">تحقق PE الملفات (محمول الملف التنفيذي) (EXE، DLL، الخ) على التوقيعات طويلة PE أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
-<div dir="rtl"><ul>
- <li>"pex_custom"</li>
- <li>"pex_mussel"</li>
 </ul></div>
 
 <div dir="rtl">تحقق PE الملفات (محمول الملف التنفيذي) (EXE، DLL، الخ) على التوقيعات PE أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"exe_clamav"</li>
- <li>"exe_custom"</li>
  <li>"exe_mussel"</li>
 </ul></div>
 
 <div dir="rtl">التحقق من الملفات ELF على التوقيعات ELF أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"elf_clamav"</li>
- <li>"elf_custom"</li>
  <li>"elf_mussel"</li>
 </ul></div>
 
 <div dir="rtl">تحقق Mach-O الملفات (OSX، الخ) على Mach-O التوقيعات أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [الافتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"macho_clamav"</li>
- <li>"macho_custom"</li>
  <li>"macho_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص ملفات الرسومات ضد الرسومات على أساس التوقيعات أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"graphics_clamav"</li>
- <li>"graphics_custom"</li>
  <li>"graphics_mussel"</li>
-</ul></div>
-
-<div dir="rtl">افحص محتويات أرشيف ضد التوقيعات الفوقية ارشيف أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
-<div dir="rtl"><ul>
- <li>"metadata_clamav"</li>
- <li>"metadata_custom"</li>
- <li>"metadata_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص كائنات OLE ضد التوقيعات OLE أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"ole_clamav"</li>
- <li>"ole_custom"</li>
  <li>"ole_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص أسماء الملفات ضد التوقيعات على اسم الملف أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"filenames_clamav"</li>
- <li>"filenames_custom"</li>
  <li>"filenames_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص ضد توقيعات البريد الإلكتروني أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"mail_clamav"</li>
- <li>"mail_custom"</li>
  <li>"mail_mussel"</li>
 </ul></div>
 
 <div dir="rtl">تمكين ملف القائمة البيضاء المحددة؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"whitelist_clamav"</li>
- <li>"whitelist_custom"</li>
  <li>"whitelist_mussel"</li>
-</ul></div>
-
-<div dir="rtl">افحص XML/XDP ضد XML/XDP التوقيعات أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
-<div dir="rtl"><ul>
- <li>"xmlxdp_clamav"</li>
- <li>"xmlxdp_custom"</li>
- <li>"xmlxdp_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص ضد التوقيعات طويلة معقدة أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"coex_clamav"</li>
- <li>"coex_custom"</li>
  <li>"coex_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص ضد التوقيعات PDF أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"pdf_clamav"</li>
- <li>"pdf_custom"</li>
  <li>"pdf_mussel"</li>
 </ul></div>
 
 <div dir="rtl">افحص ضد توقيعات المستخدمين أثناء الفحص؟ كاذبة = لا؛ صحيح = نعم [افتراضي].<br /></div>
 <div dir="rtl"><ul>
  <li>"swf_clamav"</li>
- <li>"swf_custom"</li>
  <li>"swf_mussel"</li>
-</ul></div>
-
-<div dir="rtl">توقيع مطابقة المدة يحدد من الخيارات. فقط قم تغيير هذه إذا كنت تعرف ما تفعلونه. SD = التوقيعات القياسية. RX = PCRE (التعبير العادية بيرل المتوافقة، أو "التعبيرات المنتظمة") التوقيعات. FN = تواقيع اسم الملف. إذا لاحظت PHP تحطمها عندما يحاول phpMussel مسح ومحاولة خفض هذه القيم "الحد الأقصى". إذا كان ذلك ممكنا و مريح، واسمحوا لي أن أعرف عندما يحدث هذا، ونتائج مهما حاولت.<br /></div>
-<div dir="rtl"><ul>
- <li>"fn_siglen_min"</li>
- <li>"fn_siglen_max"</li>
- <li>"rx_siglen_min"</li>
- <li>"rx_siglen_max"</li>
- <li>"sd_siglen_min"</li>
- <li>"sd_siglen_max"</li>
 </ul></div>
 
 <div dir="rtl">"fail_silently"<br /></div>
@@ -800,7 +696,7 @@
 #### <div dir="rtl">"attack_specific" (التصنيف)<br /></div>
 <div dir="rtl">تعليمات للهجوم المحدد.<br /><br /></div>
 
-<div dir="rtl">الكشف عن الهجوم المتقلب: = زائف. صحيح = تشغيل.<br /><br /></div>
+<div dir="rtl">الكشف عن الهجوم المتقلب: True = على. False = إيقاف.<br /><br /></div>
 
 <div dir="rtl">"chameleon_from_php"<br /></div>
 <div dir="rtl"><ul>
@@ -832,7 +728,7 @@
  <li>البحث عن الملفات PDF التي عناوينها غير صحيحة.</li>
 </ul></div>
 
-<div dir="rtl">"archive_file_extensions" و "archive_file_extensions_wc"<br /></div>
+<div dir="rtl">"archive_file_extensions"<br /></div>
 <div dir="rtl"><ul>
  <li>ملحقات ملفات الأرشيف المعترف بها (الشكل هو CSV، وينبغي فقط إضافة أو إزالة عندما تحدث المشاكل؛ إزالة دون داع قد يسبب ايجابيات كاذبة لتظهر لملفات الأرشيف، في حين اضاف داع سوف القائمة البيضاء أساسا ما كنت تقوم بإضافة من كشف المحدد الهجوم؛ تعديل مع الحذر، لاحظ أيضا أن هذا ليس له تأثير على ما المحفوظات يمكن ولا يمكن تحليلها على مستوى المحتوى). القائمة، كما هو في التقصير، يسرد تلك الأشكال الأكثر شيوعا في غالبية النظم واتفاقية الأنواع المهاجرة، ولكن عمدا ليست شاملة بالضرورة.</li>
 </ul></div>
@@ -859,7 +755,7 @@
 
 <div dir="rtl">"scannable_threshold"<br /></div>
 <div dir="rtl"><ul>
- <li>الحد الاختياري أو الحد الأقصى لطول البيانات الخام التي يسمح phpMussel لقراءة ومسح (في حالة وجود أي مشكلات في الأداء ملحوظة أثناء المسح). القيمة هي عدد صحيح يمثل حجم الملف بالكيلو بايت. افتراضي = 32768 (32MB). صفر أو قيمة فارغة تعطيل العتبة. عموما، يجب أن لا تكون هذه القيمة أقل من متوسط حجم الملف من تحميل الملفات التي تريد وتتوقع الحصول على الخادم الخاص بك أو الموقع، لا ينبغي أن يكون أكثر من التوجيه filesize_limit، ويجب أن لا يكون خامس أكثر من ما يقرب من واحد من مجموع تخصيص الذاكرة المسموح منح لPHP عن طريق ملف php.iniconfiguration. هذا التوجيه موجود في محاولة لمنع phpMussel من استخدام ما يصل الكثير من الذاكرة (التي تريد منعها من أن تكون قادرة على مسح بنجاح الملفات فوق حجم الملف معين).</li>
+ <li>الحد الاختياري أو الحد الأقصى لطول البيانات الخام التي يسمح phpMussel لقراءة ومسح (في حالة وجود أي مشكلات في الأداء ملحوظة أثناء المسح). القيمة هي عدد صحيح يمثل حجم الملف بالكيلو بايت. افتراضي = 32768 (32MB). صفر أو قيمة فارغة تعطيل العتبة. عموما، يجب أن لا تكون هذه القيمة أقل من متوسط حجم الملف من تحميل الملفات التي تريد وتتوقع الحصول على الخادم الخاص بك أو الموقع، لا ينبغي أن يكون أكثر من التوجيه filesize_limit، ويجب أن لا يكون خامس أكثر من ما يقرب من واحد من مجموع تخصيص الذاكرة المسموح منح لPHP عن طريق ملف التكوين "php.ini". هذا التوجيه موجود في محاولة لمنع phpMussel من استخدام ما يصل الكثير من الذاكرة (التي تريد منعها من أن تكون قادرة على مسح بنجاح الملفات فوق حجم الملف معين).</li>
 </ul></div>
 
 #### <div dir="rtl">"compatibility" (التصنيف)<br /></div>
@@ -888,10 +784,10 @@
 
 <div dir="rtl">"vt_public_api_key"<br /></div>
 <div dir="rtl"><ul>
- <li>اختياريا، phpMussel غير قادرة على مسح الملفات باستخدام الفيروسات مجموع API كوسيلة لتوفير مستوى تتعزز بشكل كبير من الحماية ضد الفيروسات، و ملفات التجسس، والبرمجيات الخبيثة وغيرها من التهديدات. افتراضيا، ملفات المسح الضوئي باستخدام الفيروسات مجموع API يتم تعطيل. لتمكينه، لا بد من وضع مفتاح API من الفيروسات إجمالي. ويرجع ذلك إلى فائدة كبيرة أن هذا يمكن أن توفر لك، هذا شيء أنا أوصي تمكين. يرجى أن يكون على علم، مع ذلك، أن استخدام الفيروسات مجموع API، التي يجب أن تتوافق مع شروط الخدمة، ويجب أن تلتزم جميع المبادئ التوجيهية حسب وصفه الفيروسات مجموع الوثائق! لا يجوز لك استخدام هذه الميزة التكامل ما لم :</li>
+ <li>اختياريا، phpMussel غير قادرة على مسح الملفات باستخدام الفيروسات مجموع API كوسيلة لتوفير مستوى تتعزز بشكل كبير من الحماية ضد الفيروسات، و ملفات التجسس، والبرمجيات الخبيثة وغيرها من التهديدات. افتراضيا، ملفات المسح الضوئي باستخدام الفيروسات مجموع API يتم تعطيل. لتمكينه، لا بد من وضع مفتاح API من الفيروسات إجمالي. ويرجع ذلك إلى فائدة كبيرة أن هذا يمكن أن توفر لك، هذا شيء أنا أوصي تمكين. يرجى أن يكون على علم، مع ذلك، أن استخدام الفيروسات مجموع API، التي يجب أن تتوافق مع شروط الخدمة، ويجب أن تلتزم جميع المبادئ التوجيهية حسب وصفه الفيروسات مجموع الوثائق! لا يجوز لك استخدام هذه الميزة التكامل ما لم:</li>
  <ul>
   <li>لقد قرأت ووافقت على شروط الخدمة من فيروس توتال و API لها. شروط الخدمة من فيروس توتال و API ليمكن العثور عليها <a href="https://www.virustotal.com/en/about/terms-of-service/">هنا</a>.</li>
-  <li> لقد قرأت وفهمت، كحد أدنى، ديباجة الفيروسات وثائق API ملفه مجموع (كل شيء بعد "فايروس توتال V2.0 API العام" ولكن قبل "المحتويات"). يمكن العثور على وثائق API العام الفيروسات إجمالي <a href="https://www.virustotal.com/en/documentation/public-api/">هنا</a>.</li>
+  <li>لقد قرأت وفهمت، كحد أدنى، ديباجة الفيروسات وثائق API ملفه مجموع (كل شيء بعد "فايروس توتال V2.0 API العام" ولكن قبل "المحتويات"). يمكن العثور على وثائق API العام الفيروسات إجمالي <a href="https://www.virustotal.com/en/documentation/public-api/">هنا</a>.</li>
  </ul>
 </ul></div>
 
@@ -931,7 +827,7 @@
 
 <div dir="rtl">"lookup_hphosts"<br /></div>
 <div dir="rtl"><ul>
- <li>تمكين عمليات بحث API إلى API hpHosts عند وضع <a href="http://hosts-file.net/">hpHosts</a> على hpHosts لا يحتاج الى مفتاح API لأداء عمليات البحث API.</li>
+ <li>تمكين عمليات بحث API إلى API <a href="http://hosts-file.net/">hpHosts</a>. hpHosts لا يحتاج الى مفتاح API لأداء عمليات البحث API.</li>
 </ul></div>
 
 <div dir="rtl">"google_api_key"<br /></div>
@@ -1028,31 +924,29 @@
 <div dir="rtl">أي شكل من أشكال التعابير المنطقية يتم فهمها ومعالجتها بشكل صحيح عن طريق PHP و يجب أيضا أن يكون مفهوما بشكل صحيح و تتم معالجتها بواسطة phpMussel و توقيعاتها. مع ذلك، أود أن أقترح اتخاذ الحذر الشديد عند كتابة توقيعات التعابير المنطقية الجديدة، لأنه إذا لم تكن متأكدا تماما مما تفعله، يمكن أن يكون هناك عدم انتظام كبير و/أو نتائج غير متوقعة. القي نظرة على phpMussel مصدر الترميز إذا لم تكن متأكدا تماما من السياق الذي يتم تحليل البيانات باستخدام التعابير المنطقية. أيضا، تذكر أن كل أنماط (باستثناء اسم الملف، أرشيف البيانات الوصفية وأنماط MD5) يجب أن تتبع ترميز سادس عشري(عند تركيب نمط ما، بالتأكيد)!<br /><br /></div>
 
 ####*<div dir="rtl">أين يضع التوقيعات المخصصة؟</div>*
-<div dir="rtl">فقط ضع التوقيعات المخصصة في تلك الملفات المعدة للتوقيعات مخصصة. ينبغي أن تتضمن تلك الملفات "_custom" في أسماء الملفات الخاصة بهم. يجب عليك أيضا تجنب تحرير ملفات التوقيع الافتراضي، إلا إذا كنتم تعرفون بالضبط ما تفعلونه، لأنه بصرف النظر عن كونها ممارسة جيدة بشكل عام، و بعيدا عن مساعدتك على التمييز بين التوقيعات الخاصة بك والتوقيعات الافتراضية المتضمنة في phpMussel، انها جيدة للتحرير فقط على الملفات المعدة للتحرير لأن العبث في ملفات التوقيع الافتراضي يمكن أن تسبب لهم التوقف عن العمل بشكل صحيح، ويرجع ذلك إلى ملفات "خرائط": ملفات الخرائط في phpMussel حيث في ملفات التوقيع للبحث عن التوقيعات المطلوبة بواسطة phpMussel عند الحاجة، ويمكن لهذه الخرائط أن تصبح غير متزامنة مع توقيع الملفات المرتبطة بها إذا تم العبث بملفات التوقيع معه. يمكنك وضع حد كبير ما تريد في التوقيعات المخصصة، طالما كنت تتبع بناء الجملة الصحيح. مع ذلك، وتوخي الحذر لاختبار توقيعات جديدة ل-فحص خاطئ مسبقا إذا كنت تنوي مشاركتها أو استخدامها في بيئة حية.<br /><br /></div>
 
 ####*<div dir="rtl">التوزيع التفصيلي للتوقيع</div>*
 <div dir="rtl">فيما يلي تفصيل لأنواع التوقيعات التي يستخدمها phpMussel:<br /><br /></div>
 <div dir="rtl"><ul>
- <li>"التوقيعات التي تمت تسويتها بواسطة ASCII" (ascii_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"التوقيعات التي تمت تسويتها بواسطة ASCII". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
  <li>"التوقيعات المركبة الموسعة" (coex_*). نوع مطابقة التواقيع المختلطة.</li>
- <li>"توقيعات ELF" (elf_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق ELF.</li>
+ <li>"توقيعات ELF". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق ELF.</li>
  <li>"التواقيع المحمولة القابلة للتنفيذ"  (exe_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
  <li>"توقيعات اسم الملف"  (filenames_*). تم الفحص ضد أسماء الملفات المستهدفة للفحص.</li>
- <li>"التوقيعات العامة" (general_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"توقيعات الرسومات" (graphics_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص و معروف كذلك كملف رسومات.</li>
+ <li>"التوقيعات العامة". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"توقيعات الرسومات". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص و معروف كذلك كملف رسومات.</li>
  <li>"الاوامر العامة" (hex_general_commands.csv). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"التوقيعات التي تمت تسويتها بواسطة HTML" (html_*). تم الفحص ضد محتويات كل ملف HTML غير الموجودة في قائمة السماح المستهدفة للفحص.</li>
- <li>"توقيعات Mach-O" (macho_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق Mach-O.</li>
- <li>"توقيعات البريد" (mail_*). تم الفحص ضد محتويات كل كائن EML غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"توقيعات MD5" (md5_*). تم الفحص ضد تجزئة MD5 من محتويات وحجم الملف من كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"توقيعات أرشيف البيانات الوصفية" (metadata_*). فحص ضد تجزئة CRC32 الملف وحجم الملف الأولي الموجودة داخل أي أرشيف غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"التوقيعات التي تمت تسويتها بواسطة HTML". تم الفحص ضد محتويات كل ملف HTML غير الموجودة في قائمة السماح المستهدفة للفحص.</li>
+ <li>"توقيعات Mach-O". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق Mach-O.</li>
+ <li>"توقيعات البريد". تم الفحص ضد محتويات كل كائن EML غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"توقيعات MD5". تم الفحص ضد تجزئة MD5 من محتويات وحجم الملف من كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
+
  <li>"توقيعات OLE" (ole_*). تم الفحص ضد محتويات كل كائن OLE غير موجود في لائحة السماح المستهدفة للفحص.</li>
  <li>"توقيعات PDF" (pdf_*). تم الفحص ضد محتويات كل كائن PDF غير موجود في لائحة السماح المستهدفة للفحص.</li>
  <li>"التوقيعات الفرعية المحمولة القابلة للتنفيذ" (pe_*). تم الفحص ضد تجزئة MD5 وحجم كل قسم PE من كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
  <li>"التوقيعات الموسعة المحمولة القابلة للتنفيذ" (pex_*). تم الفحص ضد تجزئة MD5 وحجم المتغيرات داخل كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
  <li>"توقيعات SWF" (swf_*). تم الفحص ضد محتويات كل ملف بالمستخدمين غير موجود في لائحة السماح المستهدفة للفحص.</li>
  <li>"توقيعات قائمة السماح" (whitelist_*). تم الفحص ضد تجزئة MD5 من محتويات وحجم الملف من كل ملف المستهدفة للفحص. الملفات المتطابقة سوف تكون في مأمن من أن يقابله نوع من التوقيع المذكورة في دخولهم قائمة السماح.</li>
- <li>"توقيعات XML/XDP" (xmlxdp_*). تم الفحص ضد أي قطع XML/XDP وجدت داخل أي ملفات غير لائحة السماح المستهدفة للفحص.</li>
 </ul></div>
 <div dir="rtl">(لاحظ أن أي من هذه التوقيعات قد يتم تعطيل بسهولة عبر `config.ini`).<br /><br /></div>
 
@@ -1158,4 +1052,4 @@ Zoner | <div dir="rtl" style="display:inline;">لا مشاكل معروفة</div
 ---
 
 
-<div dir="rtl">آخر تحديث: 4 ديسمبر 2016 (2016.12.04).</div>
+<div dir="rtl">آخر تحديث: 19 ديسمبر 2016 (2016.12.19).</div>

@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2016.12.08).
+ * This file: Front-end handler (last modified: 2016.12.15).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -48,7 +48,7 @@ $phpMussel['FE'] = array(
 
 /** Traversal detection. */
 $phpMussel['Traverse'] = function ($Path) {
-    return !preg_match("\x01" . '(?:[\./]{2}|[\x01-\x1f\[-`?*$])' . "\x01i", str_replace("\\", '/', $Path));
+    return !preg_match("\x01" . '(?:[\./]{2}|[\x01-\x1f\[-^`?*$])' . "\x01i", str_replace("\\", '/', $Path));
 };
 
 /** A fix for correctly displaying LTR/RTL text. */
@@ -571,6 +571,115 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'config' && $phpMussel['FE
 
     $phpMussel['FE']['bNav'] = $phpMussel['lang']['bNav_home_logout'];
 
+    $phpMussel['FE']['ConfigRow'] = $phpMussel['ReadFile']($phpMussel['Vault'] . 'fe_assets/_config_row.html');
+
+    /** Generate entries for display and regenerate configuration if any changes were submitted. */
+    reset($phpMussel['Config']['Config Defaults']);
+    $phpMussel['CountCats'] = count($phpMussel['Config']['Config Defaults']);
+    $phpMussel['FE']['ConfigFields'] = $phpMussel['RegenerateConfig'] = '';
+    $phpMussel['ConfigModified'] = (!empty($phpMussel['QueryVars']['updated']) && $phpMussel['QueryVars']['updated'] === 'true');
+    for ($phpMussel['IterateCats'] = 0; $phpMussel['IterateCats'] < $phpMussel['CountCats']; $phpMussel['IterateCats']++) {
+        $phpMussel['CatKey'] = key($phpMussel['Config']['Config Defaults']);
+        next($phpMussel['Config']['Config Defaults']);
+        if (!is_array($phpMussel['Config']['Config Defaults'][$phpMussel['CatKey']])) {
+            continue;
+        }
+        $phpMussel['RegenerateConfig'] .= '[' . $phpMussel['CatKey'] . "]\r\n\r\n";
+        reset($phpMussel['Config']['Config Defaults'][$phpMussel['CatKey']]);
+        $phpMussel['CountDirs'] = count($phpMussel['Config']['Config Defaults'][$phpMussel['CatKey']]);
+        for ($phpMussel['IterateDirs'] = 0; $phpMussel['IterateDirs'] < $phpMussel['CountDirs']; $phpMussel['IterateDirs']++) {
+            unset($phpMussel['ThisDir']);
+            $phpMussel['ThisDir'] = array(
+                'DirKey' => key($phpMussel['Config']['Config Defaults'][$phpMussel['CatKey']]),
+                'FieldOut' => ''
+            );
+            next($phpMussel['Config']['Config Defaults'][$phpMussel['CatKey']]);
+            $phpMussel['DirDefault'] = $phpMussel['Config']['Config Defaults'][$phpMussel['CatKey']][$phpMussel['ThisDir']['DirKey']];
+            if (empty($phpMussel['DirDefault']['type']) || !isset($phpMussel['Config'][$phpMussel['CatKey']][$phpMussel['ThisDir']['DirKey']])) {
+                continue;
+            }
+            $phpMussel['ThisDir']['Actual'] = &$phpMussel['Config'][$phpMussel['CatKey']][$phpMussel['ThisDir']['DirKey']];
+            $phpMussel['ThisDir']['DirLangKey'] = 'config_' . $phpMussel['CatKey'] . '_' . $phpMussel['ThisDir']['DirKey'];
+            $phpMussel['ThisDir']['DirLang'] =
+                (!empty($phpMussel['lang'][$phpMussel['ThisDir']['DirLangKey']])) ? $phpMussel['lang'][$phpMussel['ThisDir']['DirLangKey']] : $phpMussel['lang']['response_error'];
+            $phpMussel['RegenerateConfig'] .= '; ' . wordwrap($phpMussel['ThisDir']['DirLang'], 77, "\r\n; ") . "\r\n";
+            if (isset($_POST[$phpMussel['ThisDir']['DirLangKey']])) {
+                if ($phpMussel['DirDefault']['type'] === 'string' || $phpMussel['DirDefault']['type'] === 'int' || $phpMussel['DirDefault']['type'] === 'bool') {
+                    $phpMussel['AutoType']($_POST[$phpMussel['ThisDir']['DirLangKey']], $phpMussel['DirDefault']['type']);
+                } elseif ($phpMussel['DirDefault']['type'] === 'bool|int') {
+                    $phpMussel['AutoType']($_POST[$phpMussel['ThisDir']['DirLangKey']]);
+                }
+                if (
+                    !preg_match("/[\"'\x01-\x1f]/i", $_POST[$phpMussel['ThisDir']['DirLangKey']]) && (
+                        !isset($phpMussel['DirDefault']['choices']) || isset($phpMussel['DirDefault']['choices'][$_POST[$phpMussel['ThisDir']['DirLangKey']]])
+                    )
+                ) {
+                    $phpMussel['ThisDir']['Actual'] = $_POST[$phpMussel['ThisDir']['DirLangKey']];
+                    $phpMussel['ConfigModified'] = true;
+                }
+            }
+            if ($phpMussel['ThisDir']['Actual'] === true || ($phpMussel['DirDefault']['type'] === 'bool|int' && $phpMussel['ThisDir']['Actual'])) {
+                $phpMussel['RegenerateConfig'] .= $phpMussel['ThisDir']['DirKey'] . "=true\r\n\r\n";
+            } elseif ($phpMussel['ThisDir']['Actual'] === false || ($phpMussel['DirDefault']['type'] === 'bool|int' && !$phpMussel['ThisDir']['Actual'])) {
+                $phpMussel['RegenerateConfig'] .= $phpMussel['ThisDir']['DirKey'] . "=false\r\n\r\n";
+            } elseif ($phpMussel['DirDefault']['type'] === 'int') {
+                $phpMussel['RegenerateConfig'] .= $phpMussel['ThisDir']['DirKey'] . '=' . $phpMussel['ThisDir']['Actual'] . "\r\n\r\n";
+            } else {
+                $phpMussel['RegenerateConfig'] .= $phpMussel['ThisDir']['DirKey'] . '=\'' . $phpMussel['ThisDir']['Actual'] . "'\r\n\r\n";
+            }
+            if (isset($phpMussel['DirDefault']['choices'])) {
+                $phpMussel['ThisDir']['FieldOut'] = '<select name="'. $phpMussel['ThisDir']['DirLangKey'] . '">';
+                reset($phpMussel['DirDefault']['choices']);
+                $phpMussel['CountChoices'] = count($phpMussel['DirDefault']['choices']);
+                for ($phpMussel['IterateChoices'] = 0; $phpMussel['IterateChoices'] < $phpMussel['CountChoices']; $phpMussel['IterateChoices']++) {
+                    $phpMussel['ChoiceKey'] = key($phpMussel['DirDefault']['choices']);
+                    next($phpMussel['DirDefault']['choices']);
+                    $phpMussel['ThisDir']['FieldOut'] .= ($phpMussel['ChoiceKey'] === $phpMussel['ThisDir']['Actual']) ?
+                        '<option value="' . $phpMussel['ChoiceKey'] . '" selected>' .
+                        $phpMussel['DirDefault']['choices'][$phpMussel['ChoiceKey']] . '</option>'
+                    :
+                        '<option value="' . $phpMussel['ChoiceKey'] . '">' .
+                        $phpMussel['DirDefault']['choices'][$phpMussel['ChoiceKey']] . '</option>';
+                }
+                $phpMussel['ThisDir']['FieldOut'] .= '</select>';
+            } elseif ($phpMussel['DirDefault']['type'] === 'bool') {
+                if ($phpMussel['ThisDir']['Actual']) {
+                    $phpMussel['ThisDir']['FieldOut'] =
+                        '<select name="'. $phpMussel['ThisDir']['DirLangKey'] . '">' .
+                        '<option value="true" selected>True</option><option value="false">False</option>' .
+                        '</select>';
+                } else {
+                    $phpMussel['ThisDir']['FieldOut'] =
+                        '<select name="'. $phpMussel['ThisDir']['DirLangKey'] . '">' .
+                        '<option value="true">True</option><option value="false" selected>False</option>' .
+                        '</select>';
+                }
+            } elseif ($phpMussel['DirDefault']['type'] === 'int') {
+                $phpMussel['ThisDir']['FieldOut'] = '<input type="number" name="'. $phpMussel['ThisDir']['DirLangKey'] . '" value="' . $phpMussel['ThisDir']['Actual'] . '" />';
+            } elseif ($phpMussel['DirDefault']['type'] === 'string') {
+                $phpMussel['ThisDir']['FieldOut'] = '<textarea class="half" name="'. $phpMussel['ThisDir']['DirLangKey'] . '">' . $phpMussel['ThisDir']['Actual'] . '</textarea>';
+            } else {
+                $phpMussel['ThisDir']['FieldOut'] = '<input type="text" name="'. $phpMussel['ThisDir']['DirLangKey'] . '" value="' . $phpMussel['ThisDir']['Actual'] . '" />';
+            }
+            $phpMussel['FE']['ConfigFields'] .= $phpMussel['ParseVars'](
+                $phpMussel['lang'] + $phpMussel['ThisDir'], $phpMussel['FE']['ConfigRow']
+            );
+        }
+        $phpMussel['RegenerateConfig'] .= "\r\n";
+    }
+
+    /** Update the configuration file if any changes were made. */
+    if ($phpMussel['ConfigModified']) {
+        $phpMussel['FE']['state_msg'] = $phpMussel['lang']['response_configuration_updated'];
+        $phpMussel['Handle'] = fopen($phpMussel['Vault'] . 'config.ini', 'w');
+        fwrite($phpMussel['Handle'], $phpMussel['RegenerateConfig']);
+        fclose($phpMussel['Handle']);
+        if (empty($phpMussel['QueryVars']['updated'])) {
+            header('Location: ?phpmussel-page=config&updated=true');
+            die;
+        }
+    }
+
     /** Parse output. */
     $phpMussel['FE']['FE_Content'] = $phpMussel['ParseVars'](
         $phpMussel['lang'] + $phpMussel['FE'],
@@ -938,6 +1047,9 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
                 $phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]['Name'],
                 $phpMussel['Config']['general']['lang']
             );
+        }
+        if (empty($phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]['Extended Description'])) {
+            $phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]['Extended Description'] = '';
         }
         if (is_array($phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]['Extended Description'])) {
             $phpMussel['IsolateL10N'](
