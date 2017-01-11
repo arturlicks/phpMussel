@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Functions file (last modified: 2016.12.26).
+ * This file: Functions file (last modified: 2017.01.11).
  *
  * @todo Add support for 7z, RAR (github.com/phpMussel/universe/issues/5).
  * @todo Add recursion support for ZIP scanning.
@@ -231,11 +231,6 @@ $phpMussel['Function'] = function ($n, $str = false) {
         return (isset($fList[$n])) ? $fList[$n] : '';
     }
     return @$fList[$n]($str);
-};
-
-/** Does some quick prepwork to regex patterns prior to execution. */
-$phpMussel['rxPrep'] = function ($RX) {
-    return str_ireplace('(?', '(?:', $RX);
 };
 
 /**
@@ -1829,13 +1824,13 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                     !substr_count("\x01" . substr($str_hex, 0, $xsig[$sxi][3] * 2), "\x01" . $xsig[$sxi][1])
                                 ) || (
                                     $xsig[$sxi][0] == 'FD-RX' &&
-                                    !preg_match('/\A' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', substr($str_hex, 0, $xsig[$sxi][3] * 2))
+                                    !preg_match('/\A(?:' . $xsig[$sxi][1] . ')/i', substr($str_hex, 0, $xsig[$sxi][3] * 2))
                                 ) || (
                                     $xsig[$sxi][0] == 'FD-NORM' &&
                                     !substr_count("\x01" . substr($str_hex_norm, 0, $xsig[$sxi][3] * 2), "\x01" . $xsig[$sxi][1])
                                 ) || (
                                     $xsig[$sxi][0] == 'FD-NORM-RX' &&
-                                    !preg_match('/\A' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', substr($str_hex_norm, 0, $xsig[$sxi][3] * 2))
+                                    !preg_match('/\A(?:' . $xsig[$sxi][1] . ')/i', substr($str_hex_norm, 0, $xsig[$sxi][3] * 2))
                                 )
                             ) {
                                 continue 2;
@@ -1846,13 +1841,13 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                 !substr_count(substr($str_hex, $xsig[$sxi][2] * 2, $xsig[$sxi][3] * 2), $xsig[$sxi][1])
                             ) || (
                                 $xsig[$sxi][0] == 'FD-RX' &&
-                                !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', substr($str_hex, $xsig[$sxi][2] * 2, $xsig[$sxi][3]*2))
+                                !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', substr($str_hex, $xsig[$sxi][2] * 2, $xsig[$sxi][3]*2))
                             ) || (
                                 $xsig[$sxi][0] == 'FD-NORM' &&
                                 !substr_count(substr($str_hex_norm, $xsig[$sxi][2] * 2, $xsig[$sxi][3] * 2), $xsig[$sxi][1])
                             ) || (
                                 $xsig[$sxi][0] == 'FD-NORM-RX' &&
-                                !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', substr($str_hex_norm, $xsig[$sxi][2] * 2, $xsig[$sxi][3]*2))
+                                !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', substr($str_hex_norm, $xsig[$sxi][2] * 2, $xsig[$sxi][3]*2))
                             )
                         ) {
                             continue 2;
@@ -1862,19 +1857,19 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                             if (
                                 !substr_count(',FN,FD,FD-RX,FD-NORM,FD-NORM-RX,', ',' . $xsig[$sxi][0] . ',') || (
                                     $xsig[$sxi][0] == 'FN' &&
-                                    !preg_match('/\A' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', $ofn)
+                                    !preg_match('/\A(?:' . $xsig[$sxi][1] . ')/i', $ofn)
                                 ) || (
                                     $xsig[$sxi][0] == 'FD' &&
                                     !substr_count("\x01" . $str_hex, "\x01" . $xsig[$sxi][1])
                                 ) || (
                                     $xsig[$sxi][0] == 'FD-RX' &&
-                                    !preg_match('/\A' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', $str_hex)
+                                    !preg_match('/\A(?:' . $xsig[$sxi][1] . ')/i', $str_hex)
                                 ) || (
                                     $xsig[$sxi][0] == 'FD-NORM' &&
                                     !substr_count("\x01" . $str_hex_norm, "\x01" . $xsig[$sxi][1])
                                 ) || (
                                     $xsig[$sxi][0] == 'FD-NORM-RX' &&
-                                    !preg_match('/\A' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', $str_hex_norm)
+                                    !preg_match('/\A(?:' . $xsig[$sxi][1] . ')/i', $str_hex_norm)
                                 )
                             ) {
                                 continue 2;
@@ -1885,13 +1880,13 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                 !substr_count(substr($str_hex, $xsig[$sxi][2] * 2), $xsig[$sxi][1])
                             ) || (
                                 $xsig[$sxi][0] == 'FD-RX' &&
-                                !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', substr($str_hex, $xsig[$sxi][2] * 2))
+                                !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', substr($str_hex, $xsig[$sxi][2] * 2))
                             ) || (
                                 $xsig[$sxi][0] == 'FD-NORM' &&
                                 !substr_count(substr($str_hex_norm, $xsig[$sxi][2] * 2), $xsig[$sxi][1])
                             ) || (
                                 $xsig[$sxi][0] == 'FD-NORM-RX' &&
-                                !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', substr($str_hex_norm, $xsig[$sxi][2] * 2))
+                                !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', substr($str_hex_norm, $xsig[$sxi][2] * 2))
                             )
                         ) {
                             continue 2;
@@ -1900,7 +1895,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                 } elseif (
                     (
                         $xsig[$sxi][0] == 'FN' &&
-                        !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', $ofn)
+                        !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', $ofn)
                     ) || (
                         $xsig[$sxi][0] == 'FS-MIN' &&
                         $str_len < $xsig[$sxi][1]
@@ -1912,13 +1907,13 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                         !substr_count($str_hex, $xsig[$sxi][1])
                     ) || (
                         $xsig[$sxi][0] == 'FD-RX' &&
-                        !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', $str_hex)
+                        !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', $str_hex)
                     ) || (
                         $xsig[$sxi][0] == 'FD-NORM' &&
                         !substr_count($str_hex_norm, $xsig[$sxi][1])
                     ) || (
                         $xsig[$sxi][0] == 'FD-NORM-RX' &&
-                        !preg_match('/' . $phpMussel['rxPrep']($xsig[$sxi][1]) . '/i', $str_hex_norm)
+                        !preg_match('/(?:' . $xsig[$sxi][1] . ')/i', $str_hex_norm)
                     )
                 ) {
                     continue 2;
@@ -2152,7 +2147,149 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
         $phpMussel['MusselPlugins']['tempdata'] = '';
     }
 
-// AAA ZZZ PUT FILENAME SIGNATURES
+    /** Process filename signatures. */
+    $SigFiles = explode(',', $phpMussel['Config']['signatures']['Filename']);
+    while (($SigFile = each($SigFiles)) !== false) {
+        if (!$SigFile = $SigFile[1]) {
+            continue;
+        }
+        if (!isset($phpMussel['memCache'][$SigFile])) {
+            $phpMussel['memCache'][$SigFile] = $phpMussel['ReadFileAsArray']($phpMussel['sigPath'] . $SigFile, FILE_IGNORE_NEW_LINES);
+        }
+        if (!$phpMussel['memCache'][$SigFile]) {
+            $phpMussel['memCache']['scan_errors']++;
+            if (!$phpMussel['Config']['signatures']['fail_silently']) {
+                if (!$flagged) {
+                    $phpMussel['killdata'] .= $md5 . ':' . $str_len . ":\n";
+                }
+                $phpMussel['whyflagged'] .=
+                    $phpMussel['lang']['scan_signature_file_missing'] .
+                    ' (' . $SigFile . ')' .
+                    $phpMussel['lang']['_exclamation'];
+                return array(-3,
+                    $lnap . $phpMussel['lang']['scan_signature_file_missing'] .
+                    ' (' . $SigFile . ')' .
+                    $phpMussel['lang']['_exclamation_final'] . "\n"
+                );
+            }
+            $c = 0;
+        } else {
+            $c = count($phpMussel['memCache'][$SigFile]);
+        }
+        for ($i = 0; $i < $c; $i++) {
+            $xsig = $phpMussel['memCache'][$SigFile][$i];
+            if (substr($xsig, 0, 1) == '>') {
+                $xsig = explode('>', $xsig, 4);
+                $xsig[3] = (int)$xsig[3];
+                if ($xsig[1] == 'FN') {
+                    if (!preg_match('/(?:' . $xsig[2] . ')/i', $ofn)) {
+                        if ($xsig[3] <= $i) {
+                            break;
+                        }
+                        $i = $xsig[3] - 1;
+                    }
+                } elseif ($xsig[1] == 'FS-MIN') {
+                    if ($str_len < $xsig[2]) {
+                        if ($xsig[3] <= $i) {
+                            break;
+                        }
+                        $i = $xsig[3] - 1;
+                    }
+                } elseif ($xsig[1] == 'FS-MAX') {
+                    if ($str_len > $xsig[2]) {
+                        if ($xsig[3] <= $i) {
+                            break;
+                        }
+                        $i = $xsig[3] - 1;
+                    }
+                } elseif ($xsig[1] == 'FD') {
+                    if (!substr_count($str_hex, $xsig[2])) {
+                        if ($xsig[3] <= $i) {
+                            break;
+                        }
+                        $i = $xsig[3] - 1;
+                    }
+                } elseif ($xsig[1] == 'FD-RX') {
+                    if (!preg_match('/(?:' . $xsig[2] . ')/i', $str_hex)) {
+                        if ($xsig[3] <= $i) {
+                            break;
+                        }
+                        $i = $xsig[3] - 1;
+                    }
+                } elseif (substr($xsig[1], 0, 1) == '$') {
+                    $vf = substr($xsig[1], 1);
+                    if (isset($$vf) && !is_array($$vf)) {
+                        if ($$vf != $xsig[2]) {
+                            if ($xsig[3] <= $i) {
+                                break;
+                            }
+                            $i = $xsig[3] - 1;
+                        }
+                        continue;
+                    }
+                    if ($xsig[3] <= $i) {
+                        break;
+                    }
+                    $i = $xsig[3] - 1;
+                } elseif (substr($xsig[1], 0, 2) == '!$') {
+                    $vf = substr($xsig[1], 2);
+                    if (isset($$vf) && !is_array($$vf)) {
+                        if ($$vf == $xsig[2]) {
+                            if ($xsig[3] <= $i) {
+                                break;
+                            }
+                            $i = $xsig[3] - 1;
+                        }
+                        continue;
+                    }
+                    if ($xsig[3] <= $i) {
+                        break;
+                    }
+                    $i = $xsig[3] - 1;
+                }
+                continue;
+            }
+            if (strpos($xsig, ':') !== false) {
+                $VN = explode(':', $xsig);
+                $xsig = preg_split('/[\x00-\x1f]+/', $VN[1], -1, PREG_SPLIT_NO_EMPTY);
+                $xsig = ($xsig === false) ? '' : implode('', $xsig);
+                $VN = $phpMussel['vn_shorthand']($VN[0]);
+                if (
+                    !substr_count($phpMussel['memCache']['greylist'], ',' . $VN . ',') &&
+                    !$phpMussel['memCache']['ignoreme']
+                ) {
+                    if (preg_match('/(?:' . $xsig . ')/i', $ofn)) {
+                        if (!$flagged) {
+                            $phpMussel['killdata'] .= $md5 . ':' . $str_len . ':' . $ofn . "\n";
+                            $flagged = true;
+                        }
+                        $heur['detections']++;
+                        $phpMussel['memCache']['detections_count']++;
+                        if ($phpMussel['memCache']['weighted']) {
+                            $heur['weight']++;
+                            $heur['cli'] .= $lnap . $phpMussel['ParseVars'](
+                                array('vn' => $VN),
+                                $phpMussel['lang']['detected']
+                            ) . $phpMussel['lang']['_exclamation_final'] . "\n";
+                            $heur['web'] .= $phpMussel['ParseVars'](
+                                array('vn' => $VN),
+                                $phpMussel['lang']['detected']
+                            ) . ' (' . $ofnSafe.')' . $phpMussel['lang']['_exclamation'];
+                        } else {
+                            $out .= $lnap . $phpMussel['ParseVars'](
+                                array('vn' => $VN),
+                                $phpMussel['lang']['detected']
+                            ) . $phpMussel['lang']['_exclamation_final'] . "\n";
+                            $phpMussel['whyflagged'] .= $phpMussel['ParseVars'](
+                                array('vn' => $VN),
+                                $phpMussel['lang']['detected']
+                            ) . ' (' . $ofnSafe . ')' . $phpMussel['lang']['_exclamation'];
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     /** Process MD5 signatures. */
     $SigFiles = explode(',', $phpMussel['Config']['signatures']['MD5']);
@@ -2375,7 +2512,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                         }
                         $ThisSig[3] = (int)$ThisSig[3];
                         if ($ThisSig[1] == 'FN') {
-                            if (!preg_match('/' . $ThisSig[2] . '/i', $ofn)) {
+                            if (!preg_match('/(?:' . $ThisSig[2] . ')/i', $ofn)) {
                                 if ($ThisSig[3] <= $SigNum) {
                                     break;
                                 }
@@ -2403,7 +2540,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                 $SigNum = $ThisSig[3] - 1;
                             }
                         } elseif ($ThisSig[1] == 'FD-RX') {
-                            if (!preg_match('/' . $ThisSig[2] . '/i', $$DataSource)) {
+                            if (!preg_match('/(?:' . $ThisSig[2] . ')/i', $$DataSource)) {
                                 if ($ThisSig[3] <= $SigNum) {
                                     break;
                                 }
@@ -2562,7 +2699,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                         $ThisSig = explode('>', $ThisSig, 4);
                         $ThisSig[3] = (int)$ThisSig[3];
                         if ($ThisSig[1] == 'FN') {
-                            if (!preg_match('/' . $ThisSig[2] . '/i', $ofn)) {
+                            if (!preg_match('/(?:' . $ThisSig[2] . ')/i', $ofn)) {
                                 if ($ThisSig[3] <= $SigNum) {
                                     break;
                                 }
@@ -2590,7 +2727,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                 $SigNum = $ThisSig[3] - 1;
                             }
                         } elseif ($ThisSig[1] == 'FD-RX') {
-                            if (!preg_match('/' . $ThisSig[2] . '/i', $$DataSource)) {
+                            if (!preg_match('/(?:' . $ThisSig[2] . ')/i', $$DataSource)) {
                                 if ($ThisSig[3] <= $SigNum) {
                                     break;
                                 }
@@ -2632,7 +2769,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                     if (strpos($ThisSig, ':') !== false) {
                         $VN = explode(':', $ThisSig);
                         $ThisSig = preg_split('/[\x00-\x1f]+/', $VN[1], -1, PREG_SPLIT_NO_EMPTY);
-                        $ThisSig = ($ThisSig === false ? '' : $phpMussel['rxPrep'](implode('', $ThisSig)));
+                        $ThisSig = ($ThisSig === false) ? '' : implode('', $ThisSig);
                         $ThisSigLen = strlen($ThisSig);
                         if ($phpMussel['ConfineLength']($ThisSigLen)) {
                             continue;
@@ -2659,26 +2796,26 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                         ) {
                             if ($xstrf === '*') {
                                 if ($xstrt === '*') {
-                                    if (!preg_match('/' . $ThisSig . '/i', $$DataSource)) {
+                                    if (!preg_match('/(?:' . $ThisSig . ')/i', $$DataSource)) {
                                         continue;
                                     }
-                                } elseif (!preg_match('/' . $ThisSig . '/i', substr($$DataSource, 0, $xstrt * 2))) {
+                                } elseif (!preg_match('/(?:' . $ThisSig . ')/i', substr($$DataSource, 0, $xstrt * 2))) {
                                     continue;
                                 }
                             } elseif ($xstrf === 'A') {
                                 if ($xstrt === '*') {
-                                    if (!preg_match('/\A' . $ThisSig . '/i', $$DataSource)) {
+                                    if (!preg_match('/\A(?:' . $ThisSig . ')/i', $$DataSource)) {
                                         continue;
                                     }
-                                } elseif (!preg_match('/\A' . $ThisSig . '/i', substr($$DataSource, 0, $xstrt * 2))) {
+                                } elseif (!preg_match('/\A(?:' . $ThisSig . ')/i', substr($$DataSource, 0, $xstrt * 2))) {
                                     continue;
                                 }
                             } else {
                                 if ($xstrt === '*') {
-                                    if (!preg_match('/' . $ThisSig . '/i', substr($$DataSource, $xstrf * 2))) {
+                                    if (!preg_match('/(?:' . $ThisSig . ')/i', substr($$DataSource, $xstrf * 2))) {
                                         continue;
                                     }
-                                } elseif (!preg_match('/' . $ThisSig . '/i', substr($$DataSource, $xstrf * 2, $xstrt * 2))) {
+                                } elseif (!preg_match('/(?:' . $ThisSig . ')/i', substr($$DataSource, $xstrf * 2, $xstrt * 2))) {
                                     continue;
                                 }
                             }
@@ -2718,144 +2855,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
 // ADD COEX AND THEN URLSCANNER STUFF HERE AAA
 
     while (false) {
-        if ($SigData[$SigSet]['SigMode'] === 'filenames') {
-            if (!isset($phpMussel['memCache'][$SigFile])) {
-                $phpMussel['memCache'][$SigFile] = $phpMussel['ReadFileAsArray']($phpMussel['sigPath'] . $SigFile, FILE_IGNORE_NEW_LINES);
-            }
-            if (!$phpMussel['memCache'][$SigFile]) {
-                $phpMussel['memCache']['scan_errors']++;
-                if (!$phpMussel['Config']['signatures']['fail_silently']) {
-                    if (!$flagged) {
-                        $phpMussel['killdata'] .= $md5 . ':' . $str_len . ":\n";
-                    }
-                    $phpMussel['whyflagged'] .=
-                        $phpMussel['lang']['scan_signature_file_missing'] .
-                        ' (' . $SigFile . ')' .
-                        $phpMussel['lang']['_exclamation'];
-                    return array(-3,
-                        $lnap . $phpMussel['lang']['scan_signature_file_missing'] .
-                        ' (' . $SigFile . ')' .
-                        $phpMussel['lang']['_exclamation_final'] . "\n"
-                    );
-                }
-            $c = 0;
-            } else {
-                $c = count($phpMussel['memCache'][$SigFile]);
-            }
-            for ($i = 0; $i < $c; $i++) {
-                $xsig = $phpMussel['memCache'][$SigFile][$i];
-                if (substr($xsig, 0, 1) == '>') {
-                    $xsig = explode('>', $xsig, 4);
-                    $xsig[3] = (int)$xsig[3];
-                    if ($xsig[1] == 'FN') {
-                        if (!preg_match('/' . $xsig[2] . '/i', $ofn)) {
-                            if ($xsig[3] <= $i) {
-                                break;
-                            }
-                            $i = $xsig[3] - 1;
-                        }
-                    } elseif ($xsig[1] == 'FS-MIN') {
-                        if ($str_len < $xsig[2]) {
-                            if ($xsig[3] <= $i) {
-                                break;
-                            }
-                            $i = $xsig[3] - 1;
-                        }
-                    } elseif ($xsig[1] == 'FS-MAX') {
-                        if ($str_len > $xsig[2]) {
-                            if ($xsig[3] <= $i) {
-                                break;
-                            }
-                            $i = $xsig[3] - 1;
-                        }
-                    } elseif ($xsig[1] == 'FD') {
-                        if (!substr_count($str_hex, $xsig[2])) {
-                            if ($xsig[3] <= $i) {
-                                break;
-                            }
-                            $i = $xsig[3] - 1;
-                        }
-                    } elseif ($xsig[1] == 'FD-RX') {
-                        if (!preg_match('/' . $xsig[2] . '/i', $str_hex)) {
-                            if ($xsig[3] <= $i) {
-                                break;
-                            }
-                            $i = $xsig[3] - 1;
-                        }
-                    } elseif (substr($xsig[1], 0, 1) == '$') {
-                        $vf = substr($xsig[1], 1);
-                        if (isset($$vf) && !is_array($$vf)) {
-                            if ($$vf != $xsig[2]) {
-                                if ($xsig[3] <= $i) {
-                                    break;
-                                }
-                                $i = $xsig[3] - 1;
-                            }
-                            continue;
-                        }
-                        if ($xsig[3] <= $i) {
-                            break;
-                        }
-                        $i = $xsig[3] - 1;
-                    } elseif (substr($xsig[1], 0, 2) == '!$') {
-                        $vf = substr($xsig[1], 2);
-                        if (isset($$vf) && !is_array($$vf)) {
-                            if ($$vf == $xsig[2]) {
-                                if ($xsig[3] <= $i) {
-                                    break;
-                                }
-                                $i = $xsig[3] - 1;
-                            }
-                            continue;
-                        }
-                        if ($xsig[3] <= $i) {
-                            break;
-                        }
-                        $i = $xsig[3] - 1;
-                    }
-                    continue;
-                }
-                if (strpos($xsig, ':') !== false) {
-                    $VN = explode(':', $xsig);
-                    $xsig = preg_split('/[\x00-\x1f]+/', $VN[1], -1, PREG_SPLIT_NO_EMPTY);
-                    $xsig = ($xsig === false ? '' : $phpMussel['rxPrep'](implode('', $xsig)));
-                    $VN = $phpMussel['vn_shorthand']($VN[0]);
-                    if (
-                        !substr_count($phpMussel['memCache']['greylist'], ',' . $VN . ',') &&
-                        !$phpMussel['memCache']['ignoreme']
-                    ) {
-                        if (preg_match('/' . $xsig . '/i', $ofn)) {
-                            if (!$flagged) {
-                                $phpMussel['killdata'] .= $md5 . ':' . $str_len . ':' . $ofn . "\n";
-                                $flagged = true;
-                            }
-                            $heur['detections']++;
-                            $phpMussel['memCache']['detections_count']++;
-                            if ($phpMussel['memCache']['weighted']) {
-                                $heur['weight']++;
-                                $heur['cli'] .= $lnap . $phpMussel['ParseVars'](
-                                    array('vn' => $VN),
-                                    $phpMussel['lang']['detected']
-                                ) . $phpMussel['lang']['_exclamation_final'] . "\n";
-                                $heur['web'] .= $phpMussel['ParseVars'](
-                                    array('vn' => $VN),
-                                    $phpMussel['lang']['detected']
-                                ) . ' (' . $ofnSafe.')' . $phpMussel['lang']['_exclamation'];
-                            } else {
-                                $out .= $lnap . $phpMussel['ParseVars'](
-                                    array('vn' => $VN),
-                                    $phpMussel['lang']['detected']
-                                ) . $phpMussel['lang']['_exclamation_final'] . "\n";
-                                $phpMussel['whyflagged'] .= $phpMussel['ParseVars'](
-                                    array('vn' => $VN),
-                                    $phpMussel['lang']['detected']
-                                ) . ' (' . $ofnSafe . ')' . $phpMussel['lang']['_exclamation'];
-                            }
-                        }
-                    }
-                }
-            }
-        } elseif ($SigData[$SigSet]['SigMode'] === 'urlscanner') {
+        if ($SigData[$SigSet]['SigMode'] === 'urlscanner') {
             if (!isset($phpMussel['memCache'][$SigFile])) {
                 $phpMussel['memCache'][$SigFile] = $phpMussel['ReadFile']($phpMussel['sigPath'] . $SigFile);
             }
@@ -3528,16 +3528,16 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                                         !substr_count("\x01" . substr($str_hex, 0, $xsig[$xi][$sxi][3] * 2), "\x01" . $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-RX' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', substr($str_hex, 0, $xsig[$xi][$sxi][3] * 2))
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($str_hex, 0, $xsig[$xi][$sxi][3] * 2))
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM' &&
                                                         !substr_count("\x01" . substr($str_hex_norm, 0, $xsig[$xi][$sxi][3] * 2), "\x01" . $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM-RX' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', substr($str_hex_norm, 0, $xsig[$xi][$sxi][3] * 2))
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($str_hex_norm, 0, $xsig[$xi][$sxi][3] * 2))
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'META' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', substr($CoExMeta, 0, $xsig[$xi][$sxi][3] * 2))
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($CoExMeta, 0, $xsig[$xi][$sxi][3] * 2))
                                                     )
                                                 ) {
                                                     continue 2;
@@ -3549,16 +3549,16 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                                         !substr_count(substr($str_hex, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2), $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-RX' &&
-                                                        !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', substr($str_hex, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2))
+                                                        !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($str_hex, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2))
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM' &&
                                                         !substr_count(substr($str_hex_norm, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2), $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM-RX' &&
-                                                        !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', substr($str_hex_norm, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2))
+                                                        !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($str_hex_norm, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2))
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'META' &&
-                                                        !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', substr($CoExMeta, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2))
+                                                        !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($CoExMeta, $xsig[$xi][$sxi][2] * 2, $xsig[$xi][$sxi][3] * 2))
                                                     )
                                                 ) {
                                                     continue 2;
@@ -3569,22 +3569,22 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                                 if (
                                                     !substr_count(',FN,FD,FD-RX,FD-NORM,FD-NORM-RX,META,', ',' . $xsig[$xi][$sxi][0] . ',') || (
                                                         $xsig[$xi][$sxi][0] == 'FN' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', $ofn)
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', $ofn)
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD' &&
                                                         !substr_count("\x01" . $str_hex, "\x01" . $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-RX' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', $str_hex)
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', $str_hex)
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM' &&
                                                         !substr_count("\x01" . $str_hex_norm, "\x01" . $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM-RX' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', $str_hex_norm)
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', $str_hex_norm)
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'META' &&
-                                                        !preg_match('/\A' . $xsig[$xi][$sxi][1] . '/i', $CoExMeta)
+                                                        !preg_match('/\A(?:' . $xsig[$xi][$sxi][1] . ')/i', $CoExMeta)
                                                     )
                                                 ) {
                                                     continue 2;
@@ -3596,16 +3596,16 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                                         !substr_count(substr($str_hex, $xsig[$xi][$sxi][2] * 2), $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-RX' &&
-                                                        !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', substr($str_hex, $xsig[$xi][$sxi][2] * 2))
+                                                        !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($str_hex, $xsig[$xi][$sxi][2] * 2))
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM' &&
                                                         !substr_count(substr($str_hex_norm, $xsig[$xi][$sxi][2] * 2), $xsig[$xi][$sxi][1])
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'FD-NORM-RX' &&
-                                                        !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', substr($str_hex_norm, $xsig[$xi][$sxi][2] * 2))
+                                                        !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($str_hex_norm, $xsig[$xi][$sxi][2] * 2))
                                                     ) || (
                                                         $xsig[$xi][$sxi][0] == 'META' &&
-                                                        !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', substr($CoExMeta, $xsig[$xi][$sxi][2] * 2))
+                                                        !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', substr($CoExMeta, $xsig[$xi][$sxi][2] * 2))
                                                     )
                                                 ) {
                                                     continue 2;
@@ -3616,7 +3616,7 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                         if (
                                             (
                                                 $xsig[$xi][$sxi][0] == 'FN' &&
-                                                !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', $ofn)
+                                                !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', $ofn)
                                             ) || (
                                                 $xsig[$xi][$sxi][0] == 'FS-MIN' &&
                                                 $str_len < $xsig[$xi][$sxi][1]
@@ -3628,16 +3628,16 @@ $phpMussel['DataHandler'] = function ($str = '', $dpt = 0, $ofn = '') use (&$php
                                                 !substr_count($str_hex, $xsig[$xi][$sxi][1])
                                             ) || (
                                                 $xsig[$xi][$sxi][0] == 'FD-RX' &&
-                                                !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', $str_hex)
+                                                !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', $str_hex)
                                             ) || (
                                                 $xsig[$xi][$sxi][0] == 'FD-NORM' &&
                                                 !substr_count($str_hex_norm, $xsig[$xi][$sxi][1])
                                             ) || (
                                                 $xsig[$xi][$sxi][0] == 'FD-NORM-RX' &&
-                                                !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', $str_hex_norm)
+                                                !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', $str_hex_norm)
                                             ) || (
                                                 $xsig[$xi][$sxi][0] == 'META' &&
-                                                !preg_match('/' . $xsig[$xi][$sxi][1] . '/i', $CoExMeta)
+                                                !preg_match('/(?:' . $xsig[$xi][$sxi][1] . ')/i', $CoExMeta)
                                             )
                                         ) {
                                             continue 2;
@@ -6451,4 +6451,14 @@ $phpMussel['Logs-RecursiveList'] = function ($Base) use (&$phpMussel) {
         $phpMussel['FormatFilesize']($Arr[$ThisName]['Filesize']);
     }
     return $Arr;
+};
+
+/**
+ * Checks whether a component is in use (front-end closure).
+ *
+ * @param array $Files The list of files to be checked.
+ * @return bool Returns true (in use) or false (not in use).
+ */
+$phpMussel['IsInUse'] = function ($Files) use (&$phpMussel) {
+    // @todo
 };

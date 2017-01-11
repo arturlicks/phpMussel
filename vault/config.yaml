@@ -77,6 +77,9 @@ Config Defaults:
    type: string
    default: ""
  signatures:
+  Filename:
+   type: string
+   default: "clamav.fdb,phpmussel.fdb"
   MD5:
    type: string
    default: "clamav.hdb,phpmussel.hdb"
