@@ -331,13 +331,12 @@ Bestand | Beschrijving
 /vault/signatures/whitelist_mussel.cvd | Bestand-specifieke whitelist.
 /vault/.htaccess | Een hypertext toegang bestand (in dit geval, om gevoelige bestanden die behoren tot het script te beschermen tegen toegang door niet-geautoriseerde bronnen).
 /vault/cli.php | CLI handler.
+/vault/components.dat | Bevat informatie met betrekking tot de verschillende phpMussel componenten; Gebruikt door de updates functie verzorgd door de frontend.
 /vault/config.ini.RenameMe | Configuratiebestand; Bevat alle configuratieopties van phpMussel, het vertellen wat te doen en hoe om te werken correct (hernoemen om te activeren).
 /vault/config.php | Configuratie handler.
-/vault/core.dat | Bevat informatie over de belangrijkste bestanddelen van phpMussel; Gebruikt door de updates functie verzorgd door de frontend.
 /vault/frontend.php | Frontend-handler.
 /vault/functions.php | Functies bestand (essentieel).
 /vault/greylist.csv | CSV van greylisted handtekeningen aangeeft om phpMussel waarop handtekeningen moet worden negeren (bestand automatisch aangemaakt opnieuw als verwijderd).
-/vault/l10n.dat | Bevat informatie over de L10N bestanddelen van phpMussel; Gebruikt door de updates functie verzorgd door de frontend.
 /vault/lang.php | Taal-handler.
 /vault/php5.4.x.php | Polyfills voor PHP 5.4.X (nodig voor PHP 5.4.X achterwaartse compatibiliteit; veilig te verwijderen voor nieuwere PHP-versies).
 ※ /vault/scan_kills.txt | Een record van elk bestand uploaden geblokkeerde/gedood door phpMussel.
@@ -879,4 +878,4 @@ phpMussel *DOET* blokkeren van een bestand | __Vals positieve__ | Waar positieve
 ---
 
 
-Laatste Bijgewerkt: 19 December 2016 (2016.12.19).
+Laatste Bijgewerkt: 18 Januari 2016 (2017.01.18).

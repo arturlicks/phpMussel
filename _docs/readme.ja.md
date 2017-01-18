@@ -331,13 +331,12 @@ CLIプロンプトにて`c`とタイプしエンターを押せば、利用可�
 /vault/signatures/whitelist_mussel.cvd | 特定ホワイトリスト用ファイル。
 /vault/.htaccess | ハイパーテキスト・アクセスファイル（この場合、本スクリプトの重要なファイルを権限のないソースのアクセスから保護するためです）。
 /vault/cli.php | CLIハンドラ。
+/vault/components.dat | phpMusselのコンポーネント情報が含まれています； アップデート機能で使用（フロントエンドが提供します）。
 /vault/config.ini.RenameMe | phpMussel設定ファイル；phpMusselの全オプション設定を記載しています。それぞれのオプションの機能と動作手法の説明です（アクティブにするために名前を変更します）。
 /vault/config.php | コンフィギュレーション・ハンドラ。
-/vault/core.dat | phpMusselの主なコンポーネント情報が含まれています；アップデート機能で使用（フロントエンドが提供します）。
 /vault/frontend.php | フロントエンド・ハンドラ。
 /vault/functions.php | 関数ファイル（本質的ファイル）。
 /vault/greylist.csv | グレーリスト化された署名のCSVで、phpMusselがどの署名を無視すべきかを指示するものです（削除しても自動的に再作成されます）。
-/vault/l10n.dat | phpMusselのL10Nコンポーネント情報が含まれています；アップデート機能で使用（フロントエンドが提供します）。
 /vault/lang.php | 言語・ハンドラ。
 /vault/php5.4.x.php | PHP 5.4.X ポリフィル （PHP 5.4.X の下位互換性のために必要です； より新しいPHPバージョンのために、削除しても安全です）。
 ※ /vault/scan_kills.txt | phpMusselによりブロック／削除されたアップロードファイルの全記録。
@@ -863,11 +862,11 @@ phpMusselは大概のウィルススキャンソフトウェアに対して互�
 
 ####「偽陽性」とは何ですか？
 
-用語「偽陽性」（*または：偽陽性のエラー、虚報；* 英語： *false positive*; *false positive error*; *false alarm*）、非常に簡単に説明し、一般化文脈で、is used when testing for a condition, to refer to the results of that test, when the results are 陽性（即ち、 the condition is determined to be 「陽性」、または、「真」), but are expected to be (or should have been) 陰性 （即ち、 the condition, in reality, is 「陰性」、または、「偽」）。 A 「偽陽性」 could be considered analogous to "crying wolf" （wherein the condition being tested is whether there's a wolf near the herd, the condition is 「偽」 in that there's no wolf near the herd, and the condition is reported as 「陽性」 by the shepherd by way of calling 「オオカミ、オオカミ」）、 or analogous to situations in medical testing wherein a patient is diagnosed as having some illness or disease, when in reality, they have no such illness or disease.
+一般化された文脈で簡単に説明、条件の状態をテストするときに、結果を参照する目的で、用語「偽陽性」（*または：偽陽性のエラー、虚報；* 英語： *false positive*; *false positive error*; *false alarm*）の意味は、結果は「陽性」のようです、しかし結果は間違いです（即ち、真の条件は「陽性/真」とみなされます、しかしそれは本当に「陰性/偽」です）。 「偽陽性」は「泣く狼」に類似していると考えることができます（その状態は群の近くに狼がいるかどうかである、真の条件は「偽/陰性」です、群れの近くに狼がないからです、しかし条件は「真/陽性」として報告されます、羊飼いが「狼！狼！」を叫んだからです）、または、医療検査に類似、患者が誤って診断されたとき。
 
-いくつかの関連する用語は、「真陽性」、「真陰性」、と「偽陰性」です。「真陽性」 refers to when the test results and the actual state of the condition are both 真 (or 「陽性」), and a 「真陰性」 refers to when the test results and the actual state of the condition are both 偽 (or 「陰性」); A 「真陽性」 or a 「真陰性」 is considered to be a 「正しい推論」. The antithesis of a 「偽陽性」 is a 「偽陰性」; A 「偽陰性」 refers to when the test results are 陰性 （即ち、 the condition is determined to be 「陰性」、または、「偽」), but are expected to be (or should have been) 陽性 （即ち、 the condition, in reality, is 「陽性」、または、「真」）。
+いくつかの関連する用語は、「真陽性」、「真陰性」、と「偽陰性」です。 これらの用語が示す意味： 「真陽性」の意味は、テスト結果と真の条件が真です（即ち、「陽性」です）。 「真陰性」の意味は、テスト結果と真の条件が偽です（即ち、「陰性」です）。 「真陽性」と「真陰性」は「正しい推論」とみなされます。 「偽陽性」の反対は「偽陰性」です。 「偽陰性」の意味は、テスト結果が偽です（即ち、「陰性」です）、しかし、真の条件が本当に真です（即ち、「陽性」です）； 両方テスト結果と真の条件、が「真/陽性」すべきであるはずです。
 
-In the context of phpMussel, these 用語 refer to the signatures of phpMussel and the files that they block. When phpMussel blocks a file due to bad, outdated or incorrect signatures, but shouldn't have done so, or when it does so for the wrong reasons, 我々はこのイベント「偽陽性」のを呼び出します。 When phpMussel fails to block a file that should have been blocked, due to unforeseen threats, missing signatures or shortfalls in its signatures, 我々はこのイベント「不在検出」のを呼び出します（「偽陰性」のアナログです）。
+phpMusselの文脈で、これらの用語は、phpMusselのシグネチャ（署名）とそれらがブロックするファイルを指します。 phpMusselが誤ってファイルをブロックすると（例えば、不正確な署名、時代遅れの署名などによる）、我々はこのイベント「偽陽性」のを呼び出します。 phpMusselがファイルをブロックできなかった場合（例えば、予期せぬ脅威、署名の欠落などによる）、我々はこのイベント「不在検出」のを呼び出します（「偽陰性」のアナログです）。
 
 これは、以下の表に要約することができます。
 
@@ -879,4 +878,4 @@ phpMusselは、ファイルをブロックします | __偽陽性__ | 真陽性�
 ---
 
 
-最終アップデート： 2016年12月19日。
+最終アップデート： 2017年1月18日。

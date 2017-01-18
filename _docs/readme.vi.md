@@ -331,13 +331,12 @@ Tập tin | Chi tiết
 /vault/signatures/whitelist_mussel.cvd | Tập tin riêng cho danh sách trắng.
 /vault/.htaccess | Tập tin "hypertext access" / tập tin truy cập siêu văn bản (bảo vệ tập tin bí mật khỏi bị truy cập bởi nguồn không được ủy quyền).
 /vault/cli.php | Tập tin cho xử lý CLI.
+/vault/components.dat | Chứa thông tin liên quan đến các gói khác nhau của phpMussel; Được sử dụng bởi tính năng cập nhật được cung cấp bởi các front-end.
 /vault/config.ini.RenameMe | Tập tin cho cấu hình; Chứa tất cả các tùy chọn cho cấu hình của phpMussel, nói cho nó biết phải làm gì và làm thế nào để hoạt động (đổi tên để kích hoạt).
 /vault/config.php | Tập tin cho xử lý cấu hình.
-/vault/core.dat | Chứa thông tin liên quan đến các gói chính của phpMussel; Được sử dụng bởi tính năng cập nhật được cung cấp bởi các front-end.
 /vault/frontend.php | Tập tin cho xử lý các front-end.
 /vault/functions.php | Tập tin cho chức năng.
 /vault/greylist.csv | Tập tin CSV cho danh sách xám chử ký chỉ thị cho phpMussel cái nào chử ký nó phải được bỏ qua (tập tin tự động tạo lại nếu xóa).
-/vault/l10n.dat | Chứa thông tin liên quan đến các gói L10N của phpMussel; Được sử dụng bởi tính năng cập nhật được cung cấp bởi các front-end.
 /vault/lang.php | Dữ liệu tiếng.
 /vault/php5.4.x.php | Polyfills cho PHP 5.4.X (cần cho khả năng tương thích ngược PHP 5.4.X; an toàn để xóa cho các phiên bản PHP mới hơn).
 ※ /vault/scan_kills.txt | Kỷ lục của mỗi tập tin tải lên từ chối/giết bởi phpMussel.
@@ -879,4 +878,4 @@ phpMussel chặn một tập tin | __Sai tích cực__ | Đúng tích cực (suy
 ---
 
 
-Lần cuối cập nhật: 19 Tháng Mười Hai 2016 (2016.12.19).
+Lần cuối cập nhật: 18 Tháng Giêng 2017 (2017.01.18).

@@ -331,13 +331,12 @@ Archivo | Descripción
 /vault/signatures/whitelist_mussel.cvd | Archivo específico whitelist.
 /vault/.htaccess | Un hipertexto acceso archivo (en este caso, para proteger confidenciales archivos perteneciente a la script contra el acceso de fuentes no autorizadas).
 /vault/cli.php | Módulo de la CLI.
+/vault/components.dat | Contiene información relativa a los diversos componentes de phpMussel; Utilizado por la página de actualizaciones proporcionada por el front-end.
 /vault/config.ini.RenameMe | Archivo de configuración; Contiene todas las opciones de configuración para phpMussel, instruyendo para qué hacer y cómo operar correctamente (cambiar el nombre para activar).
 /vault/config.php | Módulo de configuración.
-/vault/core.dat | Contiene información relativa a los componentes L10N de phpMussel; Utilizado por la página de actualizaciones proporcionada por el front-end.
 /vault/frontend.php | Módulo del front-end.
 /vault/functions.php | Archivo de funciones (esencial).
 /vault/greylist.csv | CSV de las firmas en la Greylist indicando para phpMussel las firmas que deben ser ignorados (archivo será recreado automáticamente si eliminado).
-/vault/l10n.dat | Contiene información relativa a los componentes principales de phpMussel; Utilizado por la página de actualizaciones proporcionada por el front-end.
 /vault/lang.php | Lingüísticos datos.
 /vault/php5.4.x.php | Polyfills para PHP 5.4.X (necesario para la retrocompatibilidad de PHP 5.4.X; seguro para eliminar por versiones más recientes de PHP).
 ※ /vault/scan_kills.txt | Un registro de todos archivos subidos bloqueado/asesinado por phpMussel.
@@ -879,4 +878,4 @@ phpMussel *HACE* bloquear un archivo | __Falso positivo__ | Verdadero positivo (
 ---
 
 
-Última Actualización: 19 Diciembre 2016 (2016.12.19).
+Última Actualización: 18 Enero 2016 (2017.01.18).

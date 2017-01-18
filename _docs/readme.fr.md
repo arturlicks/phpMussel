@@ -167,17 +167,17 @@ Fichier | Description
 ----|----
 /_docs/ | Documentation répertoire (contient divers fichiers).
 /_docs/readme.ar.md | Documentation en Arabe.
-/_docs/readme.de.md | Documentation en Allemand.
+/_docs/readme.de.md | Documentation en Allemande.
 /_docs/readme.en.md | Documentation en Anglais.
 /_docs/readme.es.md | Documentation en Espagnol.
 /_docs/readme.fr.md | Documentation en Français.
-/_docs/readme.id.md | Documentation en Indonésien.
-/_docs/readme.it.md | Documentation en Italien.
+/_docs/readme.id.md | Documentation en Indonésienne.
+/_docs/readme.it.md | Documentation en Italienne.
 /_docs/readme.ja.md | Documentation en Japonaise.
-/_docs/readme.nl.md | Documentation en Néerlandais.
-/_docs/readme.pt.md | Documentation en Portugais.
+/_docs/readme.nl.md | Documentation en Néerlandaise.
+/_docs/readme.pt.md | Documentation en Portugaise.
 /_docs/readme.ru.md | Documentation en Russe.
-/_docs/readme.vi.md | Documentation en Vietnamien.
+/_docs/readme.vi.md | Documentation en Vietnamienne.
 /_docs/readme.zh-TW.md | Documentation en Chinois (traditionnel).
 /_docs/readme.zh.md | Documentation en Chinois (simplifié).
 /_testfiles/ | Test fichiers répertoire (contient divers fichiers). Tous les fichiers contenus sont des fichiers à test si phpMussel a été correctement installé sur votre système, et vous n'avez pas besoin de télécharger ce répertoire ou l'un de ses fichiers, sauf si faire ces tests.
@@ -219,28 +219,28 @@ Fichier | Description
 /vault/lang/.htaccess | Un hypertexte accès fichier (dans ce cas, pour protéger les sensibles fichiers appartenant au script contre être consulté par non autorisées sources).
 /vault/lang/lang.ar.fe.php | Linguistiques données en Arabe pour le front-end.
 /vault/lang/lang.ar.php | Linguistiques données en Arabe.
-/vault/lang/lang.de.fe.php | Linguistiques données en Allemand pour le front-end.
-/vault/lang/lang.de.php | Linguistiques données en Allemand.
+/vault/lang/lang.de.fe.php | Linguistiques données en Allemande pour le front-end.
+/vault/lang/lang.de.php | Linguistiques données en Allemande.
 /vault/lang/lang.en.fe.php | Linguistiques données en Anglais pour le front-end.
 /vault/lang/lang.en.php | Linguistiques données en Anglais.
 /vault/lang/lang.es.fe.php | Linguistiques données en Espagnol pour le front-end.
 /vault/lang/lang.es.php | Linguistiques données en Espagnol.
 /vault/lang/lang.fr.fe.php | Linguistiques données en Français pour le front-end.
 /vault/lang/lang.fr.php | Linguistiques données en Français.
-/vault/lang/lang.id.fe.php | Linguistiques données en Indonésien pour le front-end.
-/vault/lang/lang.id.php | Linguistiques données en Indonésien.
-/vault/lang/lang.it.fe.php | Linguistiques données en Italien pour le front-end.
-/vault/lang/lang.it.php | Linguistiques données en Italien.
-/vault/lang/lang.ja.fe.php | Linguistiques données en Japonais pour le front-end.
-/vault/lang/lang.ja.php | Linguistiques données en Japonais.
-/vault/lang/lang.nl.fe.php | Linguistiques données en Néerlandais pour le front-end.
-/vault/lang/lang.nl.php | Linguistiques données en Néerlandais.
-/vault/lang/lang.pt.fe.php | Linguistiques données en Portugais pour le front-end.
-/vault/lang/lang.pt.php | Linguistiques données en Portugais.
+/vault/lang/lang.id.fe.php | Linguistiques données en Indonésienne pour le front-end.
+/vault/lang/lang.id.php | Linguistiques données en Indonésienne.
+/vault/lang/lang.it.fe.php | Linguistiques données en Italienne pour le front-end.
+/vault/lang/lang.it.php | Linguistiques données en Italienne.
+/vault/lang/lang.ja.fe.php | Linguistiques données en Japonaise pour le front-end.
+/vault/lang/lang.ja.php | Linguistiques données en Japonaise.
+/vault/lang/lang.nl.fe.php | Linguistiques données en Néerlandaise pour le front-end.
+/vault/lang/lang.nl.php | Linguistiques données en Néerlandaise.
+/vault/lang/lang.pt.fe.php | Linguistiques données en Portugaise pour le front-end.
+/vault/lang/lang.pt.php | Linguistiques données en Portugaise.
 /vault/lang/lang.ru.fe.php | Linguistiques données en Russe pour le front-end.
 /vault/lang/lang.ru.php | Linguistiques données en Russe.
-/vault/lang/lang.vi.fe.php | Linguistiques données en Vietnamien pour le front-end.
-/vault/lang/lang.vi.php | Linguistiques données en Vietnamien.
+/vault/lang/lang.vi.fe.php | Linguistiques données en Vietnamienne pour le front-end.
+/vault/lang/lang.vi.php | Linguistiques données en Vietnamienne.
 /vault/lang/lang.zh-tw.fe.php | Linguistiques données en Chinois (traditionnel) pour le front-end.
 /vault/lang/lang.zh-tw.php | Linguistiques données en Chinois (traditionnel).
 /vault/lang/lang.zh.fe.php | Linguistiques données en Chinois (simplifié) pour le front-end.
@@ -331,13 +331,12 @@ Fichier | Description
 /vault/signatures/whitelist_mussel.cvd | Fichier spécifique blanche liste.
 /vault/.htaccess | Un hypertexte accès fichier (dans ce cas, pour protéger les sensibles fichiers appartenant au script contre être consulté par non autorisées sources).
 /vault/cli.php | Module de CLI.
+/vault/components.dat | Contient des informations relatives aux divers composants de phpMussel; Utilisé par la page des mises à jour fournies par de l'accès frontal.
 /vault/config.ini.RenameMe | Fichier de configuration; Contient toutes les options de configuration pour phpMussel, pour comment fonctionner correctement (renommer pour activer).
 /vault/config.php | Module de configuration.
-/vault/core.dat | Contient des informations relatives aux L10N composants de phpMussel; Utilisé par la page des mises à jour fournies par de l'accès frontal.
 /vault/frontend.php | Module de l'accès frontal.
 /vault/functions.php | Fichier de fonctions (essentiel).
 /vault/greylist.csv | CSV de grise listé signatures indiquant pour phpMussel qui signatures il faut ignorer (fichier recréé automatiquement si supprimé).
-/vault/l10n.dat | Contient des informations relatives aux principaux composants de phpMussel; Utilisé par la page des mises à jour fournies par de l'accès frontal.
 /vault/lang.php | Module de linguistiques.
 /vault/php5.4.x.php | Polyfills pour PHP 5.4.X (Requis pour la compatibilité descendante de PHP 5.4.X; safe à supprimer pour les versions plus récentes de PHP).
 ※ /vault/scan_kills.txt | Les résultats de chaque fichier téléchargement bloqué/tués par phpMussel.
@@ -879,4 +878,4 @@ phpMussel bloque un fichier | __Faux positif__ | Vrai positif (inférence correc
 ---
 
 
-Dernière Mise à Jour: 19 Décembre 2016 (2016.12.19).
+Dernière Mise à Jour: 18 Janvier 2016 (2017.01.18).

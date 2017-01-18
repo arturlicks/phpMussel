@@ -335,13 +335,12 @@
 <div dir="rtl" style="display:inline;">ملف قائمة السماح المحددة.</div> | /vault/signatures/whitelist_mussel.cvd
 <div dir="rtl" style="display:inline;">ملف وصول النص التشعبي (في هذه الحالة، لحماية الملفات الحساسة التي تنتمي إلى البرنامج من أن يتم الوصول إليها عن طريق مصادر غير مصرح لها).</div> | /vault/.htaccess
 <div dir="rtl" style="display:inline;">معالج CLI.</div> | /vault/cli.php
+<div dir="rtl" style="display:inline;">يحتوي على معلومات تتعلق حدات phpMussel؛ المستخدمة من ميزة التحديثات التي تقدمها لphpMussel.</div> | /vault/components.dat
 <div dir="rtl" style="display:inline;">ملف التكوين. يحتوي على جميع خيارات تهيئة phpMussel، يخبرك ماذا يفعل وكيف يعمل بشكل صحيح (إعادة تسمية لتفعيل)!</div> | /vault/config.ini.RenameMe
 <div dir="rtl" style="display:inline;">معالج التكوين.</div> | /vault/config.php
-<div dir="rtl" style="display:inline;">يحتوي على معلومات المتعلقة المكونات الرئيسية لphpMussel؛ المستخدمة من ميزة التحديثات التي تقدمها لphpMussel.</div> | /vault/core.dat
 <div dir="rtl" style="display:inline;">معالج front-end.</div> | /vault/frontend.php
 <div dir="rtl" style="display:inline;">ملف وظائف (ضروري).</div> | /vault/functions.php
 <div dir="rtl" style="display:inline;">ملف CSV توقيعات القائمة الرمادية المشيرة إلى التوقيعات التي ينبغي على phpMussel أن يتجاهلها (هذا ملف يتم إعادة إنشاءه تلقائيا إذا حذف).</div> | /vault/greylist.csv
-<div dir="rtl" style="display:inline;">يحتوي على معلومات المتعلقة المكونات L10N لphpMussel؛ المستخدمة من ميزة التحديثات التي تقدمها لphpMussel.</div> | /vault/l10n.dat
 <div dir="rtl" style="display:inline;">ملف لغة.</div> | /vault/lang.php
 <div dir="rtl" style="display:inline;">Polyfills لPHP 5.4.X (اللازمة لالتوافق PHP 5.4.X؛ لإصدارات أحدث PHP، آمنة للحذف).</div> | /vault/php5.4.x.php
 <div dir="rtl" style="display:inline;">سجل لكل ما تم فحصه بواسطة phpMussel.</div> | ※ /vault/scan_log.txt
@@ -1052,4 +1051,4 @@ Zoner | <div dir="rtl" style="display:inline;">لا مشاكل معروفة</div
 ---
 
 
-<div dir="rtl">آخر تحديث: 19 ديسمبر 2016 (2016.12.19).</div>
+<div dir="rtl">آخر تحديث: 18 يناير 2016 (2017.01.18).</div>

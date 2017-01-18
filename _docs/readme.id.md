@@ -331,13 +331,12 @@ Data | Deskripsi
 /vault/signatures/whitelist_mussel.cvd | File spesifik daftar putih.
 /vault/.htaccess | File akses hiperteks (pada instansi ini, untuk melindungi file-file sensitif dari skrip untuk diakses dari sumber yang tidak terautorisasi).
 /vault/cli.php | Modul CLI handler.
+/vault/components.dat | Berisi informasi yang berkaitan dengan berbagai komponen untuk phpMussel; Digunakan oleh fitur pembaruan disediakan oleh akses bagian depan.
 /vault/config.ini.RenameMe | File konfigurasi phpMussel; Berisi semua opsi konfigurasi dari phpMussel, memberitahukannya apa yang harus dilakukan dan bagaimana mengoperasikannya dengan benar (mengubah nama untuk mengaktifkan).
 /vault/config.php | Modul konfigurasi.
-/vault/core.dat | Berisi informasi yang berkaitan dengan komponen L10N untuk phpMussel; Digunakan oleh fitur pembaruan disediakan oleh akses bagian depan.
 /vault/frontend.php | Modul untuk akses bagian depan.
 /vault/functions.php | Modul fungsi (utama).
 /vault/greylist.csv | CSV terdiri dari tanda tangan daftar abu-abu mengindikasikan phpMussel tanda tangan mana yang harus diabaikan (file automatis diciptakan kembali jika dihapus).
-/vault/l10n.dat | Berisi informasi yang berkaitan dengan komponen utama untuk phpMussel; Digunakan oleh fitur pembaruan disediakan oleh akses bagian depan.
 /vault/lang.php | File bahasa.
 /vault/php5.4.x.php | Polyfill untuk PHP 5.4.X (diperlukan untuk kompatibilitas mundur PHP 5.4.X; aman untuk menghapus selama versi PHP yang lebih baru).
 ※ /vault/scan_kills.txt | Sebuah catatan dari setiap file upload yang diblok/dibunuh oleh phpMussel.
@@ -879,4 +878,4 @@ phpMussel memblokir file | __Positif palsu__ | Positif benar (inferensi benar)
 ---
 
 
-Terakhir Diperbarui: 19 Desember 2016 (2016.12.19).
+Terakhir Diperbarui: 18 Januari 2016 (2017.01.18).
