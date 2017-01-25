@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2017.01.05).
+ * This file: Front-end handler (last modified: 2017.01.25).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -733,20 +733,13 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
     /** Prepare components metadata working array. */
     $phpMussel['Components'] = array(
         'Files' => scandir($phpMussel['Vault']),
-        'Types' => ',dat,inc,yaml,',
         'Meta' => array(),
         'RemoteMeta' => array(),
     );
 
-    /** Bump main components file to the top of the list. */
-    if (file_exists($phpMussel['Vault'] . 'components.dat')) {
-        array_unshift($phpMussel['Components']['Files'], 'components.dat');
-        $phpMussel['Components']['Files'] = array_unique($phpMussel['Components']['Files']);
-    }
-
     /** Count files; Prepare to search for components metadata. */
     array_walk($phpMussel['Components']['Files'], function ($ThisFile) use (&$phpMussel) {
-        if (!empty($ThisFile) && strpos($phpMussel['Components']['Types'], strtolower(substr($ThisFile, -3))) !== false) {
+        if (!empty($ThisFile) && preg_match('/\.(?:dat|inc|yaml)$/i', $ThisFile)) {
             $ThisData = $phpMussel['ReadFile']($phpMussel['Vault'] . $ThisFile);
             if (substr($ThisData, 0, 4) === "---\n" && ($EoYAML = strpos($ThisData, "\n\n")) !== false) {
                 $phpMussel['YAML'](substr($ThisData, 4, $EoYAML - 4), $phpMussel['Components']['Meta']);
@@ -1032,7 +1025,7 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
         'Meta' => $phpMussel['Components']['Meta'],
         'RemoteMeta' => $phpMussel['Components']['RemoteMeta'],
         'Remotes' => array(),
-        'Out' => ''
+        'Out' => array()
     );
 
     reset($phpMussel['Components']['Meta']);
@@ -1291,7 +1284,7 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
             if (empty($phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]['RowClass'])) {
                 $phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]['RowClass'] = 'h1';
             }
-            $phpMussel['Components']['Out'] .= $phpMussel['ParseVars'](
+            $phpMussel['Components']['Out'][$phpMussel['Components']['Key']] = $phpMussel['ParseVars'](
                 $phpMussel['lang'] + $phpMussel['ArrayFlatten']($phpMussel['Components']['Meta'][$phpMussel['Components']['Key']]) + $phpMussel['ArrayFlatten']($phpMussel['FE']),
                 $phpMussel['FE']['UpdatesRow']
             );
@@ -1448,7 +1441,7 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
             '<br /><a href="' . $phpMussel['Components']['RemoteMeta'][$phpMussel['Components']['Key']]['Changelog'] . '">Changelog</a>';
         $phpMussel['Components']['RemoteMeta'][$phpMussel['Components']['Key']]['Filename'] = '';
         if (!$phpMussel['FE']['hide-unused']) {
-            $phpMussel['Components']['Out'] .= $phpMussel['ParseVars'](
+            $phpMussel['Components']['Out'][$phpMussel['Components']['Key']] = $phpMussel['ParseVars'](
                 $phpMussel['lang'] + $phpMussel['ArrayFlatten']($phpMussel['Components']['RemoteMeta'][$phpMussel['Components']['Key']]) + $phpMussel['ArrayFlatten']($phpMussel['FE']),
                 $phpMussel['FE']['UpdatesRow']
             );
@@ -1466,7 +1459,24 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
     });
 
     /** Finalise output and unset working data. */
-    $phpMussel['FE']['Components'] = $phpMussel['Components']['Out'];
+    uksort($phpMussel['Components']['Out'], function ($A, $B) {
+        $CheckA = preg_match('/^(?:phpMussel$|l10n)/i', $A);
+        $CheckB = preg_match('/^(?:phpMussel$|l10n)/i', $B);
+        if ($CheckA && !$CheckB) {
+            return -1;
+        }
+        if ($CheckB && !$CheckA) {
+            return 1;
+        }
+        if ($A < $B) {
+            return -1;
+        }
+        if ($A > $B) {
+            return 1;
+        }
+        return 0;
+    });
+    $phpMussel['FE']['Components'] = implode('', $phpMussel['Components']['Out']);
     unset($phpMussel['Components'], $phpMussel['Count'], $phpMussel['Iterate']);
 
     /** Parse output. */
