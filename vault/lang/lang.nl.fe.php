@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Dutch language data for the front-end (last modified: 2016.12.19).
+ * This file: Dutch language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -89,7 +89,7 @@ $phpMussel['lang']['config_virustotal_vt_quota_rate'] = 'Volgens de Virus Total 
 $phpMussel['lang']['config_virustotal_vt_quota_time'] = 'vt_quota_time:';
 $phpMussel['lang']['config_virustotal_vt_suspicion_level'] = 'Normaal, phpMussel zal beperken welke bestanden scant met behulp van de Virus Total API om het bestanden die zijn beschouwd "achterdochtig". Optioneel, u kan dit beperking aan te passen door de waarde van het `vt_suspicion_level` richtlijn.';
 $phpMussel['lang']['config_virustotal_vt_weighting'] = 'Moeten phpMussel de resultaten van het scannen met behulp van de Virus Total API toe te passen als detecties of detectie weging? Dit richtlijn bestaat, omdat, hoewel het scannen van een bestand met behulp van meerdere motoren (als Virus Total doet) moet leiden tot een verhoogde aantal van detecties (en dus in een hoger aantal van kwaadaardige bestanden worden gedetecteerd), het kan ook resulteren in een hoger aantal van valse positieven, en daarom, in sommige gevallen, de resultaten van de scan kan beter worden benut als betrouwbaarheidsscore eerder dan als een definitieve conclusie. Als een waarde van 0 wordt gebruikt, de resultaten van het scannen met behulp van de Virus Total API zal worden toegepast als detecties, en zo, als een motor gebruikt door Virus Total vlaggen het bestand wordt gescand als kwaadaardige, phpMussel zal het bestand overwegen kwaadaardig te zijn. Als een andere waarde wordt gebruikt, de resultaten van het scannen met behulp van de Virus Total API zal worden toegepast als detectie weging, en zo, het aantal van motoren gebruikt door Virus Total dat vlag het bestand wordt gescand als kwaadaardige zal dienen als een betrouwbaarheidsscore (of detectie weging) voor of het bestand dat wordt gescand moet worden beschouwd als kwaadaardige door phpMussel (de waarde die wordt gebruikt zal vertegenwoordigen de minimale betrouwbaarheidsscore of weging vereist om kwaadaardige te worden beschouwd). Een waarde van 0 wordt standaard gebruikt.';
-$phpMussel['lang']['field_component'] = 'Bestanddeel';
+$phpMussel['lang']['field_component'] = 'Component';
 $phpMussel['lang']['field_create_new_account'] = 'Nieuw Account Creëren';
 $phpMussel['lang']['field_delete_account'] = 'Account Verwijderen';
 $phpMussel['lang']['field_delete_file'] = 'Verwijder';
@@ -141,11 +141,11 @@ $phpMussel['lang']['response_accounts_created'] = 'Account succesvol aangemaakt!
 $phpMussel['lang']['response_accounts_deleted'] = 'Account succesvol verwijderd!';
 $phpMussel['lang']['response_accounts_doesnt_exist'] = 'Die account bestaat niet.';
 $phpMussel['lang']['response_accounts_password_updated'] = 'Wachtwoord succesvol gewijzigd!';
-$phpMussel['lang']['response_component_successfully_installed'] = 'Bestanddeel succesvol geïnstalleerd.';
-$phpMussel['lang']['response_component_successfully_uninstalled'] = 'Bestanddeel succesvol verwijderd.';
-$phpMussel['lang']['response_component_successfully_updated'] = 'Bestanddeel succesvol gewijzigd.';
-$phpMussel['lang']['response_component_uninstall_error'] = 'Er is een fout opgetreden tijdens een poging om het bestanddeel te verwijderen.';
-$phpMussel['lang']['response_component_update_error'] = 'Er is een fout opgetreden tijdens een poging om het bestanddeel te bijwerken.';
+$phpMussel['lang']['response_component_successfully_installed'] = 'Component succesvol geïnstalleerd.';
+$phpMussel['lang']['response_component_successfully_uninstalled'] = 'Component succesvol verwijderd.';
+$phpMussel['lang']['response_component_successfully_updated'] = 'Component succesvol gewijzigd.';
+$phpMussel['lang']['response_component_uninstall_error'] = 'Er is een fout opgetreden tijdens een poging om de component te verwijderen.';
+$phpMussel['lang']['response_component_update_error'] = 'Er is een fout opgetreden tijdens een poging om de component te bijwerken.';
 $phpMussel['lang']['response_configuration_updated'] = 'Configuratie succesvol gewijzigd.';
 $phpMussel['lang']['response_delete_error'] = 'Mislukt om te verwijderen!';
 $phpMussel['lang']['response_directory_deleted'] = 'Bestandsmap succesvol verwijderd!';
@@ -161,15 +161,17 @@ $phpMussel['lang']['response_login_password_field_empty'] = 'Password veld leeg!
 $phpMussel['lang']['response_login_username_field_empty'] = 'Gebruikersnaam veld leeg!';
 $phpMussel['lang']['response_rename_error'] = 'Mislukt om de naam te veranderen!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'Al bijgewerkt.';
-$phpMussel['lang']['response_updates_not_installed'] = 'Bestanddeel niet geïnstalleerd!';
+$phpMussel['lang']['response_updates_not_installed'] = 'Component niet geïnstalleerd!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'Component niet geïnstalleerd (heeft nodig PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'Verouderd!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'Verouderd (neem handmatig bijwerken)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'Verouderd (heeft nodig PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'Onbepaald.';
 $phpMussel['lang']['response_upload_error'] = 'Mislukt om te uploaden!';
 $phpMussel['lang']['state_complete_access'] = 'Volledige toegang';
-$phpMussel['lang']['state_component_is_active'] = 'Bestanddeel is actief.';
-$phpMussel['lang']['state_component_is_inactive'] = 'Bestanddeel is inactief.';
-$phpMussel['lang']['state_component_is_provisional'] = 'Bestanddeel is voorlopig.';
+$phpMussel['lang']['state_component_is_active'] = 'Component is actief.';
+$phpMussel['lang']['state_component_is_inactive'] = 'Component is inactief.';
+$phpMussel['lang']['state_component_is_provisional'] = 'Component is voorlopig.';
 $phpMussel['lang']['state_default_password'] = 'Waarschuwing: Gebruikt de standaard wachtwoord!';
 $phpMussel['lang']['state_logged_in'] = 'Ingelogd.';
 $phpMussel['lang']['state_logs_access_only'] = 'Logbestanden toegang alleen';
@@ -186,7 +188,7 @@ $phpMussel['lang']['tip_home'] = 'Hallo, {username}.<br />Dit is de startpagina 
 $phpMussel['lang']['tip_login'] = 'Standaard gebruikersnaam: <span class="txtRd">admin</span> – Standaard wachtwoord: <span class="txtRd">password</span>';
 $phpMussel['lang']['tip_logs'] = 'Hallo, {username}.<br />Selecteer een logbestand uit de onderstaande lijst om de inhoud van de logbestand te bekijken.';
 $phpMussel['lang']['tip_see_the_documentation'] = 'Zie de <a href="https://github.com/Maikuolan/phpMussel/blob/master/_docs/readme.nl.md#SECTION7">documentatie</a> voor informatie over de verschillende configuratie richtlijnen en hun doeleinden.';
-$phpMussel['lang']['tip_updates'] = 'Hallo, {username}.<br />De updates pagina stelt u in staat om de verschillende onderdelen van phpMussel te installeren, verwijderen, en actualiseren (de core pakket, handtekeningen, plugins, L10N bestanden, ezv).';
+$phpMussel['lang']['tip_updates'] = 'Hallo, {username}.<br />De updates pagina stelt u in staat om de verschillende phpMussel componenten te installeren, verwijderen, en actualiseren (de core pakket, handtekeningen, plugins, L10N bestanden, ezv).';
 $phpMussel['lang']['tip_upload_test'] = 'Hallo, {username}.<br />De upload test pagina bevat een standaard file upload formulier, voor het testen of een bestand normaliter geblokkeerd door phpMussel bij een poging om het te uploaden.';
 $phpMussel['lang']['title_accounts'] = 'phpMussel – Accounts';
 $phpMussel['lang']['title_config'] = 'phpMussel – Configuratie';
