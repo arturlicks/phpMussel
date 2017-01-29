@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Front-end handler (last modified: 2017.01.25).
+ * This file: Front-end handler (last modified: 2017.01.29).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -1369,10 +1369,16 @@ elseif ($phpMussel['QueryVars']['phpmussel-page'] === 'updates' && $phpMussel['F
         ) !== "---\n") {
             continue;
         }
-        $phpMussel['Components']['Remotes'][$phpMussel['Components']['ReannotateThis']] =
-            substr(
-                $phpMussel['Components']['Remotes'][$phpMussel['Components']['ReannotateThis']], 0, -2
-            ) . $phpMussel['Components']['RemoteDataThis'] . "\n";
+        $phpMussel['ThisOffset'] = array(0 => array());
+        $phpMussel['ThisOffset'][1] = preg_match(
+            '/(\n+)$/',
+            $phpMussel['Components']['Remotes'][$phpMussel['Components']['ReannotateThis']],
+            $phpMussel['ThisOffset'][0]
+        );
+        $phpMussel['ThisOffset'] = strlen($phpMussel['ThisOffset'][0][0]) * -1;
+        $phpMussel['Components']['Remotes'][$phpMussel['Components']['ReannotateThis']] = substr(
+            $phpMussel['Components']['Remotes'][$phpMussel['Components']['ReannotateThis']], 0, $phpMussel['ThisOffset']
+        ) . $phpMussel['Components']['RemoteDataThis'] . "\n";
         if (is_array($phpMussel['Components']['RemoteMeta'][$phpMussel['Components']['Key']]['Name'])) {
             $phpMussel['IsolateL10N'](
                 $phpMussel['Components']['RemoteMeta'][$phpMussel['Components']['Key']]['Name'],

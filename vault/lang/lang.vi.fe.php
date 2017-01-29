@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Vietnamese language data for the front-end (last modified: 2016.12.19).
+ * This file: Vietnamese language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = 'Tên người dùng
 $phpMussel['lang']['response_rename_error'] = 'Không thể đổi tên!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'Đã cập nhật.';
 $phpMussel['lang']['response_updates_not_installed'] = 'Gói không được cài đặt!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'Gói không được cài đặt (đòi hỏi PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'Hết hạn!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'Hết hạn (vui lòng cập nhật bằng tay)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'Hết hạn (đòi hỏi PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'Không thể xác định.';
 $phpMussel['lang']['response_upload_error'] = 'Không thể tải lên!';
 $phpMussel['lang']['state_complete_access'] = 'Truy cập đầy đủ';

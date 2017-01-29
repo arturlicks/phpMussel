@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Italian language data for the front-end (last modified: 2016.12.19).
+ * This file: Italian language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = 'L\'input nome utent
 $phpMussel['lang']['response_rename_error'] = 'Non riuscito a rinominare!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'Aggiornato già.';
 $phpMussel['lang']['response_updates_not_installed'] = 'Componente non installato!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'Componente non installato (richiede PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'Non aggiornato!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'Non aggiornato (si prega di aggiornare manualmente)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'Non aggiornato (richiede PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'Incapace di determinare.';
 $phpMussel['lang']['response_upload_error'] = 'Non riuscito a caricare!';
 $phpMussel['lang']['state_complete_access'] = 'Accesso completo';

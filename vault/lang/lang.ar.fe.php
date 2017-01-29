@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Arabic language data for the front-end (last modified: 2016.12.19).
+ * This file: Arabic language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = 'اسم المستخ
 $phpMussel['lang']['response_rename_error'] = 'فشل في إعادة تسمية!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'تحديث غير مطلوب.';
 $phpMussel['lang']['response_updates_not_installed'] = 'وحدة غير مثبت!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'وحدة غير مثبت (يتطلب PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'عفا عليها الزمن!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'عفا عليها الزمن (يرجى تحديث يدويا)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'عفا عليها الزمن (يتطلب PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'غير قادر على تحديد.';
 $phpMussel['lang']['response_upload_error'] = 'فشل لتحميل!';
 $phpMussel['lang']['state_complete_access'] = 'الوصول كامل';

@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Chinese (traditional) language data for the front-end (last modified: 2016.12.19).
+ * This file: Chinese (traditional) language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = '用戶名輸入是�
 $phpMussel['lang']['response_rename_error'] = '無法改名！';
 $phpMussel['lang']['response_updates_already_up_to_date'] = '已經更新。';
 $phpMussel['lang']['response_updates_not_installed'] = '組件不安裝！';
+$phpMussel['lang']['response_updates_not_installed_php'] = '組件不安裝（它需要PHP {V}）！';
 $phpMussel['lang']['response_updates_outdated'] = '過時！';
 $phpMussel['lang']['response_updates_outdated_manually'] = '過時（請更新手動）！';
+$phpMussel['lang']['response_updates_outdated_php_version'] = '過時（它需要PHP {V}）！';
 $phpMussel['lang']['response_updates_unable_to_determine'] = '無法確定。';
 $phpMussel['lang']['response_upload_error'] = '無法上傳！';
 $phpMussel['lang']['state_complete_access'] = '完全訪問';

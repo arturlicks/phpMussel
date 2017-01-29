@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Russian language data for the front-end (last modified: 2016.12.19).
+ * This file: Russian language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = 'Имя пользо
 $phpMussel['lang']['response_rename_error'] = 'Не удалось переименовать!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'Уже обновлено.';
 $phpMussel['lang']['response_updates_not_installed'] = 'Компонент не установлен!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'Компонент не установлен (требует PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'Устаревший!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'Устаревший (пожалуйста обновить вручную)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'Устаревший (требует PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'Невозможно определить.';
 $phpMussel['lang']['response_upload_error'] = 'Не удалось загрузить!';
 $phpMussel['lang']['state_complete_access'] = 'Полный доступ';

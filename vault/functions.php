@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Functions file (last modified: 2017.01.11).
+ * This file: Functions file (last modified: 2017.01.16).
  *
  * @todo Add support for 7z, RAR (github.com/phpMussel/universe/issues/5).
  * @todo Add recursion support for ZIP scanning.
@@ -33,7 +33,7 @@ if (substr(PHP_VERSION, 0, 4) === '5.4.') {
 }
 
 /**
- * Registers plugin functions to their intended hooks.
+ * Registers plugin functions/closures to their intended hooks.
  *
  * @param string $what The name of the chosen function to execute at the
  *      desired point in the script.
@@ -76,22 +76,13 @@ $phpMussel['Arrayify'] = function (&$Input) {
 };
 
 /**
- * Replaces encapsulated substrings within the given input string based upon
- * the elements of the given input array. The function accepts two input
- * parameters: The first, the input array, and the second, the input string.
- * The function searches for any instances of each array key, encapsulated by
- * curly brackets, as substrings within the input string, and replaces any
- * instances found with the array element content corresponding to the array
- * key associated with each instance found.
+ * Replaces encapsulated substrings within an input string with the value of
+ * elements within an input array, whose keys correspond to the substrings.
+ * Accepts two input parameters: An input array (1), and an input string (2).
  *
- * This function is used extensively throughout phpMussel, to parse its
- * language data and to parse any messages related to any detections found
- * during the scan process and any other related processes.
- *
- * @param array $Needle The input array (what we're looking *for*).
- * @param string $Haystack The input string (what we're looking *in*).
- * @return string Results are returned directly to the calling scope as a
- *      string.
+ * @param array $Needle The input array (the needle[/s]).
+ * @param string $Haystack The input string (the haystack).
+ * @return string The resultant string.
  */
 $phpMussel['ParseVars'] = function ($Needle, $Haystack) {
     if (!is_array($Needle) || empty($Haystack)) {
@@ -520,14 +511,13 @@ $phpMussel['substral'] = function ($h, $n) {
 /**
  * This function reads files and returns the contents of those files.
  *
- * @param string $f Path and filename of the file to read.
+ * @param string $File Path and filename of the file to read.
  * @param int $s Number of blocks to read from the file (optional; can be
  *      manually specified, but it's best to just ignore it and let the
  *      function work it out for itself).
- * @param bool $c If false, perform basic safety check prior to reading the
- *      file (check if the file exists); If true, skip check (optional;
- *      defaults to false).
- * @param int $b The total size of a single block in kilobytes (optional;
+ * @param bool $PreChecked When false, checks that the file exists and is
+ *      writable. Defaults to false.
+ * @param int $Blocks The total size of a single block in kilobytes (optional;
  *      defaults to 128, ie, 128KB or 131072 bytes). This can be modified by
  *      developers as per their individual needs. Generally, a smaller value
  *      will increase stability but decrease performance, whereas a larger
@@ -535,25 +525,26 @@ $phpMussel['substral'] = function ($h, $n) {
  * @return string|bool Content of the file returned by the function (or false
  *      on failure).
  */
-$phpMussel['ReadFile'] = function ($f, $s = 0, $c = false, $b = 128) {
-    if (!$c && !is_file($f)) {
+$phpMussel['ReadFile'] = function ($File, $Size = 0, $PreChecked = false, $Blocks = 128) {
+    if (!$PreChecked && (!is_file($File) || !is_readable($File))) {
         return false;
     }
-    $bsize = $b * 1024;
-    if (!$s) {
-        $s = @ceil(filesize($f) / $bsize);
+    $Blocksize = $Blocks * 1024;
+    $Filesize = filesize($File);
+    if (!$Size) {
+        $Size = ($Filesize && $Blocksize) ? ceil($Filesize / $Blocksize) : 0;
     }
-    $d = '';
-    if ($s > 0) {
-        $fh = fopen($f, 'rb');
+    $Data = '';
+    if ($Size > 0) {
+        $Handle = fopen($File, 'rb');
         $r = 0;
-        while ($r < $s) {
-            $d .= fread($fh, $bsize);
+        while ($r < $Size) {
+            $Data .= fread($Handle, $Blocksize);
             $r++;
         }
-        fclose($fh);
+        fclose($Handle);
     }
-    return $d ?: false;
+    return $Data ?: false;
 };
 
 /**
@@ -713,7 +704,7 @@ $phpMussel['SaveCache'] = function ($entry = '', $item_ex = 0, $item_data = '') 
     fwrite($fh, $d);
     fclose($fh);
     $IndexFile = $phpMussel['Vault'] . 'cache/index.dat';
-    $IndexNewData = $IndexData = (!file_exists($IndexFile)) ? '' : $phpMussel['ReadFile']($IndexFile, 0, true);
+    $IndexNewData = $IndexData = (file_exists($IndexFile)) ? $phpMussel['ReadFile']($IndexFile, 0, true) : '';
     while (substr_count($IndexNewData, $entry . ':')) {
         $IndexNewData = str_ireplace($entry . ':' . $phpMussel['substrbf']($phpMussel['substraf']($IndexNewData, $entry . ':'), ';') . ';', '', $IndexNewData);
     }
@@ -5999,7 +5990,11 @@ $phpMussel['AutoType'] = function (&$Var, $Type = '') {
  *      to send along with the request.
  * @return string The results of the request.
  */
-$phpMussel['Request'] = function ($URI, $Params = '') use (&$phpMussel) {
+$phpMussel['Request'] = function ($URI, $Params = '', $Timeout = '') use (&$phpMussel) {
+    if (!$Timeout) {
+        $Timeout = $phpMussel['Timeout'];
+    }
+
     /** Initialise the cURL session. */
     $Request = curl_init($URI);
 
@@ -6019,7 +6014,7 @@ $phpMussel['Request'] = function ($URI, $Params = '') use (&$phpMussel) {
         curl_setopt($Request, CURLOPT_SSL_VERIFYPEER, false);
     }
     curl_setopt($Request, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($Request, CURLOPT_TIMEOUT, $phpMussel['Timeout']);
+    curl_setopt($Request, CURLOPT_TIMEOUT, $Timeout);
     curl_setopt($Request, CURLOPT_USERAGENT, $phpMussel['ScriptUA']);
 
     /** Execute and get the response. */

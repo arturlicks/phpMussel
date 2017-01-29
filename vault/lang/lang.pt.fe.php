@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Portuguese language data for the front-end (last modified: 2016.12.19).
+ * This file: Portuguese language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = 'Entrada de nome de 
 $phpMussel['lang']['response_rename_error'] = 'Falha ao renomear!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'Já atualizado.';
 $phpMussel['lang']['response_updates_not_installed'] = 'Componente não instalado!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'Componente não instalado (requer PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'Desatualizado!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'Desatualizado (por favor atualize manualmente)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'Desatualizado (requer PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'Não foi possível determinar.';
 $phpMussel['lang']['response_upload_error'] = 'Falha ao carregar!';
 $phpMussel['lang']['state_complete_access'] = 'Acesso completo';

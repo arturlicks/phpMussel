@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Indonesian language data for the front-end (last modified: 2016.12.19).
+ * This file: Indonesian language data for the front-end (last modified: 2016.12.31).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -162,8 +162,10 @@ $phpMussel['lang']['response_login_username_field_empty'] = 'Nama pengguna yang 
 $phpMussel['lang']['response_rename_error'] = 'Gagal memodifikasi nama!';
 $phpMussel['lang']['response_updates_already_up_to_date'] = 'Sudah yang terbaru.';
 $phpMussel['lang']['response_updates_not_installed'] = 'Komponen tidak diinstal!';
+$phpMussel['lang']['response_updates_not_installed_php'] = 'Komponen tidak diinstal (membutuhkan PHP {V})!';
 $phpMussel['lang']['response_updates_outdated'] = 'Tidak yang terbaru!';
 $phpMussel['lang']['response_updates_outdated_manually'] = 'Tidak yang terbaru (silahkan perbarui secara manual)!';
+$phpMussel['lang']['response_updates_outdated_php_version'] = 'Tidak yang terbaru (membutuhkan PHP {V})!';
 $phpMussel['lang']['response_updates_unable_to_determine'] = 'Tidak dapat menentukan.';
 $phpMussel['lang']['response_upload_error'] = 'Gagal mengupload!';
 $phpMussel['lang']['state_complete_access'] = 'Akses lengkap';
