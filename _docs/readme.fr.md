@@ -6,7 +6,7 @@
 - 2B. [COMMENT INSTALLER (POUR CLI)](#SECTION2B)
 - 3A. [COMMENT UTILISER (POUR SERVEURS WEB)](#SECTION3A)
 - 3B. [COMMENT UTILISER (POUR CLI)](#SECTION3B)
-- 4. [GESTION FRONT-END](#SECTION4)
+- 4. [GESTION L'ACCÈS FRONTAL](#SECTION4)
 - 5. [CLI (COMMANDE LIGNE INTERFACE)](#SECTION5)
 - 6. [FICHIERS INCLUS DANS CETTE PAQUET](#SECTION6)
 - 7. [OPTIONS DE CONFIGURATION](#SECTION7)
@@ -124,7 +124,7 @@ Pour un complet itinéraire de signatures que sera utilisé par phpMussel pour l
 
 Si vous rencontrez des faux positifs, si vous rencontrez quelque chose nouveau que vous pensez doit être bloqué, ou pour toute autre chose en ce qui concerne les signatures, s'il vous plaît, contactez moi à ce sujet afin que je puisse effectuer les nécessaires changements, dont, si vous ne contactez moi pas, j'ai peut n'être pas conscient.
 
-Pour désactiver les signatures qui sont incluent avec phpMussel (comme si vous rencontrez un faux positif spécifique à vos besoins dont ne devrait normalement pas être retiré à partir de rationaliser), référer aux les notes de la liste grise dans la GESTION FRONT-END section de ce fichier README.
+Pour désactiver les signatures qui sont incluent avec phpMussel (comme si vous rencontrez un faux positif spécifique à vos besoins dont ne devrait normalement pas être retiré à partir de rationaliser), référer aux les notes de la liste grise dans la GESTION L'ACCÈS FRONTAL section de ce fichier README.
 
 ---
 
@@ -140,7 +140,7 @@ Aussi soyez conscient que phpMussel est un scanner *à la demande* (ou *on-deman
 ---
 
 
-###4. <a name="SECTION4"></a>GESTION FRONT-END
+###4. <a name="SECTION4"></a>GESTION L'ACCÈS FRONTAL
 
 @TODO@
 
@@ -208,7 +208,7 @@ Fichier | Description
 /vault/fe_assets/_login.html | Un modèle HTML pour la page pour la connexion de l'accès frontal.
 /vault/fe_assets/_logs.html | Un modèle HTML pour la page pour les fichiers journaux de l'accès frontal.
 /vault/fe_assets/_nav_complete_access.html | Un modèle HTML pour les liens de navigation de l'accès frontal, pour ceux qui ont accès complet.
-/vault/fe_assets/_nav_logs_access_only.html | Un modèle HTML pour le front-end navigation links, pour ceux qui ont accès aux fichiers journaux seulement.
+/vault/fe_assets/_nav_logs_access_only.html | Un modèle HTML pour les liens de navigation de l'accès frontal, pour ceux qui ont accès aux fichiers journaux seulement.
 /vault/fe_assets/_updates.html | Un modèle HTML pour la page des mises à jour de l'accès frontal.
 /vault/fe_assets/_updates_row.html | Un modèle HTML pour la page des mises à jour de l'accès frontal.
 /vault/fe_assets/_upload_test.html | Un modèle HTML pour les tests de téléchargement.
@@ -217,33 +217,33 @@ Fichier | Description
 /vault/fe_assets/frontend.html | Le fichier modèle HTML principal pour l'accès frontal.
 /vault/lang/ | Contient linguistiques données.
 /vault/lang/.htaccess | Un hypertexte accès fichier (dans ce cas, pour protéger les sensibles fichiers appartenant au script contre être consulté par non autorisées sources).
-/vault/lang/lang.ar.fe.php | Linguistiques données en Arabe pour le front-end.
+/vault/lang/lang.ar.fe.php | Linguistiques données en Arabe pour l'accès frontal.
 /vault/lang/lang.ar.php | Linguistiques données en Arabe.
-/vault/lang/lang.de.fe.php | Linguistiques données en Allemande pour le front-end.
+/vault/lang/lang.de.fe.php | Linguistiques données en Allemande pour l'accès frontal.
 /vault/lang/lang.de.php | Linguistiques données en Allemande.
-/vault/lang/lang.en.fe.php | Linguistiques données en Anglais pour le front-end.
+/vault/lang/lang.en.fe.php | Linguistiques données en Anglais pour l'accès frontal.
 /vault/lang/lang.en.php | Linguistiques données en Anglais.
-/vault/lang/lang.es.fe.php | Linguistiques données en Espagnol pour le front-end.
+/vault/lang/lang.es.fe.php | Linguistiques données en Espagnol pour l'accès frontal.
 /vault/lang/lang.es.php | Linguistiques données en Espagnol.
-/vault/lang/lang.fr.fe.php | Linguistiques données en Français pour le front-end.
+/vault/lang/lang.fr.fe.php | Linguistiques données en Français pour l'accès frontal.
 /vault/lang/lang.fr.php | Linguistiques données en Français.
-/vault/lang/lang.id.fe.php | Linguistiques données en Indonésienne pour le front-end.
+/vault/lang/lang.id.fe.php | Linguistiques données en Indonésienne pour l'accès frontal.
 /vault/lang/lang.id.php | Linguistiques données en Indonésienne.
-/vault/lang/lang.it.fe.php | Linguistiques données en Italienne pour le front-end.
+/vault/lang/lang.it.fe.php | Linguistiques données en Italienne pour l'accès frontal.
 /vault/lang/lang.it.php | Linguistiques données en Italienne.
-/vault/lang/lang.ja.fe.php | Linguistiques données en Japonaise pour le front-end.
+/vault/lang/lang.ja.fe.php | Linguistiques données en Japonaise pour l'accès frontal.
 /vault/lang/lang.ja.php | Linguistiques données en Japonaise.
-/vault/lang/lang.nl.fe.php | Linguistiques données en Néerlandaise pour le front-end.
+/vault/lang/lang.nl.fe.php | Linguistiques données en Néerlandaise pour l'accès frontal.
 /vault/lang/lang.nl.php | Linguistiques données en Néerlandaise.
-/vault/lang/lang.pt.fe.php | Linguistiques données en Portugaise pour le front-end.
+/vault/lang/lang.pt.fe.php | Linguistiques données en Portugaise pour l'accès frontal.
 /vault/lang/lang.pt.php | Linguistiques données en Portugaise.
-/vault/lang/lang.ru.fe.php | Linguistiques données en Russe pour le front-end.
+/vault/lang/lang.ru.fe.php | Linguistiques données en Russe pour l'accès frontal.
 /vault/lang/lang.ru.php | Linguistiques données en Russe.
-/vault/lang/lang.vi.fe.php | Linguistiques données en Vietnamienne pour le front-end.
+/vault/lang/lang.vi.fe.php | Linguistiques données en Vietnamienne pour l'accès frontal.
 /vault/lang/lang.vi.php | Linguistiques données en Vietnamienne.
-/vault/lang/lang.zh-tw.fe.php | Linguistiques données en Chinois (traditionnel) pour le front-end.
+/vault/lang/lang.zh-tw.fe.php | Linguistiques données en Chinois (traditionnel) pour l'accès frontal.
 /vault/lang/lang.zh-tw.php | Linguistiques données en Chinois (traditionnel).
-/vault/lang/lang.zh.fe.php | Linguistiques données en Chinois (simplifié) pour le front-end.
+/vault/lang/lang.zh.fe.php | Linguistiques données en Chinois (simplifié) pour l'accès frontal.
 /vault/lang/lang.zh.php | Linguistiques données en Chinois (simplifié).
 /vault/quarantine/ | Quarantaine répertoire (contient des fichiers de la quarantaine).
 /vault/quarantine/.htaccess | Un hypertexte accès fichier (dans ce cas, pour protéger les sensibles fichiers appartenant au script contre être consulté par non autorisées sources).
