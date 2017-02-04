@@ -249,86 +249,8 @@ CLIプロンプトにて`c`とタイプしエンターを押せば、利用可�
 /vault/quarantine/.htaccess | ハイパーテキスト・アクセスファイル（この場合、本スクリプトの重要なファイルを権限のないソースのアクセスから保護するためです）。
 /vault/signatures/ | シグネチャディレクトリ（シグネチャファイルが含まれています）。
 /vault/signatures/.htaccess | ハイパーテキスト・アクセスファイル（この場合、本スクリプトの重要なファイルを権限のないソースのアクセスから保護するためです）。
-/vault/signatures/ascii_clamav_regex.cvd | 正規化ASCIIシグネチャ用ファイル。
-/vault/signatures/ascii_clamav_regex.map | 正規化ASCIIシグネチャ用ファイル。
-/vault/signatures/ascii_clamav_standard.cvd | 正規化ASCIIシグネチャ用ファイル。
-/vault/signatures/ascii_clamav_standard.map | 正規化ASCIIシグネチャ用ファイル。
-/vault/signatures/ascii_mussel_regex.cvd | 正規化ASCIIシグネチャ用ファイル。
-/vault/signatures/ascii_mussel_standard.cvd | 正規化ASCIIシグネチャ用ファイル。
-/vault/signatures/coex_clamav.cvd | 複合拡張シグネチャ用ファイル。
-/vault/signatures/coex_mussel.cvd | 複合拡張シグネチャ用ファイル。
-/vault/signatures/elf_clamav_regex.cvd | ＥＬＦシグネチャ用ファイル。
-/vault/signatures/elf_clamav_regex.map | ＥＬＦシグネチャ用ファイル。
-/vault/signatures/elf_clamav_standard.cvd | ＥＬＦシグネチャ用ファイル。
-/vault/signatures/elf_clamav_standard.map | ＥＬＦシグネチャ用ファイル。
-/vault/signatures/elf_mussel_regex.cvd | ＥＬＦシグネチャ用ファイル。
-/vault/signatures/elf_mussel_standard.cvd | ＥＬＦシグネチャ用ファイル。
-/vault/signatures/exe_clamav_regex.cvd | ＰＥ（ポータブル実行可能）シグネチャ用ファイル。
-/vault/signatures/exe_clamav_regex.map | ＰＥ（ポータブル実行可能）シグネチャ用ファイル。
-/vault/signatures/exe_clamav_standard.cvd | ＰＥ（ポータブル実行可能）シグネチャ用ファイル。
-/vault/signatures/exe_clamav_standard.map | ＰＥ（ポータブル実行可能）シグネチャ用ファイル。
-/vault/signatures/exe_mussel_regex.cvd | ＰＥ（ポータブル実行可能）シグネチャ用ファイル。
-/vault/signatures/exe_mussel_standard.cvd | ＰＥ（ポータブル実行可能）シグネチャ用ファイル。
-/vault/signatures/filenames_clamav.cvd | ファイル名シグネチャ用ファイル。
-/vault/signatures/filenames_mussel.cvd | ファイル名シグネチャ用ファイル。
-/vault/signatures/general_clamav_regex.cvd | 一般シグネチャ用ファイル。
-/vault/signatures/general_clamav_regex.map | 一般シグネチャ用ファイル。
-/vault/signatures/general_clamav_standard.cvd | 一般シグネチャ用ファイル。
-/vault/signatures/general_clamav_standard.map | 一般シグネチャ用ファイル。
-/vault/signatures/general_mussel_regex.cvd | 一般シグネチャ用ファイル。
-/vault/signatures/general_mussel_standard.cvd | 一般シグネチャ用ファイル。
-/vault/signatures/graphics_clamav_regex.cvd | グラフィックシグネチャ用ファイル。
-/vault/signatures/graphics_clamav_regex.map | グラフィックシグネチャ用ファイル。
-/vault/signatures/graphics_clamav_standard.cvd | グラフィックシグネチャ用ファイル。
-/vault/signatures/graphics_clamav_standard.map | グラフィックシグネチャ用ファイル。
-/vault/signatures/graphics_mussel_regex.cvd | グラフィックシグネチャ用ファイル。
-/vault/signatures/graphics_mussel_standard.cvd | グラフィックシグネチャ用ファイル。
 /vault/signatures/hex_general_commands.csv | phpMussel がオプション利用する一般コマンド検知の１６進法変換ＣＳＶ。
-/vault/signatures/html_clamav_regex.cvd | 正規化ＨＴＭＬシグネチャ用ファイル。
-/vault/signatures/html_clamav_regex.map | 正規化ＨＴＭＬシグネチャ用ファイル。
-/vault/signatures/html_clamav_standard.cvd | 正規化ＨＴＭＬシグネチャ用ファイル。
-/vault/signatures/html_clamav_standard.map | 正規化ＨＴＭＬシグネチャ用ファイル。
-/vault/signatures/html_mussel_regex.cvd | 正規化ＨＴＭＬシグネチャ用ファイル。
-/vault/signatures/html_mussel_standard.cvd | 正規化ＨＴＭＬシグネチャ用ファイル。
-/vault/signatures/macho_clamav_regex.cvd | Mach-Oシグネチャ用ファイル。
-/vault/signatures/macho_clamav_regex.map | Mach-Oシグネチャ用ファイル。
-/vault/signatures/macho_clamav_standard.cvd | Mach-Oシグネチャ用ファイル。
-/vault/signatures/macho_clamav_standard.map | Mach-Oシグネチャ用ファイル。
-/vault/signatures/macho_mussel_regex.cvd | Mach-Oシグネチャ用ファイル。
-/vault/signatures/macho_mussel_standard.cvd | Mach-Oシグネチャ用ファイル。
-/vault/signatures/mail_clamav_regex.cvd | メールシグネチャ用のファイル。
-/vault/signatures/mail_clamav_regex.map | メールシグネチャ用のファイル。
-/vault/signatures/mail_clamav_standard.cvd | メールシグネチャ用のファイル。
-/vault/signatures/mail_clamav_standard.map | メールシグネチャ用のファイル。
-/vault/signatures/mail_mussel_regex.cvd | メールシグネチャ用のファイル。
-/vault/signatures/mail_mussel_standard.cvd | メールシグネチャ用のファイル。
-/vault/signatures/clamav.hdb | ＭＤ５ベースシグネチャ用ファイル。
-/vault/signatures/phpmussel.hdb | ＭＤ５ベースシグネチャ用ファイル。
-/vault/signatures/ole_clamav_regex.cvd | ＯＬＥシグネチャ用ファイル。
-/vault/signatures/ole_clamav_regex.map | ＯＬＥシグネチャ用ファイル。
-/vault/signatures/ole_clamav_standard.cvd | ＯＬＥシグネチャ用ファイル。
-/vault/signatures/ole_clamav_standard.map | ＯＬＥシグネチャ用ファイル。
-/vault/signatures/ole_mussel_regex.cvd | ＯＬＥシグネチャ用ファイル。
-/vault/signatures/ole_mussel_standard.cvd | ＯＬＥシグネチャ用ファイル。
-/vault/signatures/pdf_clamav_regex.cvd | ＰＤＦシグネチャ用ファイル。
-/vault/signatures/pdf_clamav_regex.map | ＰＤＦシグネチャ用ファイル。
-/vault/signatures/pdf_clamav_standard.cvd | ＰＤＦシグネチャ用ファイル。
-/vault/signatures/pdf_clamav_standard.map | ＰＤＦシグネチャ用ファイル。
-/vault/signatures/pdf_mussel_regex.cvd | ＰＤＦシグネチャ用ファイル。
-/vault/signatures/pdf_mussel_standard.cvd | ＰＤＦシグネチャ用ファイル。
-/vault/signatures/phpmussel.pex | PE拡張シグネチャ用ファイル。
-/vault/signatures/clamav.mdb | PEセクショナルシグネチャ用ファイル。
-/vault/signatures/phpmussel.mdb | PEセクショナルシグネチャ用ファイル。
-/vault/signatures/swf_clamav_regex.cvd | ショックウェーブシグネチャ用ファイル。
-/vault/signatures/swf_clamav_regex.map | ショックウェーブシグネチャ用ファイル。
-/vault/signatures/swf_clamav_standard.cvd | ショックウェーブシグネチャ用ファイル。
-/vault/signatures/swf_clamav_standard.map | ショックウェーブシグネチャ用ファイル。
-/vault/signatures/swf_mussel_regex.cvd | ショックウェーブシグネチャ用ファイル。
-/vault/signatures/swf_mussel_standard.cvd | ショックウェーブシグネチャ用ファイル。
 /vault/signatures/switch.dat | 変数をコントロール、セットします。
-/vault/signatures/urlscanner.cvd | URLスキャナーシグネチャ用ファイル。
-/vault/signatures/whitelist_clamav.cvd | 特定ホワイトリスト用ファイル。
-/vault/signatures/whitelist_mussel.cvd | 特定ホワイトリスト用ファイル。
 /vault/.htaccess | ハイパーテキスト・アクセスファイル（この場合、本スクリプトの重要なファイルを権限のないソースのアクセスから保護するためです）。
 /vault/cli.php | CLIハンドラ。
 /vault/components.dat | phpMusselのコンポーネント情報が含まれています； アップデート機能で使用（フロントエンドが提供します）。
@@ -356,21 +278,6 @@ CLIプロンプトにて`c`とタイプしエンターを押せば、利用可�
 /web.config | ASP.NET設定ファイルです（スクリプトがASP.NETテクノロジーを基礎とするサーバーにインストールされた時に`/vault`ディレクトリを権限のないソースによるアクセスから保護するためです）。
 
 ※ ファイル名は設定の仕方（`config.ini`内）により異なることがあります。
-
-####*シグネチャファイルについて*
-CVDは"ClamAV Virus Definitions"（ClamAV ウィルス定義）の頭文字をとったもので、ClamAVがどのようにシグネチャを参照するか、phpMusselに対してどのように使用するかに関連しています。"CVD"で終了するファイルはシグネチャを含んでいます。
-
-"MAP"で終了するファイルは、文字通り、phpMusselが各々のスキャンにおいてどのシグネチャを使用すべきか否かをマッピングしています。スキャンは必ずしも全てのシグネチャを必要とはしません。phpMusselはシグネチャファイルのマップを使ってスキャン工程をスピードアップします（さもなければ、長時間を要する可能性がある場合など）。
-
-"_regex"でマークされたシグネチャファイルは、正規表現パターンチェッキング(regex)を利用するシグネチャを含んでいます。
-
-"_standard"でマークされたシグネチャファイルは、特にパターンチェッキングを利用しないシグネチャを含んでいます。
-
-"_regex" でも "_standard"でもマークされていないシグネチャファイルでも、そのどちらか一方に属し、両方の性質をもつことはありません（本READMEファイルのシグネチャフォーマットのセクションにてドキュメンテーション及び詳細を参照して下さい）。
-
-"_clamav"でマークされたシグネチャファイルは、ClamAVデータベース（GNU/GPL）をソースとするシグネチャのみを含んでいます。
-
-"_mussel"でマークされたシグネチャは、ClamAVをソースとしないシグネチャを含んでいます。概して私自身か種々の情報源から集めたシグネチャです。
 
 ---
 
@@ -709,13 +616,6 @@ NAMEはそのシグネチャを指す名前でFNRXはファイル名（エンコ
 
 HASHは全ファイルのMD5 ハッシュ、FILESIZEはファイルの全サイズ、NAMEはそのシグネチャを指す名前です。
 
-####*アーカイブ・メタデータシグネチャ*
-アーカイブ・メタデータシグネチャのフォーマットは例外なく次のようになります。
-
-`NAME:FILESIZE:CRC32`
-
-NAMEはそのシグネチャを指す名前、FILESIZEはアーカイブに含まれるファイルサイズ（解凍後）トータル、CRC32は含まれるファイルのCRC32チェックサムです。
-
 ####*PEセクショナルシグネチャ*
 PEセクショナルシグネチャのフォーマットは例外なく次のようになります。
 
@@ -769,12 +669,12 @@ phpMusselが使うシグネチャタイプの詳細です。
 - "Ｅメールシグネチャ"　スキャン対象ファイルがホワイトリスト化されていないEMLファイルの場合、そのコンテンツに対して使用されます。
 - "ＭＤ５シグネチャ"　スキャン対象ファイルがホワイトリスト化されていない場合、そのコンテンツのＭＤ５ハッシュ、ファイルサイズに対して使用されます。
 
-- "ＯＬＥシグネチャ" (ole_*) スキャン対象ファイルがホワイトリスト化されていないOLEオブジェクトの場合、そのコンテンツに対して使用されます。
-- "ＰＤＦシグネチャ" (pdf_*)　スキャン対象ファイルがホワイトリスト化されていないPDFファイルの場合、そのコンテンツに対して使用されます。
-- "ポータブル実行セクショナルシグネチャ" (pe_*)　スキャン対象ファイルがホワイトリスト化されていない場合、全てのPE部分のＭＤ５ハッシュとファイルサイズに対して使用され、PEフォーマットへの適合をみます。
-- "ポータブル実行拡張シグネチャ" (pex_*)　スキャン対象ファイルがホワイトリスト化されていない場合、ファイル内のＭＤ５ハッシュと変数のサイズに対して使用され、PEフォーマットへの適合をみます。
-- "ＳＷＦシグネチャ" (swf_*)　スキャン対象ファイルがホワイトリスト化されていないショックウェーブファイルの場合、そのコンテンツに対して使用されます。
-- "ホワイトリストシグネチャ" (whitelist_*)　スキャン対象ファイルのコンテンツのＭＤ５ハッシュとファイルサイズに対して使用されます。適合ファイルは、ホワイトリスト・エントリー内に記載されたシグネチャタイプへの適合性を必要としません。
+- "ＯＬＥシグネチャ" スキャン対象ファイルがホワイトリスト化されていないOLEオブジェクトの場合、そのコンテンツに対して使用されます。
+- "ＰＤＦシグネチャ"　スキャン対象ファイルがホワイトリスト化されていないPDFファイルの場合、そのコンテンツに対して使用されます。
+- "ポータブル実行セクショナルシグネチャ"　スキャン対象ファイルがホワイトリスト化されていない場合、全てのPE部分のＭＤ５ハッシュとファイルサイズに対して使用され、PEフォーマットへの適合をみます。
+- "ポータブル実行拡張シグネチャ"　スキャン対象ファイルがホワイトリスト化されていない場合、ファイル内のＭＤ５ハッシュと変数のサイズに対して使用され、PEフォーマットへの適合をみます。
+- "ＳＷＦシグネチャ"　スキャン対象ファイルがホワイトリスト化されていないショックウェーブファイルの場合、そのコンテンツに対して使用されます。
+- "ホワイトリストシグネチャ"　スキャン対象ファイルのコンテンツのＭＤ５ハッシュとファイルサイズに対して使用されます。適合ファイルは、ホワイトリスト・エントリー内に記載されたシグネチャタイプへの適合性を必要としません。
 （注意：これらのシグネチャは`config.ini`において容易に無効設定できます）。
 
 ---
@@ -878,4 +778,4 @@ phpMusselは、ファイルをブロックします | __偽陽性__ | 真陽性�
 ---
 
 
-最終アップデート： 2017年1月28日。
+最終アップデート： 2017年2月3日。

@@ -2,18 +2,18 @@
 
 ### <div dir="rtl">المحتويات:</div>
 <div dir="rtl"><ul>
- <li>1. <a href="#SECTION1">مقدمة</a></li>
- <li>2-أ. <a href="#SECTION2A">كيفية التحميل (لخدمات الويب)</a></li>
- <li>2-ب. <a href="#SECTION2B">كيفية التحميل (لخدمات واجهة سطر الأوامر)</a></li>
- <li>3-أ. <a href="#SECTION3A">كيفية الإستخدام (لخدمات الويب)</a></li>
- <li>3-ب. <a href="#SECTION3B">كيفية الاستخدام (لخدمات واجهة سطر الأوامر)</a></li>
- <li>4. <a href="#SECTION4">إدارة FRONT-END</a></li>
- <li>5. <a href="#SECTION5">CLI (واجهة سطر الأوامر)</a></li>
- <li>6. <a href="#SECTION6">الملفاتالموجودةفيهذهالحزمة</a></li>
- <li>7. <a href="#SECTION7">خياراتالتكوين/التهيئة</a></li>
- <li>8. <a href="#SECTION8">شكل/تنسيق التوقيع</a></li>
- <li>9. <a href="#SECTION9">مشاكل التوافق المعروفة</a></li>
- <li>10. <a href="#SECTION10">أسئلة وأجوبة (FAQ)</a></li>
+ <li>١. <a href="#SECTION1">مقدمة</a></li>
+ <li>٢أ. <a href="#SECTION2A">كيفية التحميل (لخدمات الويب)</a></li>
+ <li>٢ب. <a href="#SECTION2B">كيفية التحميل (لخدمات واجهة سطر الأوامر)</a></li>
+ <li>٣أ. <a href="#SECTION3A">كيفية الإستخدام (لخدمات الويب)</a></li>
+ <li>٣ب. <a href="#SECTION3B">كيفية الاستخدام (لخدمات واجهة سطر الأوامر)</a></li>
+ <li>٤. <a href="#SECTION4">إدارة FRONT-END</a></li>
+ <li>٥. <a href="#SECTION5">CLI (واجهة سطر الأوامر)</a></li>
+ <li>٦. <a href="#SECTION6">الملفاتالموجودةفيهذهالحزمة</a></li>
+ <li>٧. <a href="#SECTION7">خياراتالتكوين/التهيئة</a></li>
+ <li>٨. <a href="#SECTION8">شكل/تنسيق التوقيع</a></li>
+ <li>٩. <a href="#SECTION9">مشاكل التوافق المعروفة</a></li>
+ <li>١٠. <a href="#SECTION10">أسئلة وأجوبة (FAQ)</a></li>
 </ul></div>
 
 <div dir="rtl"><em>ملاحظة بخصوص ترجمة: في حالة الأخطاء (على سبيل المثال، التناقضات بين الترجمات، الأخطاء المطبعية، إلخ)، النسخة الإنجليزية من هذه الوثيقة هو تعتبر النسخة الأصلية وموثوق. إذا وجدت أي أخطاء، سيكون موضع ترحيب مساعدتكم في تصحيحها.</em></div>
@@ -21,11 +21,11 @@
 ---
 
 
-### <div dir="rtl">1. <a name="SECTION1"></a>مقدمة</div>
+### <div dir="rtl">١. <a name="SECTION1"></a>مقدمة</div>
 
 <div dir="rtl">شكراً لك على إستخدام phpMussel، المبرمج بلغة PHP للكشف عن ملفات الإختراق والفيروسات والبرمجيات الخبيثة الموجودة حيث يعتمد السكربت على توقيعات ClamAV وغيرها.<br /><br /></div>
 
-<div dir="rtl">حقوق النشر محفوظة ل phpMussel لعام 2013 وما بعده تحت رخصة GNU/GPLv2 للمبرمج (Caleb M (Maikuolan.<br /><br /></div>
+<div dir="rtl">حقوق النشر محفوظة ل phpMussel لعام ٢٠١٣ وما بعده تحت رخصة GNU/GPLv2 للمبرمج (Caleb M (Maikuolan.<br /><br /></div>
 
 <div dir="rtl">هذا البرنامج مجاني، يمكنك تعديله وإعادة نشره تحت رخصة GNU. نشارك هذا السكربت على أمل أن تعم الفائدة لكن لا نتحمل أية مسؤولية أو أية ضمانات لاستخدامك، اطلع على تفاصيل رخصة GNU للمزيد من المعلومات عبر الملف `LICENSE.txt` وللمزيد من المعلومات:</div>
 - <http://www.gnu.org/licenses/>.
@@ -42,19 +42,19 @@
 ---
 
 
-### <div dir="rtl">2-أ. <a name="SECTION2A"></a>كيفية التحميل (لخدمات الويب)</div>
+### <div dir="rtl">٢أ. <a name="SECTION2A"></a>كيفية التحميل (لخدمات الويب)</div>
 
 <div dir="rtl">أرجو أن يتم تسهيل هذه العملية في المستقبل القريب، لكن في الوقت الحالي إتبع هذه التعليمات والتي تعمل على أغلب الأنظمة وأنظمة إدارة المحتوى CMS:<br /><br /></div>
 
-<div dir="rtl">1. بقراءتك لهذا سنفرض بأنك قمت بتحميل السكربت، من هنا عليك العمل على جهازك المحلي أو نظام إدارة المحتوى لإضافة هذه الأمور، مجلد مثل `/public_html/phpmussel/` أو ما شابه سيكون كاف.<br /><br /></div>
+<div dir="rtl">١. بقراءتك لهذا سنفرض بأنك قمت بتحميل السكربت، من هنا عليك العمل على جهازك المحلي أو نظام إدارة المحتوى لإضافة هذه الأمور، مجلد مثل `/public_html/phpmussel/` أو ما شابه سيكون كاف.<br /><br /></div>
 
-<div dir="rtl">2. إعادة تسمية "config.ini.RenameMe" إلى "config.ini" (تقع داخل "vault")، واختياريا (هذه الخطوة اختيارية ينصح بها للمستخدمين المتقدمين ولا ينصح بها للمبتدئين)، افتحه، وعدل الخيارات كما يناسبك (أعلى كل خيار يوجد وصف مختصر للوظيفة التي يقوم بها).<br /><br /></div>
+<div dir="rtl">٢. إعادة تسمية "config.ini.RenameMe" إلى "config.ini" (تقع داخل "vault")، واختياريا (هذه الخطوة اختيارية ينصح بها للمستخدمين المتقدمين ولا ينصح بها للمبتدئين)، افتحه، وعدل الخيارات كما يناسبك (أعلى كل خيار يوجد وصف مختصر للوظيفة التي يقوم بها).<br /><br /></div>
 
-<div dir="rtl">3. إرفع الملفات للمجلد الذي اخترته(لست بحاجة لرفع `*.txt/*.md` لكن في الغالب يجب أن ترفع جميع الملفات).<br /><br /></div>
+<div dir="rtl">٣. إرفع الملفات للمجلد الذي اخترته(لست بحاجة لرفع `*.txt/*.md` لكن في الغالب يجب أن ترفع جميع الملفات).<br /><br /></div>
 
-<div dir="rtl">4. غير التصريح لمجلد vault للتصريح "755" (إذا كان هناك مشاكل، يمكنك محاولة "777"، ولكن هذه ليست آمنة). المجلد الرئيسي الذي يحتوي على الملفات-المجلد الذي اخترته سابقاً-، بالعادة يمكن تجاهله، لكن يجب التأكد من التصريح إذا واجهت مشاكل في الماضي(إفتراضيا يجب أن يكون "755").<br /><br /></div>
+<div dir="rtl">٤. غير التصريح لمجلد vault للتصريح "755" (إذا كان هناك مشاكل، يمكنك محاولة "777"، ولكن هذه ليست آمنة). المجلد الرئيسي الذي يحتوي على الملفات-المجلد الذي اخترته سابقاً-، بالعادة يمكن تجاهله، لكن يجب التأكد من التصريح إذا واجهت مشاكل في الماضي(إفتراضيا يجب أن يكون "755").<br /><br /></div>
 
-<div dir="rtl">5. الآن أنت بحاجة لربط phpMussel لنظام إدارة المحتوى أو النظام الذي تستخدمه، هناك عدة طرق لفعل هذا لكن أسهل طريقة ببساطة إضافة السكربت لبداية النواة في نظامك (سيتم إعادة التحميل لكل وصول لأي صفحة في الموقع) بإستخدام جمل `require` أو `include`، بالعادة سيتم التخزين في `/includes`، `/assets` أو `/functions`، وسيتم تسميته بالغالب مثل: `init.php`، `common_functions.php`، `functions.php` أو ما شابه. من الممكن أن تكون مستخدم ل CMS لذا يمكن أن أقدم بعض المساعدة بخصوص هذا الموضوع، لإستخدام `require` أو `include` قم بإضافة الكود التالي لبداية الملف الرئيسي لبرنامجك، عدل النص الموجود داخل علامات التنصيص لمسار `loader.php` لديك.<br /><br /></div>
+<div dir="rtl">٥. الآن أنت بحاجة لربط phpMussel لنظام إدارة المحتوى أو النظام الذي تستخدمه، هناك عدة طرق لفعل هذا لكن أسهل طريقة ببساطة إضافة السكربت لبداية النواة في نظامك (سيتم إعادة التحميل لكل وصول لأي صفحة في الموقع) بإستخدام جمل `require` أو `include`، بالعادة سيتم التخزين في `/includes`، `/assets` أو `/functions`، وسيتم تسميته بالغالب مثل: `init.php`، `common_functions.php`، `functions.php` أو ما شابه. من الممكن أن تكون مستخدم ل CMS لذا يمكن أن أقدم بعض المساعدة بخصوص هذا الموضوع، لإستخدام `require` أو `include` قم بإضافة الكود التالي لبداية الملف الرئيسي لبرنامجك، عدل النص الموجود داخل علامات التنصيص لمسار `loader.php` لديك.<br /><br /></div>
 
 `<?php require '/user_name/public_html/phpmussel/loader.php'; ?>`
 
@@ -70,29 +70,29 @@
 
 `php_value auto_prepend_file "/user_name/public_html/phpmussel/loader.php"`
 
-<div dir="rtl">6. لقد إنتهيت لكن يجب عليك التأكد من أن كل شيئ على ما يرام، للتأكد حاول رفع ملفات الفحص الموجودة في الحزمة _testfiles لموقعك، إذا كل شيئ يعمل على ما يرام يجب أن تظهر رسالة من phpMussel لتأكيد على أنه تم حجب الملفات المرفوعة بنجاح، إذا لم يظهر شيئ إذاً هناك شيئ لا يعمل على ما يرام، إذا كنت تستخدم إضافات متقدمة أو أدوات فحص أخرى أقترح أن تجرب من خلالهم أيضاً للتأكد إذا ما كان كل شيئ على ما يرام.<br /><br /></div>
+<div dir="rtl">٦. لقد إنتهيت لكن يجب عليك التأكد من أن كل شيئ على ما يرام، للتأكد حاول رفع ملفات الفحص الموجودة في الحزمة _testfiles لموقعك، إذا كل شيئ يعمل على ما يرام يجب أن تظهر رسالة من phpMussel لتأكيد على أنه تم حجب الملفات المرفوعة بنجاح، إذا لم يظهر شيئ إذاً هناك شيئ لا يعمل على ما يرام، إذا كنت تستخدم إضافات متقدمة أو أدوات فحص أخرى أقترح أن تجرب من خلالهم أيضاً للتأكد إذا ما كان كل شيئ على ما يرام.<br /><br /></div>
 
 ---
 
 
-### <div dir="rtl">2-ب. <a name="SECTION2B"></a>كيفية التحميل (لخدمات واجهة سطر الأوامر)</div>
+### <div dir="rtl">٢ب. <a name="SECTION2B"></a>كيفية التحميل (لخدمات واجهة سطر الأوامر)</div>
 
 <div dir="rtl">أرجو أن يتم تسهيل هذه العملية في المستقبل القريب، لكن في الوقت الحالي إتبع هذه التعليمات للعمل من خلال واجهة سطر الأوامر(في الوقت الحالي واجهة سطر الأوامر تدعم فقط أنظمة ويندوز سيتم دعم لينكس والأنظمة الأخرى في الإصدار القادم).<br /><br /></div>
 
-<div dir="rtl">1. بقراءتك لهذا سنفرض بأنك قمت بتحميل السكربت، من هنا عليك العمل على جهازك المحلي.<br /><br /></div>
+<div dir="rtl">١. بقراءتك لهذا سنفرض بأنك قمت بتحميل السكربت، من هنا عليك العمل على جهازك المحلي.<br /><br /></div>
 
-<div dir="rtl">2. يتطلب phpMussel أن يتم تثبيت PHP على الجهاز المضيف من أجل تنفيذه. إذا لم يكن PHP مثبتا على جهازك، الرجاء قم بتثبيت PHP على جهازك، و اتبع أي تعليمات يقدمها مثبت PHP.<br /><br /></div>
+<div dir="rtl">٢. يتطلب phpMussel أن يتم تثبيت PHP على الجهاز المضيف من أجل تنفيذه. إذا لم يكن PHP مثبتا على جهازك، الرجاء قم بتثبيت PHP على جهازك، و اتبع أي تعليمات يقدمها مثبت PHP.<br /><br /></div>
 
-<div dir="rtl">3. هذه الخطوة اختيارية ينصح بها للمستخدمين المتقدمين ولا ينصح بها للمبتدئين، إفتح `config.ini` الموجود داخل vault هذا الملف يحتوي جميع التعليمات ل phpMussel، أعلى كل خيار يوجد وصف مختصر للوظيفة التي يقوم بها، عدل الخيارات كما يناسبك.<br /><br /></div>
+<div dir="rtl">٣. هذه الخطوة اختيارية ينصح بها للمستخدمين المتقدمين ولا ينصح بها للمبتدئين، إفتح `config.ini` الموجود داخل vault هذا الملف يحتوي جميع التعليمات ل phpMussel، أعلى كل خيار يوجد وصف مختصر للوظيفة التي يقوم بها، عدل الخيارات كما يناسبك.<br /><br /></div>
 
-<div dir="rtl">4. بشكل إختياري، يمكنك إستخدام phpMussel لواجهة سطر الأوامر بإنشاء ملف "باتش" لتحميل php و phpMussel تلقائياً، للقيام بهذا إفتح محرر النصوص مثل Notepad++ ثم أكتب المسار الكامل لملف `php.exe` الموجود في دليل التثبيت متبوع بمسافة ثم المسار الكامل لملف `loader.php` احفظ الملف بصيغة `bat.`، إفتح الملف الذي قمت بإنشاءه لتشغيل phpMussel في المستقبل.<br /><br /></div>
+<div dir="rtl">٤. بشكل إختياري، يمكنك إستخدام phpMussel لواجهة سطر الأوامر بإنشاء ملف "باتش" لتحميل PHP و phpMussel تلقائياً، للقيام بهذا إفتح محرر النصوص مثل Notepad++ ثم أكتب المسار الكامل لملف `php.exe` الموجود في دليل التثبيت متبوع بمسافة ثم المسار الكامل لملف `loader.php` احفظ الملف بصيغة `bat.`، إفتح الملف الذي قمت بإنشاءه لتشغيل phpMussel في المستقبل.<br /><br /></div>
 
-<div dir="rtl">5. في هذه المرحلة، لقد انتهيت! ومع ذلك فربما يجب عليك اختباره للتأكد من أنه يعمل بشكل صحيح. لاختبار phpMussel، قم بتشغيله و حاول فحص الدليل `_testfiles` المتوفر مع الحزمة.<br /><br /></div>
+<div dir="rtl">٥. في هذه المرحلة، لقد انتهيت! ومع ذلك فربما يجب عليك اختباره للتأكد من أنه يعمل بشكل صحيح. لاختبار phpMussel، قم بتشغيله و حاول فحص الدليل `_testfiles` المتوفر مع الحزمة.<br /><br /></div>
 
 ---
 
 
-### <div dir="rtl">3-أ. <a name="SECTION3A"></a>كيفية الإستخدام (لخدمات الويب)</div>
+### <div dir="rtl">٣أ. <a name="SECTION3A"></a>كيفية الإستخدام (لخدمات الويب)</div>
 
 <div dir="rtl">لقد تم إعداد phpMussel ليكون البرنامج النصي الذي سوف يعمل بشكل مرضي على جهازك مع الحد الأدنى من المتطلبات على جهازك: بمجرد تثبيته -بشكلي أساسي- فإنه ببساطة يجب أن يعمل.<br /><br /></div>
 
@@ -133,7 +133,7 @@
 ---
 
 
-### <div dir="rtl">3ب. <a name="SECTION3B"></a>كيفية الاستخدام (لخدمات واجهة سطر الأوامر)</div>
+### <div dir="rtl">٣ب. <a name="SECTION3B"></a>كيفية الاستخدام (لخدمات واجهة سطر الأوامر)</div>
 
 <div dir="rtl">يرجى الرجوع إلى قسم "التحميل (لخدمات واجهة سطر الأوامر)" من هذا الملف التمهيدي.<br /><br /></div>
 
@@ -144,14 +144,14 @@
 ---
 
 
-### <div dir="rtl">4. <a name="SECTION4"></a>إدارة FRONT-END</div>
+### <div dir="rtl">٤. <a name="SECTION4"></a>إدارة FRONT-END</div>
 
 @TODO@
 
 ---
 
 
-### <div dir="rtl">5. <a name="SECTION5"></a>CLI (واجهة سطر الأوامر).</div>
+### <div dir="rtl">٥. <a name="SECTION5"></a>CLI (واجهة سطر الأوامر).</div>
 
 <div dir="rtl">يمكن تشغيل phpMussel باعتباره برنامج فحص ملفات تفاعلي في وضع CLI في ظل النظم المستندة إلى Windows. راجع قسم "كيفية التثبيت (لواجهة سطر الاوامر)" من هذا الملف التمهيدي لمزيد من التفاصيل.<br /><br /></div>
 
@@ -163,7 +163,7 @@
 ---
 
 
-### <div dir="rtl">6. <a name="SECTION6"></a>الملفاتالموجودةفيهذهالحزمة</div>
+### <div dir="rtl">٦. <a name="SECTION6"></a>الملفاتالموجودةفيهذهالحزمة</div>
 
 <div dir="rtl">فيما يلي قائمة بجميع الملفات التي ينبغي أن تدرج في النسخة المحفوظة من هذا البرنامج النصي عند تحميله، أي الملفات التي يمكن أن يحتمل أن تكون نشأت نتيجة استعمالك لهذا البرنامج النصي، بالإضافة إلى وصفا موجزا لدور و وظيفة كل ملف.<br /><br /></div>
 
@@ -253,86 +253,8 @@
 <div dir="rtl" style="display:inline;">ملف وصول النص التشعبي (في هذه الحالة، لحماية الملفات الحساسة التي تنتمي إلى البرنامج من أن يتم الوصول إليها عن طريق مصادر غير مصرح لها).</div> | /vault/quarantine/.htaccess
 <div dir="rtl" style="display:inline;">دليل توقيعات (يحتوي توقيعات).</div> | /vault/signatures/
 <div dir="rtl" style="display:inline;">ملف وصول النص التشعبي (في هذه الحالة، لحماية الملفات الحساسة التي تنتمي إلى البرنامج من أن يتم الوصول إليها عن طريق مصادر غير مصرح لها).</div> | /vault/signatures/.htaccess
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من ASCII.</div> | /vault/signatures/ascii_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات الموسعة المعقدة.</div> | /vault/signatures/coex_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات الموسعة المعقدة.</div> | /vault/signatures/coex_mussel.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات ELF.</div> | /vault/signatures/elf_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE (المحمولة التنفيذية).</div> | /vault/signatures/exe_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات اسم الملف.</div> | /vault/signatures/filenames_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات اسم الملف.</div> | /vault/signatures/filenames_mussel.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات العامة.</div> | /vault/signatures/general_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات الرسومات.</div> | /vault/signatures/graphics_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">ترميز ملف CSV الأوامر العامة المكتشفة المستخدمة اختياريا من قبل phpMussel.</div> | /vault/signatures/hex_general_commands.csv
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف للتوقيعات التي تمت تسويتها/تطبيعها من HTML.</div> | /vault/signatures/html_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Mach-O.</div> | /vault/signatures/macho_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات البريد.</div> | /vault/signatures/mail_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/clamav.hdb
-<div dir="rtl" style="display:inline;">ملف التوقيعات القائمة على MD5.</div> | /vault/signatures/phpmussel.hdb
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات OLE.</div> | /vault/signatures/ole_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PDF.</div> | /vault/signatures/pdf_mussel_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الموسعة.</div> | /vault/signatures/phpmussel.pex
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/clamav.mdb
-<div dir="rtl" style="display:inline;">ملف توقيعات PE الجزئية.</div> | /vault/signatures/phpmussel.mdb
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_regex.map
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_standard.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_clamav_standard.map
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_mussel_regex.cvd
-<div dir="rtl" style="display:inline;">ملف توقيعات Shockwave.</div> | /vault/signatures/swf_mussel_standard.cvd
 <div dir="rtl" style="display:inline;">يتحكم و يضع متغيرات محددة.</div> | /vault/signatures/switch.dat
-<div dir="rtl" style="display:inline;">ملق توقيعات مسح الروابط.</div> | /vault/signatures/urlscanner.cvd
-<div dir="rtl" style="display:inline;">ملف قائمة السماح المحددة.</div> | /vault/signatures/whitelist_clamav.cvd
-<div dir="rtl" style="display:inline;">ملف قائمة السماح المحددة.</div> | /vault/signatures/whitelist_mussel.cvd
 <div dir="rtl" style="display:inline;">ملف وصول النص التشعبي (في هذه الحالة، لحماية الملفات الحساسة التي تنتمي إلى البرنامج من أن يتم الوصول إليها عن طريق مصادر غير مصرح لها).</div> | /vault/.htaccess
 <div dir="rtl" style="display:inline;">معالج CLI.</div> | /vault/cli.php
 <div dir="rtl" style="display:inline;">يحتوي على معلومات تتعلق حدات phpMussel؛ المستخدمة من ميزة التحديثات التي تقدمها لphpMussel.</div> | /vault/components.dat
@@ -361,25 +283,10 @@
 
 <div dir="rtl">※ اسم الملف قد يختلف استنادا إلى نصوص التكوين (في config.ini).</div>
 
-####*<div dir="rtl">فيما يتعلق بملفات التوقيع</div>*
-<div dir="rtl">CVD هو اختصار ل "تعريفات فيروسات (كلام ايه في)"، في إشارة إلى كل من كيف تشير (كلام ايه في) إلى التوقيعات الخاصة بهم واستخدام تلك التوقيعات في phpMussel. الملفات التي تنتهي ب "CVD" تحتوي على التوقيعات.<br /><br /></div>
-
-<div dir="rtl">ملفات تنتهي ب "MAP" و معناها قد يكون حرفيا، و هي خريطة تواقيع phpMussel التي ينبغي أو يجب عدم استخدامها لاجراء الفحوصات الفردية؛ ليس مطلوبا من جميع التوقيعات بالضرورة لكل فحص، لذلك، يستخدم phpMussel خرائط ملفات التوقيع لتسريع عملية الفحص (عملية من شأنها أن تكون لولا ذلك بطيئة للغاية ومملة).<br /><br /></div>
-
-<div dir="rtl">ملفات التوقيع المحددة بعلامة "_regex" تحتوي على التوقيعات التي تستخدم نمط التحقق المعتاد (regex).<br /><br /></div>
-
-<div dir="rtl">ملفات التوقيع المحددة بعلامة "_standard" تحتوي على التوقيعات التي على وجه التحديد لا تستخدم أي شكل من أشكال نمط التحقق.<br /><br /></div>
-
-<div dir="rtl">ملفات التوقيع الغير محددة بـ "_regex" أو "_standard" ستكون باعتبارها مثل أحدها أو الأخرى، ولكن ليس كلاهما (يرجى الرجوع إلى قسم شكل التوقيع في هذا الملف التمهيدي للوثائق و التفاصيل المحددة).<br /><br /></div>
-
-<div dir="rtl">ملفات التوقيع المحددة بعلامة "_clamav" تحتوي على التوقيعات التي مصدرها تماما من قاعدة بيانات كلام ايه في (GNU/GPL).<br /><br /></div>
-
-<div dir="rtl">ملفات التوقيع المحددة بعلامة "_mussel" تحتوي على التوقيعات التي على وجه التحديد التي ليست مصدرها كلام ايه في، والتوقيعات التي عموما قد إما أتيت بها بنفسي و/أو بناء على المعلومات التي تم جمعها من مصار مختلفة.<br /><br /></div>
-
 ---
 
 
-### <div dir="rtl">7. <a name="SECTION7"></a>خياراتالتكوين/التهيئة</div>
+### <div dir="rtl">٧. <a name="SECTION7"></a>خياراتالتكوين/التهيئة</div>
 <div dir="rtl">وفيما يلي قائمة من المتغيرات الموجودة في ملف تكوين `config.ini`، بالإضافة إلى وصف الغرض منه و وظيفته.<br /><br /></div>
 
 #### <div dir="rtl">"general" (التصنيف)<br /></div>
@@ -863,7 +770,7 @@
 ---
 
 
-### <div dir="rtl">8. <a name="SECTION8"></a>شكل/تنسيق التوقيع</div>
+### <div dir="rtl">٨. <a name="SECTION8"></a>شكل/تنسيق التوقيع</div>
 
 ####*<div dir="rtl">توقيعات اسم الملف</div>*
 <div dir="rtl">كل توقيعات اسم الملف تتبع التنسيق التالي:<br /><br /></div>
@@ -878,13 +785,6 @@
 `HASH:FILESIZE:NAME`
 
 <div dir="rtl">حيث "HASH" هي تجزئة "MD5" للملف كله، و "FILESIZE" هي الحجم الإجمالي لذلك الملف و "NAME" هو الاسم المذكور في التوقيع.<br /><br /></div>
-
-####*<div dir="rtl">توقيعات أرشيف البيانات الوصفية</div>*
-<div dir="rtl">جميع توقيعات أرشيف البيانات الوصفية تتبع التنسيق:<br /><br /></div>
-
-`NAME:FILESIZE:CRC32`
-
-<div dir="rtl">حيث "NAME" هو الاسم المذكور لهذا التوقيع، حجم الملف هو الحجم الكلي (غير مضغوط) للملف الوارد في الأرشيف و "CRC32" هو المجموع الاختباري لذلك الملف الوارد.<br /><br /></div>
 
 ####*<div dir="rtl">توقيعات PE الجزئية</div>*
 <div dir="rtl">جميع توقيعات PE الجزئية تتبع التنسيق:<br /><br /></div>
@@ -928,10 +828,10 @@
 <div dir="rtl">فيما يلي تفصيل لأنواع التوقيعات التي يستخدمها phpMussel:<br /><br /></div>
 <div dir="rtl"><ul>
  <li>"التوقيعات التي تمت تسويتها بواسطة ASCII". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"التوقيعات المركبة الموسعة" (coex_*). نوع مطابقة التواقيع المختلطة.</li>
+ <li>"التوقيعات المركبة الموسعة". نوع مطابقة التواقيع المختلطة.</li>
  <li>"توقيعات ELF". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق ELF.</li>
- <li>"التواقيع المحمولة القابلة للتنفيذ"  (exe_*). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
- <li>"توقيعات اسم الملف"  (filenames_*). تم الفحص ضد أسماء الملفات المستهدفة للفحص.</li>
+ <li>"التواقيع المحمولة القابلة للتنفيذ". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
+ <li>"توقيعات اسم الملف". تم الفحص ضد أسماء الملفات المستهدفة للفحص.</li>
  <li>"التوقيعات العامة". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
  <li>"توقيعات الرسومات". تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص و معروف كذلك كملف رسومات.</li>
  <li>"الاوامر العامة" (hex_general_commands.csv). تم الفحص ضد محتويات كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
@@ -940,19 +840,19 @@
  <li>"توقيعات البريد". تم الفحص ضد محتويات كل كائن EML غير موجود في لائحة السماح المستهدفة للفحص.</li>
  <li>"توقيعات MD5". تم الفحص ضد تجزئة MD5 من محتويات وحجم الملف من كل ملف غير موجود في لائحة السماح المستهدفة للفحص.</li>
 
- <li>"توقيعات OLE" (ole_*). تم الفحص ضد محتويات كل كائن OLE غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"توقيعات PDF" (pdf_*). تم الفحص ضد محتويات كل كائن PDF غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"التوقيعات الفرعية المحمولة القابلة للتنفيذ" (pe_*). تم الفحص ضد تجزئة MD5 وحجم كل قسم PE من كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
- <li>"التوقيعات الموسعة المحمولة القابلة للتنفيذ" (pex_*). تم الفحص ضد تجزئة MD5 وحجم المتغيرات داخل كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
- <li>"توقيعات SWF" (swf_*). تم الفحص ضد محتويات كل ملف بالمستخدمين غير موجود في لائحة السماح المستهدفة للفحص.</li>
- <li>"توقيعات قائمة السماح" (whitelist_*). تم الفحص ضد تجزئة MD5 من محتويات وحجم الملف من كل ملف المستهدفة للفحص. الملفات المتطابقة سوف تكون في مأمن من أن يقابله نوع من التوقيع المذكورة في دخولهم قائمة السماح.</li>
+ <li>"توقيعات OLE". تم الفحص ضد محتويات كل كائن OLE غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"توقيعات PDF". تم الفحص ضد محتويات كل كائن PDF غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"التوقيعات الفرعية المحمولة القابلة للتنفيذ". تم الفحص ضد تجزئة MD5 وحجم كل قسم PE من كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
+ <li>"التوقيعات الموسعة المحمولة القابلة للتنفيذ". تم الفحص ضد تجزئة MD5 وحجم المتغيرات داخل كل ملف غير موجود في لائحة السماح المستهدفة للفحص ومطابقة لتنسيق PE.</li>
+ <li>"توقيعات SWF". تم الفحص ضد محتويات كل ملف بالمستخدمين غير موجود في لائحة السماح المستهدفة للفحص.</li>
+ <li>"توقيعات قائمة السماح". تم الفحص ضد تجزئة MD5 من محتويات وحجم الملف من كل ملف المستهدفة للفحص. الملفات المتطابقة سوف تكون في مأمن من أن يقابله نوع من التوقيع المذكورة في دخولهم قائمة السماح.</li>
 </ul></div>
 <div dir="rtl">(لاحظ أن أي من هذه التوقيعات قد يتم تعطيل بسهولة عبر `config.ini`).<br /><br /></div>
 
 ---
 
 
-### <div dir="rtl">9. <a name="SECTION9"></a>مشاكل التوافق المعروفة</div>
+### <div dir="rtl">٩. <a name="SECTION9"></a>مشاكل التوافق المعروفة</div>
 
 ####<div dir="rtl">PHP و PCRE</div>
 
@@ -1031,7 +931,7 @@ Zoner | <div dir="rtl" style="display:inline;">لا مشاكل معروفة</div
 ---
 
 
-### <div dir="rtl">10. <a name="SECTION10"></a>أسئلة وأجوبة (FAQ)</div>
+### <div dir="rtl">١٠. <a name="SECTION10"></a>أسئلة وأجوبة (FAQ)</div>
 
 #### <div dir="rtl">ما هو "إيجابية خاطئة"؟<br /><br /></div>
 

@@ -249,86 +249,8 @@ File | Description
 /vault/quarantine/.htaccess | A hypertext access file (in this instance, to protect sensitive files belonging to the script from being accessed by non-authorised sources).
 /vault/signatures/ | Signatures directory (contains signature files).
 /vault/signatures/.htaccess | A hypertext access file (in this instance, to protect sensitive files belonging to the script from being accessed by non-authorised sources).
-/vault/signatures/ascii_clamav_regex.cvd | File for normalised ASCII signatures.
-/vault/signatures/ascii_clamav_regex.map | File for normalised ASCII signatures.
-/vault/signatures/ascii_clamav_standard.cvd | File for normalised ASCII signatures.
-/vault/signatures/ascii_clamav_standard.map | File for normalised ASCII signatures.
-/vault/signatures/ascii_mussel_regex.cvd | File for normalised ASCII signatures.
-/vault/signatures/ascii_mussel_standard.cvd | File for normalised ASCII signatures.
-/vault/signatures/coex_clamav.cvd | File for complex extended signatures.
-/vault/signatures/coex_mussel.cvd | File for complex extended signatures.
-/vault/signatures/elf_clamav_regex.cvd | File for ELF signatures.
-/vault/signatures/elf_clamav_regex.map | File for ELF signatures.
-/vault/signatures/elf_clamav_standard.cvd | File for ELF signatures.
-/vault/signatures/elf_clamav_standard.map | File for ELF signatures.
-/vault/signatures/elf_mussel_regex.cvd | File for ELF signatures.
-/vault/signatures/elf_mussel_standard.cvd | File for ELF signatures.
-/vault/signatures/exe_clamav_regex.cvd | File for PE (Portable Executable) signatures.
-/vault/signatures/exe_clamav_regex.map | File for PE (Portable Executable) signatures.
-/vault/signatures/exe_clamav_standard.cvd | File for PE (Portable Executable) signatures.
-/vault/signatures/exe_clamav_standard.map | File for PE (Portable Executable) signatures.
-/vault/signatures/exe_mussel_regex.cvd | File for PE (Portable Executable) signatures.
-/vault/signatures/exe_mussel_standard.cvd | File for PE (Portable Executable) signatures.
-/vault/signatures/filenames_clamav.cvd | File for filename signatures.
-/vault/signatures/filenames_mussel.cvd | File for filename signatures.
-/vault/signatures/general_clamav_regex.cvd | File for general signatures.
-/vault/signatures/general_clamav_regex.map | File for general signatures.
-/vault/signatures/general_clamav_standard.cvd | File for general signatures.
-/vault/signatures/general_clamav_standard.map | File for general signatures.
-/vault/signatures/general_mussel_regex.cvd | File for general signatures.
-/vault/signatures/general_mussel_standard.cvd | File for general signatures.
-/vault/signatures/graphics_clamav_regex.cvd | File for graphics signatures.
-/vault/signatures/graphics_clamav_regex.map | File for graphics signatures.
-/vault/signatures/graphics_clamav_standard.cvd | File for graphics signatures.
-/vault/signatures/graphics_clamav_standard.map | File for graphics signatures.
-/vault/signatures/graphics_mussel_regex.cvd | File for graphics signatures.
-/vault/signatures/graphics_mussel_standard.cvd | File for graphics signatures.
 /vault/signatures/hex_general_commands.csv | Hex-encoded CSV of general command detections optionally used by phpMussel.
-/vault/signatures/html_clamav_regex.cvd | File for normalised HTML signatures.
-/vault/signatures/html_clamav_regex.map | File for normalised HTML signatures.
-/vault/signatures/html_clamav_standard.cvd | File for normalised HTML signatures.
-/vault/signatures/html_clamav_standard.map | File for normalised HTML signatures.
-/vault/signatures/html_mussel_regex.cvd | File for normalised HTML signatures.
-/vault/signatures/html_mussel_standard.cvd | File for normalised HTML signatures.
-/vault/signatures/macho_clamav_regex.cvd | File for Mach-O signatures.
-/vault/signatures/macho_clamav_regex.map | File for Mach-O signatures.
-/vault/signatures/macho_clamav_standard.cvd | File for Mach-O signatures.
-/vault/signatures/macho_clamav_standard.map | File for Mach-O signatures.
-/vault/signatures/macho_mussel_regex.cvd | File for Mach-O signatures.
-/vault/signatures/macho_mussel_standard.cvd | File for Mach-O signatures.
-/vault/signatures/mail_clamav_regex.cvd | File for mail signatures.
-/vault/signatures/mail_clamav_regex.map | File for mail signatures.
-/vault/signatures/mail_clamav_standard.cvd | File for mail signatures.
-/vault/signatures/mail_clamav_standard.map | File for mail signatures.
-/vault/signatures/mail_mussel_regex.cvd | File for mail signatures.
-/vault/signatures/mail_mussel_standard.cvd | File for mail signatures.
-/vault/signatures/clamav.hdb | File for MD5 based signatures.
-/vault/signatures/phpmussel.hdb | File for MD5 based signatures.
-/vault/signatures/ole_clamav_regex.cvd | File for OLE signatures.
-/vault/signatures/ole_clamav_regex.map | File for OLE signatures.
-/vault/signatures/ole_clamav_standard.cvd | File for OLE signatures.
-/vault/signatures/ole_clamav_standard.map | File for OLE signatures.
-/vault/signatures/ole_mussel_regex.cvd | File for OLE signatures.
-/vault/signatures/ole_mussel_standard.cvd | File for OLE signatures.
-/vault/signatures/pdf_clamav_regex.cvd | File for PDF signatures.
-/vault/signatures/pdf_clamav_regex.map | File for PDF signatures.
-/vault/signatures/pdf_clamav_standard.cvd | File for PDF signatures.
-/vault/signatures/pdf_clamav_standard.map | File for PDF signatures.
-/vault/signatures/pdf_mussel_regex.cvd | File for PDF signatures.
-/vault/signatures/pdf_mussel_standard.cvd | File for PDF signatures.
-/vault/signatures/phpmussel.pex | File for PE extended signatures.
-/vault/signatures/clamav.mdb | File for PE Sectional signatures.
-/vault/signatures/phpmussel.mdb | File for PE Sectional signatures.
-/vault/signatures/swf_clamav_regex.cvd | File for the Shockwave signatures.
-/vault/signatures/swf_clamav_regex.map | File for the Shockwave signatures.
-/vault/signatures/swf_clamav_standard.cvd | File for the Shockwave signatures.
-/vault/signatures/swf_clamav_standard.map | File for the Shockwave signatures.
-/vault/signatures/swf_mussel_regex.cvd | File for the Shockwave signatures.
-/vault/signatures/swf_mussel_standard.cvd | File for the Shockwave signatures.
 /vault/signatures/switch.dat | Controls and sets certain variables.
-/vault/signatures/urlscanner.cvd | File for URL scanner signatures.
-/vault/signatures/whitelist_clamav.cvd | File specific whitelist.
-/vault/signatures/whitelist_mussel.cvd | File specific whitelist.
 /vault/.htaccess | A hypertext access file (in this instance, to protect sensitive files belonging to the script from being accessed by non-authorised sources).
 /vault/cli.php | CLI handler.
 /vault/components.dat | Contains information relating to the various components of phpMussel; Used by the updates feature provided by the front-end.
@@ -356,21 +278,6 @@ File | Description
 /web.config | An ASP.NET configuration file (in this instance, to protect the `/vault` directory from being accessed by non-authorised sources in the event that the script is installed on a server based upon ASP.NET technologies).
 
 ※ Filename may differ based on configuration stipulations (in `config.ini`).
-
-####*REGARDING SIGNATURE FILES*
-CVD is an acronym for "ClamAV Virus Definitions", in reference both to how ClamAV refers to its own signatures and to the use of those signatures for phpMussel; Files ending with "CVD" contain signatures.
-
-Files ending with "MAP", quite literally, map which signatures phpMussel should and shouldn't use for individual scans; Not all signatures are necessarily required for every single scan, so, phpMussel uses maps of the signature files to speed up the scanning process (a process that would otherwise be extremely slow and tedious).
-
-Signature files marked with "_regex" contain signatures that utilise regular expression pattern checking (regex).
-
-Signature files marked with "_standard" contain signatures that specifically don't utilise any form of pattern checking.
-
-Signature files marked with neither "_regex" nor "_standard" will be as one or the other, but not both (refer to the Signature Format section of this README file for documentation and specific details).
-
-Signature files marked with "_clamav" contain signatures that are sourced entirely from the ClamAV database (GNU/GPL).
-
-Signature files marked with "_mussel" contain signatures that specifically are not sourced from ClamAV, signatures which, generally, I've either come up with myself and/or based on information gathered from various sources.
 
 ---
 
@@ -709,13 +616,6 @@ All MD5 signatures follow the format:
 
 Where HASH is the MD5 hash of an entire file, FILESIZE is the total size of that file and NAME is the name to cite for that signature.
 
-####*ARCHIVE METADATA SIGNATURES*
-All archive metadata signatures follow the format:
-
-`NAME:FILESIZE:CRC32`
-
-Where NAME is the name to cite for that signature, FILESIZE is the total size (uncompressed) of a file contained within the archive and CRC32 is the CRC32 checksum of that contained file.
-
 ####*PE SECTIONAL SIGNATURES*
 All PE Sectional signatures follow the format:
 
@@ -769,12 +669,12 @@ The following is a breakdown of the types of signatures used by phpMussel:
 - "Email signatures". Checked against the contents of every non-whitelisted EML file targeted for scanning.
 - "MD5 signatures". Checked against the MD5 hash of the contents and the filesize of every non-whitelisted file targeted for scanning.
 
-- "OLE signatures" (ole_*). Checked against the contents of every non-whitelisted OLE object targeted for scanning.
-- "PDF signatures" (pdf_*). Checked against the contents of every non-whitelisted PDF file targeted for scanning.
-- "Portable executable sectional signatures" (pe_*). Checked against the MD5 hash and the size of each PE section of every non-whitelisted file targeted for scanning and matched to the PE format.
-- "Portable executable extended signatures" (pex_*). Checked against the MD5 hash and the size of variables within every non-whitelisted file targeted for scanning and matched to the PE format.
-- "SWF signatures" (swf_*). Checked against the contents of every non-whitelisted Shockwave file targeted for scanning.
-- "Whitelist signatures" (whitelist_*). Checked against the MD5 hash of the contents and the filesize of every file targeted for scanning. Matched files will be immune to being matched by the type of signature mentioned in their whitelist entry.
+- "OLE signatures". Checked against the contents of every non-whitelisted OLE object targeted for scanning.
+- "PDF signatures". Checked against the contents of every non-whitelisted PDF file targeted for scanning.
+- "Portable executable sectional signatures". Checked against the MD5 hash and the size of each PE section of every non-whitelisted file targeted for scanning and matched to the PE format.
+- "Portable executable extended signatures". Checked against the MD5 hash and the size of variables within every non-whitelisted file targeted for scanning and matched to the PE format.
+- "SWF signatures". Checked against the contents of every non-whitelisted Shockwave file targeted for scanning.
+- "Whitelist signatures". Checked against the MD5 hash of the contents and the filesize of every file targeted for scanning. Matched files will be immune to being matched by the type of signature mentioned in their whitelist entry.
 (Note that any of these signatures may be easily disabled via `config.ini`).
 
 ---
@@ -878,4 +778,4 @@ phpMussel *DOES* block a file | __False positive__ | True positive (correct infe
 ---
 
 
-Last Updated: 18 January 2016 (2017.01.18).
+Last Updated: 3 January 2016 (2017.02.03).

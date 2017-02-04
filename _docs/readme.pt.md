@@ -249,86 +249,8 @@ Arquivo | Descrição
 /vault/quarantine/.htaccess | Um hipertexto acesso arquivo (neste caso, para proteger confidenciais arquivos pertencentes ao script contra serem acessados por fontes não autorizadas).
 /vault/signatures/ | Diretório de assinaturas (contém ficheiros de assinaturas).
 /vault/signatures/.htaccess | Um hipertexto acesso arquivo (neste caso, para proteger confidenciais arquivos pertencentes ao script contra serem acessados por fontes não autorizadas).
-/vault/signatures/ascii_clamav_regex.cvd | Arquivo por normalizada ASCII assinaturas.
-/vault/signatures/ascii_clamav_regex.map | Arquivo por normalizada ASCII assinaturas.
-/vault/signatures/ascii_clamav_standard.cvd | Arquivo por normalizada ASCII assinaturas.
-/vault/signatures/ascii_clamav_standard.map | Arquivo por normalizada ASCII assinaturas.
-/vault/signatures/ascii_mussel_regex.cvd | Arquivo por normalizada ASCII assinaturas.
-/vault/signatures/ascii_mussel_standard.cvd | Arquivo por normalizada ASCII assinaturas.
-/vault/signatures/coex_clamav.cvd | Arquivo por o complexos estendidas assinaturas.
-/vault/signatures/coex_mussel.cvd | Arquivo por o complexos estendidas assinaturas.
-/vault/signatures/elf_clamav_regex.cvd | Arquivo por ELF assinaturas.
-/vault/signatures/elf_clamav_regex.map | Arquivo por ELF assinaturas.
-/vault/signatures/elf_clamav_standard.cvd | Arquivo por ELF assinaturas.
-/vault/signatures/elf_clamav_standard.map | Arquivo por ELF assinaturas.
-/vault/signatures/elf_mussel_regex.cvd | Arquivo por ELF assinaturas.
-/vault/signatures/elf_mussel_standard.cvd | Arquivo por ELF assinaturas.
-/vault/signatures/exe_clamav_regex.cvd | Arquivo por Portátil Executável arquivo (EXE) assinaturas.
-/vault/signatures/exe_clamav_regex.map | Arquivo por Portátil Executável arquivo (EXE) assinaturas.
-/vault/signatures/exe_clamav_standard.cvd | Arquivo por Portátil Executável arquivo (EXE) assinaturas.
-/vault/signatures/exe_clamav_standard.map | Arquivo por Portátil Executável arquivo (EXE) assinaturas.
-/vault/signatures/exe_mussel_regex.cvd | Arquivo por Portátil Executável arquivo (EXE) assinaturas.
-/vault/signatures/exe_mussel_standard.cvd | Arquivo por Portátil Executável arquivo (EXE) assinaturas.
-/vault/signatures/filenames_clamav.cvd | Arquivo por arquivo nome assinaturas.
-/vault/signatures/filenames_mussel.cvd | Arquivo por arquivo nome assinaturas.
-/vault/signatures/general_clamav_regex.cvd | Arquivo por gerais assinaturas.
-/vault/signatures/general_clamav_regex.map | Arquivo por gerais assinaturas.
-/vault/signatures/general_clamav_standard.cvd | Arquivo por gerais assinaturas.
-/vault/signatures/general_clamav_standard.map | Arquivo por gerais assinaturas.
-/vault/signatures/general_mussel_regex.cvd | Arquivo por gerais assinaturas.
-/vault/signatures/general_mussel_standard.cvd | Arquivo por gerais assinaturas.
-/vault/signatures/graphics_clamav_regex.cvd | Arquivo por gráficas assinaturas.
-/vault/signatures/graphics_clamav_regex.map | Arquivo por gráficas assinaturas.
-/vault/signatures/graphics_clamav_standard.cvd | Arquivo por gráficas assinaturas.
-/vault/signatures/graphics_clamav_standard.map | Arquivo por gráficas assinaturas.
-/vault/signatures/graphics_mussel_regex.cvd | Arquivo por gráficas assinaturas.
-/vault/signatures/graphics_mussel_standard.cvd | Arquivo por gráficas assinaturas.
 /vault/signatures/hex_general_commands.csv | Hex-codificado CSV de geral comando detecções opcionalmente usado por phpMussel.
-/vault/signatures/html_clamav_regex.cvd | Arquivo por normalizada HTML assinaturas.
-/vault/signatures/html_clamav_regex.map | Arquivo por normalizada HTML assinaturas.
-/vault/signatures/html_clamav_standard.cvd | Arquivo por normalizada HTML assinaturas.
-/vault/signatures/html_clamav_standard.map | Arquivo por normalizada HTML assinaturas.
-/vault/signatures/html_mussel_regex.cvd | Arquivo por normalizada HTML assinaturas.
-/vault/signatures/html_mussel_standard.cvd | Arquivo por normalizada HTML assinaturas.
-/vault/signatures/macho_clamav_regex.cvd | Arquivo por Mach-O assinaturas.
-/vault/signatures/macho_clamav_regex.map | Arquivo por Mach-O assinaturas.
-/vault/signatures/macho_clamav_standard.cvd | Arquivo por Mach-O assinaturas.
-/vault/signatures/macho_clamav_standard.map | Arquivo por Mach-O assinaturas.
-/vault/signatures/macho_mussel_regex.cvd | Arquivo por Mach-O assinaturas.
-/vault/signatures/macho_mussel_standard.cvd | Arquivo por Mach-O assinaturas.
-/vault/signatures/mail_clamav_regex.cvd | Arquivo por mail assinaturas.
-/vault/signatures/mail_clamav_regex.map | Arquivo por mail assinaturas.
-/vault/signatures/mail_clamav_standard.cvd | Arquivo por mail assinaturas.
-/vault/signatures/mail_clamav_standard.map | Arquivo por mail assinaturas.
-/vault/signatures/mail_mussel_regex.cvd | Arquivo por mail assinaturas.
-/vault/signatures/mail_mussel_standard.cvd | Arquivo por mail assinaturas.
-/vault/signatures/clamav.hdb | Arquivo por MD5 baseadas assinaturas.
-/vault/signatures/phpmussel.hdb | Arquivo por MD5 baseadas assinaturas.
-/vault/signatures/ole_clamav_regex.cvd | Arquivo por OLE assinaturas.
-/vault/signatures/ole_clamav_regex.map | Arquivo por OLE assinaturas.
-/vault/signatures/ole_clamav_standard.cvd | Arquivo por OLE assinaturas.
-/vault/signatures/ole_clamav_standard.map | Arquivo por OLE assinaturas.
-/vault/signatures/ole_mussel_regex.cvd | Arquivo por OLE assinaturas.
-/vault/signatures/ole_mussel_standard.cvd | Arquivo por OLE assinaturas.
-/vault/signatures/pdf_clamav_regex.cvd | Arquivo por PDF assinaturas.
-/vault/signatures/pdf_clamav_regex.map | Arquivo por PDF assinaturas.
-/vault/signatures/pdf_clamav_standard.cvd | Arquivo por PDF assinaturas.
-/vault/signatures/pdf_clamav_standard.map | Arquivo por PDF assinaturas.
-/vault/signatures/pdf_mussel_regex.cvd | Arquivo por PDF assinaturas.
-/vault/signatures/pdf_mussel_standard.cvd | Arquivo por PDF assinaturas.
-/vault/signatures/phpmussel.pex | Arquivo por PE estendidas assinaturas.
-/vault/signatures/clamav.mdb | Arquivo por PE Seccional assinaturas.
-/vault/signatures/phpmussel.mdb | Arquivo por PE Seccional assinaturas.
-/vault/signatures/swf_clamav_regex.cvd | Arquivo por o Shockwave assinaturas.
-/vault/signatures/swf_clamav_regex.map | Arquivo por o Shockwave assinaturas.
-/vault/signatures/swf_clamav_standard.cvd | Arquivo por o Shockwave assinaturas.
-/vault/signatures/swf_clamav_standard.map | Arquivo por o Shockwave assinaturas.
-/vault/signatures/swf_mussel_regex.cvd | Arquivo por o Shockwave assinaturas.
-/vault/signatures/swf_mussel_standard.cvd | Arquivo por o Shockwave assinaturas.
 /vault/signatures/switch.dat | Isto controla e define algumas variáveis.
-/vault/signatures/urlscanner.cvd | Arquivo por URL analisador assinaturas.
-/vault/signatures/whitelist_clamav.cvd | Arquivo específico whitelist.
-/vault/signatures/whitelist_mussel.cvd | Arquivo específico whitelist.
 /vault/.htaccess | Um hipertexto acesso arquivo (neste caso, para proteger confidenciais arquivos pertencentes ao script contra serem acessados por fontes não autorizadas).
 /vault/cli.php | Módulo de CLI.
 /vault/components.dat | Contém informações relativas aos vários componentes de phpMussel; Usado pelo recurso atualizações fornecidas pelo front-end.
@@ -356,21 +278,6 @@ Arquivo | Descrição
 /web.config | Um arquivo de configuração para ASP.NET (neste caso, para protegendo o`/vault` diretório contra serem acessado por fontes não autorizadas em caso que o script está instalado em um servidor baseado em ASP.NET tecnologias).
 
 ※ Arquivo nome podem variar baseado em configuração estipulação (referem-se a `config.ini`).
-
-####*EM RELAÇÃO AOS ASSINATURAS ARQUIVOS*
-CVD é um acrônimo por "ClamAV Virus Definitions", em referência tanto à forma como ClamAV refere-se às suas próprias assinaturas e para o uso dessas assinaturas por phpMussel; Arquivos que terminam com "CVD" contêm assinaturas.
-
-Arquivos que terminam com "MAP", literalmente, mapa quais assinaturas phpMussel deve e não deve ser usado para análisar arquivos; Nem todas as assinaturas são necessariamente necessário por cada individual análise, e assim, phpMussel usa mapas dos assinatura arquivos para acelerar o processo de análise (um processo que de outro modo seria extremamente lento e tedioso).
-
-Assinatura arquivos marcados com "_regex" contêm assinaturas que utilizam regulares expressões (regex).
-
-Assinatura arquivos marcados com "_standard" contêm assinaturas que especificamente não utilizam qualquer forma de regulares expressões.
-
-Assinatura arquivos marcados com nenhum "_regex" nem "_standard" será como um ou outro, mas não tanto (consulte formatos de assinaturas seção deste arquivo README por documentação e específicos detalhes).
-
-Assinatura arquivos marcados com "_clamav" contêm assinaturas, provenientes exclusivamente do ClamAV database (GNU/GPL).
-
-Assinatura arquivos marcados com "_mussel" contêm assinaturas que são especificamente não provenientes de ClamAV, assinaturas que, em geral, eu criei pessoalmente ou baseado em informações obtidas através de várias fontes.
 
 ---
 
@@ -577,7 +484,7 @@ Configuração geral por a manipulação de arquivos.
 - Detectar e bloquear compactados arquivos criptografados? Porque phpMussel não é capaz de analisar o conteúdo de arquivos criptografados, é possível que a criptografia de arquivo pode ser empregado por um atacante como meio de tentar contornar phpMussel, analisadores anti-vírus e outras dessas protecções. Instruindo phpMussel para bloquear quaisquer arquivos que ele descobrir a ser criptografada poderia ajudar a reduzir o risco associado a essas tais possibilidades. False = Não; True = Sim [Padrão].
 
 ####"attack_specific" (Categoria)
-Configuração por específicas ataque detecções (não baseado em CVDs).
+Configuração por específicas ataque detecções.
 
 Chameleon ataque detecções: False = Inativo; True = Ativo.
 
@@ -709,13 +616,6 @@ Todas as MD5 assinaturas seguir o formato:
 
 Onde HASH é o hash MD5 de um inteiro arquivo, TAMANHO é o total tamanho do arquivo e NOME é o nome para citar por essa assinatura.
 
-####*COMPACTADOS ARQUIVOS METADADOS ASSINATURAS*
-Todas as compactados arquivos metadados assinaturas seguir o formato:
-
-`NOME:TAMANHO:CRC32`
-
-Onde NOME é o nome para citar por essa assinatura, TAMANHO é o total tamanho (descompactado) de um arquivo contido dentro do compactado arquivo e CRC32 é o CRC32 checksum do contido arquivo.
-
 ####*PE SECCIONAL ASSINATURAS*
 Todas as PE Seccional assinaturas seguir o formato:
 
@@ -769,12 +669,12 @@ A seguir estão os diferentes tipos de assinaturas utilizadas por phpMussel:
 - "Assinaturas E-mail". Verificado contra o conteúdo de cada arquivo EML não no whitelist.
 - "Assinaturas MD5". Verificado contra o hash MD5 do conteúdo e contra o arquivo tamanho de cada arquivo não no whitelist e alvo por analisando.
 
-- "Assinaturas OLE" (ole_*). Verificado contra o conteúdo de cada objeto não no whitelist e alvo por analisando.
-- "Assinaturas PDF" (pdf_*). Verificado contra o conteúdo de cada arquivo PDF não no whitelist.
-- "Assinaturas portátil executável seccional" (pe_*). Verificado contra o tamanho eo hash MD5 de cada PE seção de cada arquivo não em o whitelist e alvo por analisando e confirmados tal do formato PE.
-- "Assinaturas portátil executável estendidas" (pex_*). Verificado contra o tamanho eo hash MD5 de todas as variáveis de cada arquivo não em o whitelist e alvo por analisando e confirmados tal do formato PE.
-- "Assinaturas SWF" (swf_*). Verificado contra o conteúdo de cada Shockwave arquivo não no whitelist.
-- "Assinaturas whitelist" (whitelist_*). Verificado contra o hash MD5 do conteúdo e contra o arquivo tamanho de cada arquivo alvo por analisando. Verificados arquivos será imune de sendo verificado pelo tipo de assinatura mencionada no seu whitelist entrada.
+- "Assinaturas OLE". Verificado contra o conteúdo de cada objeto não no whitelist e alvo por analisando.
+- "Assinaturas PDF". Verificado contra o conteúdo de cada arquivo PDF não no whitelist.
+- "Assinaturas portátil executável seccional". Verificado contra o tamanho eo hash MD5 de cada PE seção de cada arquivo não em o whitelist e alvo por analisando e confirmados tal do formato PE.
+- "Assinaturas portátil executável estendidas". Verificado contra o tamanho eo hash MD5 de todas as variáveis de cada arquivo não em o whitelist e alvo por analisando e confirmados tal do formato PE.
+- "Assinaturas SWF". Verificado contra o conteúdo de cada Shockwave arquivo não no whitelist.
+- "Assinaturas whitelist". Verificado contra o hash MD5 do conteúdo e contra o arquivo tamanho de cada arquivo alvo por analisando. Verificados arquivos será imune de sendo verificado pelo tipo de assinatura mencionada no seu whitelist entrada.
 (Notar que qualquer uma destas assinaturas podem ser desativada facilmente através de `config.ini`).
 
 ---
@@ -878,4 +778,4 @@ phpMussel *FAZ* bloquear um arquivo | __Falso positivo__ | Verdadeiro positivo (
 ---
 
 
-Última Atualização: 18 Janeiro 2016 (2017.01.18).
+Última Atualização: 3 Fevereiro 2016 (2017.02.03).

@@ -250,86 +250,8 @@ phpMussel应该能够正确操作与最低要求从您：安装后，它应该�
 /vault/quarantine/.htaccess | 超文本访问文件（在这种情况，以保护敏感文件属于脚本从被访问由非授权来源）。
 /vault/signatures/ | 签名文件夹（包含签​​名文件）。
 /vault/signatures/.htaccess | 超文本访问文件（在这种情况，以保护敏感文件属于脚本从被访问由非授权来源）。
-/vault/signatures/ascii_clamav_regex.cvd | 标准化ASCII签名文件。
-/vault/signatures/ascii_clamav_regex.map | 标准化ASCII签名文件。
-/vault/signatures/ascii_clamav_standard.cvd | 标准化ASCII签名文件。
-/vault/signatures/ascii_clamav_standard.map | 标准化ASCII签名文件。
-/vault/signatures/ascii_mussel_regex.cvd | 标准化ASCII签名文件。
-/vault/signatures/ascii_mussel_standard.cvd | 标准化ASCII签名文件。
-/vault/signatures/coex_clamav.cvd | 复杂扩展签名文件。
-/vault/signatures/coex_mussel.cvd | 复杂扩展签名文件。
-/vault/signatures/elf_clamav_regex.cvd | ELF签名文件。
-/vault/signatures/elf_clamav_regex.map | ELF签名文件。
-/vault/signatures/elf_clamav_standard.cvd | ELF签名文件。
-/vault/signatures/elf_clamav_standard.map | ELF签名文件。
-/vault/signatures/elf_mussel_regex.cvd | ELF签名文件。
-/vault/signatures/elf_mussel_standard.cvd | ELF签名文件。
-/vault/signatures/exe_clamav_regex.cvd | 移植可执行｢PE｣签名文件。
-/vault/signatures/exe_clamav_regex.map | 移植可执行｢PE｣签名文件。
-/vault/signatures/exe_clamav_standard.cvd | 移植可执行｢PE｣签名文件。
-/vault/signatures/exe_clamav_standard.map | 移植可执行｢PE｣签名文件。
-/vault/signatures/exe_mussel_regex.cvd | 移植可执行｢PE｣签名文件。
-/vault/signatures/exe_mussel_standard.cvd | 移植可执行｢PE｣签名文件。
-/vault/signatures/filenames_clamav.cvd | 文件名签名文件。
-/vault/signatures/filenames_mussel.cvd | 文件名签名文件。
-/vault/signatures/general_clamav_regex.cvd | 通用签名文件。
-/vault/signatures/general_clamav_regex.map | 通用签名文件。
-/vault/signatures/general_clamav_standard.cvd | 通用签名文件。
-/vault/signatures/general_clamav_standard.map | 通用签名文件。
-/vault/signatures/general_mussel_regex.cvd | 通用签名文件。
-/vault/signatures/general_mussel_standard.cvd | 通用签名文件。
-/vault/signatures/graphics_clamav_regex.cvd | 图像签名文件。
-/vault/signatures/graphics_clamav_regex.map | 图像签名文件。
-/vault/signatures/graphics_clamav_standard.cvd | 图像签名文件。
-/vault/signatures/graphics_clamav_standard.map | 图像签名文件。
-/vault/signatures/graphics_mussel_regex.cvd | 图像签名文件。
-/vault/signatures/graphics_mussel_standard.cvd | 图像签名文件。
 /vault/signatures/hex_general_commands.csv | 十六进制编码的CSV（逗号分隔变量）为通用命令检测，使用可选通过phpMussel。
-/vault/signatures/html_clamav_regex.cvd | 标准化HTML签名文件。
-/vault/signatures/html_clamav_regex.map | 标准化HTML签名文件。
-/vault/signatures/html_clamav_standard.cvd | 标准化HTML签名文件。
-/vault/signatures/html_clamav_standard.map | 标准化HTML签名文件。
-/vault/signatures/html_mussel_regex.cvd | 标准化HTML签名文件。
-/vault/signatures/html_mussel_standard.cvd | 标准化HTML签名文件。
-/vault/signatures/macho_clamav_regex.cvd | Mach-O签名文件。
-/vault/signatures/macho_clamav_regex.map | Mach-O签名文件。
-/vault/signatures/macho_clamav_standard.cvd | Mach-O签名文件。
-/vault/signatures/macho_clamav_standard.map | Mach-O签名文件。
-/vault/signatures/macho_mussel_regex.cvd | Mach-O签名文件。
-/vault/signatures/macho_mussel_standard.cvd | Mach-O签名文件。
-/vault/signatures/mail_clamav_regex.cvd | 电子邮件签名文件。
-/vault/signatures/mail_clamav_regex.map | 电子邮件签名文件。
-/vault/signatures/mail_clamav_standard.cvd | 电子邮件签名文件。
-/vault/signatures/mail_clamav_standard.map | 电子邮件签名文件。
-/vault/signatures/mail_mussel_regex.cvd | 电子邮件签名文件。
-/vault/signatures/mail_mussel_standard.cvd | 电子邮件签名文件。
-/vault/signatures/clamav.hdb | 基于MD5签名文件。
-/vault/signatures/phpmussel.hdb | 基于MD5签名文件。
-/vault/signatures/ole_clamav_regex.cvd | OLE签名文件。
-/vault/signatures/ole_clamav_regex.map | OLE签名文件。
-/vault/signatures/ole_clamav_standard.cvd | OLE签名文件。
-/vault/signatures/ole_clamav_standard.map | OLE签名文件。
-/vault/signatures/ole_mussel_regex.cvd | OLE签名文件。
-/vault/signatures/ole_mussel_standard.cvd | OLE签名文件。
-/vault/signatures/pdf_clamav_regex.cvd | PDF签名文件。
-/vault/signatures/pdf_clamav_regex.map | PDF签名文件。
-/vault/signatures/pdf_clamav_standard.cvd | PDF签名文件。
-/vault/signatures/pdf_clamav_standard.map | PDF签名文件。
-/vault/signatures/pdf_mussel_regex.cvd | PDF签名文件。
-/vault/signatures/pdf_mussel_standard.cvd | PDF签名文件。
-/vault/signatures/phpmussel.pex | 移植可执行｢PE｣扩展签名文件。
-/vault/signatures/clamav.mdb | 移植可执行｢PE｣部分签名文件。
-/vault/signatures/phpmussel.mdb | 移植可执行｢PE｣部分签名文件。
-/vault/signatures/swf_clamav_regex.cvd | SWF签名文件。
-/vault/signatures/swf_clamav_regex.map | SWF签名文件。
-/vault/signatures/swf_clamav_standard.cvd | SWF签名文件。
-/vault/signatures/swf_clamav_standard.map | SWF签名文件。
-/vault/signatures/swf_mussel_regex.cvd | SWF签名文件。
-/vault/signatures/swf_mussel_standard.cvd | SWF签名文件。
 /vault/signatures/switch.dat | 控制和确定某些变量。
-/vault/signatures/urlscanner.cvd | URL扫描仪签名文件。
-/vault/signatures/whitelist_clamav.cvd | 文件具体白名单。
-/vault/signatures/whitelist_mussel.cvd | 文件具体白名单。
 /vault/.htaccess | 超文本访问文件（在这种情况，以保护敏感文件属于脚本从被访问由非授权来源）。
 /vault/cli.php | CLI处理文件。
 /vault/components.dat | 包含的相关信息关于phpMussel的各种组件；它使用通过更新功能从前端。
@@ -357,24 +279,6 @@ phpMussel应该能够正确操作与最低要求从您：安装后，它应该�
 /web.config | 一个ASP.NET配置文件（在这种情况，以保护`/vault`文件夹从被访问由非授权来源在事件的脚本是安装在服务器根据ASP.NET技术）。
 
 ※ 文件名可能不同基于配置规定（在`config.ini`）。
-
-####*关于签名文件*
-（这里是关于phpMussel引用的签名文件来源以及格式说明，请参考英文部分以及签名文件提供商的说明）
-CVD是一个acronym为｢ClamAV Virus Definitions｣，在参照如何ClamAV参考它自己的签名和在参的用法的那些签名在phpMussel；文件名结尾有｢CVD｣包含签名。
-
-文件名结尾有｢MAP｣绘制该签名phpMussel应该和不应该使用为独特扫描；不所有签名是一定需要为所有独特扫描，所以，phpMussel使用签名地图文件以加快扫描过程（一个过程该否则将会极其缓慢和乏味）。
-
-签名文件标有“_regex”包含签名使用正则表达式｢REGEX｣扫描。
-
-签名文件标有“_standard”包含签名特别是不使用任何类型的特殊式或正则表达式扫描。
-
-签名文件标有不“_regex”也不“_standard”将会作为一个或其他，但不二者（参考｢签名格式｣部分的这个自述文件为详细信息）。
-
-签名文件标有“_clamav”包含签名完全从ClamAV的数据库（GNU/GPL）。
-
-签名文件标有“_custom”按说不包含任何签名；这些文件存在以给您某处为放置您自己的个性化签名，如果您创建任何您自己的。
-
-签名文件标有“_mussel”包含签名特别是不从ClamAV，签名该大体，我亲自创建和／或基于信息云集从杂项来源。
 
 ---
 
@@ -727,13 +631,6 @@ URL扫描仪API配置。
 
 `HASH`是一个MD5哈希的一个全文件，`FILESIZE`是总文件大小和`NAME`是名援引为签名。
 
-####*存档元数据签名*
-所有存档元数据签名跟随格式：
-
-`NAME:FILESIZE:CRC32`
-
-`NAME`是名援引为签名，`FILESIZE`是总大小（非压缩）的一个文件包含在存档和`CRC32`是一个CRC32哈希的这个文件。
-
 ####*移植可执行｢PE｣部分签名*
 所有移植可执行｢PE｣部分签名跟随格式：
 
@@ -897,4 +794,4 @@ phpMussel会阻止文件 | __假阳性__ | 真阳性（正确的推理）
 ---
 
 
-最后更新：2017年1月18日。
+最后更新：2017年2月3日。

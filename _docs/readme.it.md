@@ -249,86 +249,8 @@ File | Descrizione
 /vault/quarantine/.htaccess | Un ipertesto accesso file (in questo caso, a proteggere di riservati file appartenente allo script da l'acceso di non autorizzate origini).
 /vault/signatures/ | Firme cartella (contiene i file di firme).
 /vault/signatures/.htaccess | Un ipertesto accesso file (in questo caso, a proteggere di riservati file appartenente allo script da l'acceso di non autorizzate origini).
-/vault/signatures/ascii_clamav_regex.cvd | File per le normalizzati ASCII firme.
-/vault/signatures/ascii_clamav_regex.map | File per le normalizzati ASCII firme.
-/vault/signatures/ascii_clamav_standard.cvd | File per le normalizzati ASCII firme.
-/vault/signatures/ascii_clamav_standard.map | File per le normalizzati ASCII firme.
-/vault/signatures/ascii_mussel_regex.cvd | File per le normalizzati ASCII firme.
-/vault/signatures/ascii_mussel_standard.cvd | File per le normalizzati ASCII firme.
-/vault/signatures/coex_clamav.cvd | File per il complesso esteso firme.
-/vault/signatures/coex_mussel.cvd | File per il complesso esteso firme.
-/vault/signatures/elf_clamav_regex.cvd | File per l'ELF firme.
-/vault/signatures/elf_clamav_regex.map | File per l'ELF firme.
-/vault/signatures/elf_clamav_standard.cvd | File per l'ELF firme.
-/vault/signatures/elf_clamav_standard.map | File per l'ELF firme.
-/vault/signatures/elf_mussel_regex.cvd | File per l'ELF firme.
-/vault/signatures/elf_mussel_standard.cvd | File per l'ELF firme.
-/vault/signatures/exe_clamav_regex.cvd | File per PE (Portatile Eseguibile) firme.
-/vault/signatures/exe_clamav_regex.map | File per PE (Portatile Eseguibile) firme.
-/vault/signatures/exe_clamav_standard.cvd | File per PE (Portatile Eseguibile) firme.
-/vault/signatures/exe_clamav_standard.map | File per PE (Portatile Eseguibile) firme.
-/vault/signatures/exe_mussel_regex.cvd | File per PE (Portatile Eseguibile) firme.
-/vault/signatures/exe_mussel_standard.cvd | File per PE (Portatile Eseguibile) firme.
-/vault/signatures/filenames_clamav.cvd | File per le file nomi firme.
-/vault/signatures/filenames_mussel.cvd | File per le file nomi firme.
-/vault/signatures/general_clamav_regex.cvd | File per generali firme.
-/vault/signatures/general_clamav_regex.map | File per generali firme.
-/vault/signatures/general_clamav_standard.cvd | File per generali firme.
-/vault/signatures/general_clamav_standard.map | File per generali firme.
-/vault/signatures/general_mussel_regex.cvd | File per generali firme.
-/vault/signatures/general_mussel_standard.cvd | File per generali firme.
-/vault/signatures/graphics_clamav_regex.cvd | File per grafica firme.
-/vault/signatures/graphics_clamav_regex.map | File per grafica firme.
-/vault/signatures/graphics_clamav_standard.cvd | File per grafica firme.
-/vault/signatures/graphics_clamav_standard.map | File per grafica firme.
-/vault/signatures/graphics_mussel_regex.cvd | File per grafica firme.
-/vault/signatures/graphics_mussel_standard.cvd | File per grafica firme.
 /vault/signatures/hex_general_commands.csv | Hex-codificata CSV di generale comando rilevazioni opzionalmente utilizzati da phpMussel.
-/vault/signatures/html_clamav_regex.cvd | File per le normalizzati HTML firme.
-/vault/signatures/html_clamav_regex.map | File per le normalizzati HTML firme.
-/vault/signatures/html_clamav_standard.cvd | File per le normalizzati HTML firme.
-/vault/signatures/html_clamav_standard.map | File per le normalizzati HTML firme.
-/vault/signatures/html_mussel_regex.cvd | File per le normalizzati HTML firme.
-/vault/signatures/html_mussel_standard.cvd | File per le normalizzati HTML firme.
-/vault/signatures/macho_clamav_regex.cvd | File per Mach-O firme.
-/vault/signatures/macho_clamav_regex.map | File per Mach-O firme.
-/vault/signatures/macho_clamav_standard.cvd | File per Mach-O firme.
-/vault/signatures/macho_clamav_standard.map | File per Mach-O firme.
-/vault/signatures/macho_mussel_regex.cvd | File per Mach-O firme.
-/vault/signatures/macho_mussel_standard.cvd | File per Mach-O firme.
-/vault/signatures/mail_clamav_regex.cvd | File per mail firme.
-/vault/signatures/mail_clamav_regex.map | File per mail firme.
-/vault/signatures/mail_clamav_standard.cvd | File per mail firme.
-/vault/signatures/mail_clamav_standard.map | File per mail firme.
-/vault/signatures/mail_mussel_regex.cvd | File per mail firme.
-/vault/signatures/mail_mussel_standard.cvd | File per mail firme.
-/vault/signatures/clamav.hdb | File per l'MD5 basate firme.
-/vault/signatures/phpmussel.hdb | File per l'MD5 basate firme.
-/vault/signatures/ole_clamav_regex.cvd | File per OLE firme.
-/vault/signatures/ole_clamav_regex.map | File per OLE firme.
-/vault/signatures/ole_clamav_standard.cvd | File per OLE firme.
-/vault/signatures/ole_clamav_standard.map | File per OLE firme.
-/vault/signatures/ole_mussel_regex.cvd | File per OLE firme.
-/vault/signatures/ole_mussel_standard.cvd | File per OLE firme.
-/vault/signatures/pdf_clamav_regex.cvd | File per PDF firme.
-/vault/signatures/pdf_clamav_regex.map | File per PDF firme.
-/vault/signatures/pdf_clamav_standard.cvd | File per PDF firme.
-/vault/signatures/pdf_clamav_standard.map | File per PDF firme.
-/vault/signatures/pdf_mussel_regex.cvd | File per PDF firme.
-/vault/signatures/pdf_mussel_standard.cvd | File per PDF firme.
-/vault/signatures/phpmussel.pex | File per PE esteso firme.
-/vault/signatures/clamav.mdb | File per PE Sezionale firme.
-/vault/signatures/phpmussel.mdb | File per PE Sezionale firme.
-/vault/signatures/swf_clamav_regex.cvd | File per Shockwave firme.
-/vault/signatures/swf_clamav_regex.map | File per Shockwave firme.
-/vault/signatures/swf_clamav_standard.cvd | File per Shockwave firme.
-/vault/signatures/swf_clamav_standard.map | File per Shockwave firme.
-/vault/signatures/swf_mussel_regex.cvd | File per Shockwave firme.
-/vault/signatures/swf_mussel_standard.cvd | File per Shockwave firme.
 /vault/signatures/switch.dat | Questo controlla e imposta alcune variabili.
-/vault/signatures/urlscanner.cvd | File per firme di l'URL scanner.
-/vault/signatures/whitelist_clamav.cvd | File specifico whitelist.
-/vault/signatures/whitelist_mussel.cvd | File specifico whitelist.
 /vault/.htaccess | Un ipertesto accesso file (in questo caso, a proteggere di riservati file appartenente allo script da l'acceso di non autorizzate origini).
 /vault/cli.php | Gestore di CLI.
 /vault/components.dat | Contiene informazioni relative ai vari componenti di phpMussel; Utilizzato dalla funzionalità aggiornamenti forniti dal front-end.
@@ -356,21 +278,6 @@ File | Descrizione
 /web.config | Un ASP.NET file di configurazione (in questo caso, a proteggere la `/vault` cartella da l'acceso di non autorizzate origini nel caso che lo script è installato su un server basata su ASP.NET tecnologie).
 
 ※ Nome del file può variare dipendente di configurazione (in `config.ini`).
-
-####*IN RIGUARDA PER FIRME FILE*
-CVD è l'acronimo di "ClamAV Virus Definitions", in riferimento sia come ClamAV riferisce alle proprie firme e all'uso di tali firme da phpMussel; I file che terminano con "CVD" contengono firme.
-
-I file che terminano con "MAP", letteralmente, mappa cui delle firme phpMussel dovrebbe e non dovrebbe usare per individuale scansioni; Non tutte le firme sono necessariamente richiesti per ogni singola scansione, così, phpMussel utilizza mappe delle firme file a accelerare il processo di scansione (un processo che sarebbe altrimenti essere estremamente lento e noioso).
-
-Firma file contrassegnati con "_regex" contengono le firme che utilizzano regolari espressioni (regex) modello verifica.
-
-Firma file contrassegnati con "_standard" contengono le firme che specificamente non utilizzano qualsiasi forma di modello verifica.
-
-Firma file contrassegnati con né "_regex" o "_Standard" sarà come uno o l'altro, Ma non entrambi (fare riferimento alla Firma Formato sezione di questo file README per documentazione e specifici dettagli).
-
-Firma file contrassegnati con "_clamav" contengono le firme che esclusivamente forniti dal ClamAV database (GNU/GPL).
-
-Firma file contrassegnati con "_mussel" contengono le firme che in particolare non sono forniti da ClamAV, firme che, in generale, l'ho venire con me stesso e/o sulla base di informazioni raccolte da varie fonti.
 
 ---
 
@@ -577,7 +484,7 @@ Generale configurazione per la gestione dei file.
 - Rilevi e blocchi archivi criptati? Perché phpMussel non è in grado di verifica del contenuto degli archivi criptati, è possibile che la archivi criptati può essere usato da un attaccante verifieracome mezzo di tenta di bypassare phpMussel, verificatore anti-virus e altri tali protezioni. Istruire phpMussel di bloccare qualsiasi archivi criptati che si trovato potrebbe potenzialmente contribuire a ridurre il rischio associato a questi tali possibilità. False = No; True = Sì [Predefinito].
 
 ####"attack_specific" (Categoria)
-Configurazione per specifiche attacco rilevazioni (non basate sulle CVD).
+Configurazione per specifiche attacco rilevazioni.
 
 Chameleon attacco rilevamento: False = Disattivato; True = Attivato.
 
@@ -709,13 +616,6 @@ Tutte l'MD5 firme seguono il formato:
 
 Dove HASH è l'MD5 hash dell'intero file, DIMENSIONE è la totale dimensione del file e NOME è il nome per citare per quella firma.
 
-####*ARCHIVIO METADATI FIRME*
-Tutte l'archivio metadati firme seguono il formato:
-
-`NOME:DIMENSIONE:CRC32`
-
-Dove NOME è il nome per citare per quella firma, DIMENSIONE è la totale dimensione (non compresso) di un file contenuto all'interno dell'archivio e CRC32 è la CRC32 verifica numero di tale file.
-
 ####*PE SEZIONALI FIRME*
 Tutte il PE sezionali firme seguono il formato:
 
@@ -769,12 +669,12 @@ I seguenti sono i tipi di firme utilizzate da phpMussel:
 - "Firme Email". Verificato contro i contenuti del ogni EML file mirati per scansionare quello che non è sulla whitelist.
 - "Firme MD5". Verificato contro l'MD5 hash dei contenuti e la dimensione del ogni file mirati per scansionare quello che non è sulla whitelist.
 
-- "Firme OLE" (ole_*). Verificato contro i contenuti del ogni oggetti mirati per scansionare quello che non è sulla whitelist.
-- "Firme PDF" (pdf_*). Verificato contro i contenuti del ogni PDF file mirati per scansionare quello che non è sulla whitelist.
-- "Firme portatili eseguibili sezionale" (pe_*). Verificato contro l'MD5 hash e la dimensione di ogni PE sezione del ogni file non sulla whitelist mirati per la scansione e verificato al formato PE.
-- "Firme portatili eseguibili estesi" (pex_*). Verificato contro l'MD5 hash e la dimensione di ogni variabili del ogni file non sulla whitelist mirati per la scansione e verificato al formato PE.
-- "Firme SWF" (swf_*). Verificato contro i contenuti del ogni Shockwave file mirati per scansionare quello che non è sulla whitelist.
-- "Firme whitelist" (whitelist_*). Verificato contro l'MD5 hash dei contenuti e la dimensione del ogni file mirati per scansionare. Corrispondenti file saranno immuni contro l'essere bloccato dal tipo di firme di cui al loro whitelist listato.
+- "Firme OLE". Verificato contro i contenuti del ogni oggetti mirati per scansionare quello che non è sulla whitelist.
+- "Firme PDF". Verificato contro i contenuti del ogni PDF file mirati per scansionare quello che non è sulla whitelist.
+- "Firme portatili eseguibili sezionale". Verificato contro l'MD5 hash e la dimensione di ogni PE sezione del ogni file non sulla whitelist mirati per la scansione e verificato al formato PE.
+- "Firme portatili eseguibili estesi". Verificato contro l'MD5 hash e la dimensione di ogni variabili del ogni file non sulla whitelist mirati per la scansione e verificato al formato PE.
+- "Firme SWF". Verificato contro i contenuti del ogni Shockwave file mirati per scansionare quello che non è sulla whitelist.
+- "Firme whitelist". Verificato contro l'MD5 hash dei contenuti e la dimensione del ogni file mirati per scansionare. Corrispondenti file saranno immuni contro l'essere bloccato dal tipo di firme di cui al loro whitelist listato.
 (Si noti che qualsiasi di queste firme possono essere disattivato facilmente tramite `config.ini`).
 
 ---
@@ -878,4 +778,4 @@ phpMussel *FA* bloccare un file | __Falso positivo__ | Vero positivo (inferenza 
 ---
 
 
-Ultimo Aggiornamento: 18 Gennaio 2016 (2017.01.18).
+Ultimo Aggiornamento: 3 Febbraio 2016 (2017.02.03).
