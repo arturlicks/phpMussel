@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Dutch language data (last modified: 2016.10.15).
+ * This file: Dutch language data (last modified: 2017.02.03).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -22,7 +22,7 @@ if (!defined('phpMussel')) {
 $phpMussel['lang']['bad_command'] = 'Ik begrijp niet dat bevel, sorry.';
 $phpMussel['lang']['cli_failed_to_complete'] = 'Mislukt om het voltooien te scannen';
 $phpMussel['lang']['cli_is_not_a'] = ' is geen bestand of map.';
-$phpMussel['lang']['cli_ln2'] = " Dank u voor het gebruiken van phpMussel, een PHP-script ontwikkeld om trojans,\n virussen, malware en andere bedreigingen te ontworpen, binnen bestanden\n geüpload naar uw systeem waar het script is haakte, gebaseerd op de\n handtekeningen van ClamAV en anderen.\n PHPMUSSEL COPYRIGHT 2013 en verder GNU/GPL V.2 van Caleb M (Maikuolan).\n\n                                     ~ ~ ~\n\n";
+$phpMussel['lang']['cli_ln2'] = " Dank u voor het gebruiken van phpMussel, een PHP-script ontwikkeld om trojans,\n virussen, malware en andere bedreigingen te ontworpen, binnen bestanden\n geüpload naar uw systeem waar het script is haakte, gebaseerd op de\n signatures van ClamAV en anderen.\n PHPMUSSEL COPYRIGHT 2013 en verder GNU/GPL V.2 van Caleb M (Maikuolan).\n\n                                     ~ ~ ~\n\n";
 $phpMussel['lang']['cli_ln3'] = " Momenteel phpMussel is in CLI-modus (commandlijn interface).\n\n Om scannen een bestand of map, typ 'scan', gevolgd door de naam van het\n bestand of de map die u wilt phpMussel te scannen en druk op Enter; Typ 'c' en\n druk op Enter voor een lijst op CLI-modus commando's; Typ 'q' en druk op Enter\n om te stoppen:";
 $phpMussel['lang']['cli_pe1'] = 'Geen geldig PE-bestand!';
 $phpMussel['lang']['cli_pe2'] = 'PE Secties:';
@@ -66,14 +66,14 @@ $phpMussel['lang']['scan_command_injection'] = 'Command injectie poging gedetect
 $phpMussel['lang']['scan_complete'] = 'Voltooid';
 $phpMussel['lang']['scan_extensions_missing'] = 'Mislukt (ontbrekende vereiste extensies)!';
 $phpMussel['lang']['scan_filename_manipulation_detected'] = 'Bestandsnaam manipulatie ontdekt';
-$phpMussel['lang']['scan_map_corrupted'] = 'Handtekening kaart beschadigd';
-$phpMussel['lang']['scan_map_missing'] = 'Handtekening kaart ontbrekende';
+$phpMussel['lang']['scan_map_corrupted'] = 'Signature kaart beschadigd';
+$phpMussel['lang']['scan_map_missing'] = 'Signature kaart ontbrekende';
 $phpMussel['lang']['scan_missing_filename'] = 'Ontbrekende bestandsnaam';
 $phpMussel['lang']['scan_not_archive'] = 'Mislukt (leeg of is geen archief)!';
 $phpMussel['lang']['scan_no_problems_found'] = 'Geen problemen gevonden.';
 $phpMussel['lang']['scan_reading'] = 'Lezen van';
-$phpMussel['lang']['scan_signature_file_corrupted'] = 'Handtekening bestand beschadigd';
-$phpMussel['lang']['scan_signature_file_missing'] = 'Handtekening bestand ontbreekt';
+$phpMussel['lang']['scan_signature_file_corrupted'] = 'Signature bestand beschadigd';
+$phpMussel['lang']['scan_signature_file_missing'] = 'Signature bestand ontbreekt';
 $phpMussel['lang']['scan_tampering'] = 'Gedetecteerd potentieel gevaarlijke bestandswijziging';
 $phpMussel['lang']['scan_unauthorised_upload'] = 'Ongeautoriseerde bestand uploaden manipulatie gedetecteerd';
 $phpMussel['lang']['scan_unauthorised_upload_or_misconfig'] = 'Ongeautoriseerde bestand uploaden manipulatie of misconfiguratie gedetecteerd! ';
@@ -97,10 +97,10 @@ $phpMussel['lang']['cli_commands'] = " q
  - Verlaten CLI.
  - Aliassen: quit, exit.
  md5_file
- - Genereer MD5 handtekeningen van bestanden [Syntaxis: md5_file bestandsnaam].
+ - Genereer MD5 signatures van bestanden [Syntaxis: md5_file bestandsnaam].
  - Alias: m.
  md5
- - Genereer MD5 handtekening van string [Syntaxis: md5 string].
+ - Genereer MD5 signature van string [Syntaxis: md5 string].
  hex_encode
  - Converteren van binaire string naar hexadecimaal
    [Syntaxis: hex_encode string].
