@@ -11,7 +11,7 @@
  * License: GNU/GPLv2
  * @see LICENSE.txt
  *
- * This file: Dutch language data (last modified: 2017.02.03).
+ * This file: Dutch language data (last modified: 2017.02.07).
  */
 
 /** Prevents execution from outside of phpMussel. */
@@ -29,8 +29,7 @@ $phpMussel['lang']['cli_pe2'] = 'PE Secties:';
 $phpMussel['lang']['cli_working'] = 'Aan de gang';
 $phpMussel['lang']['corrupted'] = 'Gedetecteerd beschadigd PE';
 $phpMussel['lang']['denied'] = 'Upload Geweigerd!';
-$phpMussel['lang']['denied_other'] = 'Upload Denied! Téléchargement Refusé! Subida Denegada! Caricamento Negato! Upload verweigert! Upload Geweigerd! アップロード拒否! 上传是否认! 上傳是否認! Uppladda Nekas! Загрузка Отказана! Augšupielādēt Liegta! 업로드 거부! Sự tải lên đã bị từ chối!';
-$phpMussel['lang']['denied_reason'] = 'De upload poging werd geblokkeerd voor de hieronder vermelde redenen / Your upload was blocked for the reasons listed below:';
+$phpMussel['lang']['denied_reason'] = 'De upload poging werd geblokkeerd voor de hieronder vermelde redenen:';
 $phpMussel['lang']['detected'] = 'Gedetecteerd {vn}';
 $phpMussel['lang']['detected_control_characters'] = 'Gedetecteerd controle karakters';
 $phpMussel['lang']['encrypted_archive'] = 'Gedetecteerd gecodeerde archief; Gecodeerde archieven niet toegestaan';
@@ -66,8 +65,6 @@ $phpMussel['lang']['scan_command_injection'] = 'Command injectie poging gedetect
 $phpMussel['lang']['scan_complete'] = 'Voltooid';
 $phpMussel['lang']['scan_extensions_missing'] = 'Mislukt (ontbrekende vereiste extensies)!';
 $phpMussel['lang']['scan_filename_manipulation_detected'] = 'Bestandsnaam manipulatie ontdekt';
-$phpMussel['lang']['scan_map_corrupted'] = 'Signature kaart beschadigd';
-$phpMussel['lang']['scan_map_missing'] = 'Signature kaart ontbrekende';
 $phpMussel['lang']['scan_missing_filename'] = 'Ontbrekende bestandsnaam';
 $phpMussel['lang']['scan_not_archive'] = 'Mislukt (leeg of is geen archief)!';
 $phpMussel['lang']['scan_no_problems_found'] = 'Geen problemen gevonden.';
